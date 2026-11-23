@@ -456,6 +456,7 @@ section{position:relative;padding:clamp(5rem,10vw,9rem) 0}
 
 .article-list{display:grid;gap:0;border-top:1px solid var(--line-dark)}
 .article-row{display:grid;grid-template-columns:110px 1fr 180px 30px;gap:1.5rem;align-items:center;padding:1.35rem 0;border-bottom:1px solid var(--line-dark);transition:padding .3s,background .3s}
+.article-row.is-hidden{display:none}
 .article-row:hover{padding-left:1rem;background:rgba(201,162,94,.04)}
 .article-row time{font-family:var(--serif);font-size:1.1rem;color:var(--gold)}
 .article-row h3{font-family:var(--serif);font-size:1.45rem;font-weight:500;line-height:1.25}
