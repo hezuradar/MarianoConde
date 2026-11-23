@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es" data-device="desktop">
+<head>
+<script>(function(){
+  try{
+    if(localStorage.getItem('mc-view')==='desktop') return;
+    var ua=navigator.userAgent||'';
+    var mobile=(navigator.userAgentData&&navigator.userAgentData.mobile===true)||
+      /Android|iPhone|iPod|Windows Phone|Mobile|Silk|BlackBerry|Opera Mini/i.test(ua)||
+      (/iPad|Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+    if(mobile!==true) return;
+    var p=location.pathname.split('/').pop()||'index.html';
+    if(!/\.html$/.test(p)) p='index.html';
+    location.replace('m/'+p);
+  }catch(e){}
+})();</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto y encargos · Mariano Conde</title>
+  <meta name="description" content="Dirección, horarios, teléfono, email, lista de precios y formulario de contacto de Guitarras Mariano Conde en Madrid.">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="assets/img/MC_Favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-section="contacto.html">
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Mariano Conde — inicio">
+      <img src="assets/img/Mariano-Conde-Logo.svg" alt="Mariano Conde" class="brand-logo">
+      <span class="brand-meta">Madrid · desde 1915</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="guitarras.html">Guitarras</a><a href="directo.html" nav-live><span class="live-dot"></span> Taller en directo</a><a href="poema.html">Guitarras del Poema</a><a href="galeria.html">Galería</a><a href="noticias.html">Noticias</a><a href="historia.html">Historia</a><a href="contacto.html" class="is-current">Contacto</a></nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">Español <span aria-hidden="true">▾</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <span class="is-current">Español</span>
+          <a href="https://marianoconde.com/en/contact/" target="_blank" rel="noopener">Inglés ↗</a>
+        </div>
+      </div>
+      <a class="btn btn-sm btn-outline" href="contacto.html">Encargos</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>    <a href="guitarras.html">Guitarras</a>    <a href="directo.html">Taller en directo</a>    <a href="poema.html">Guitarras del Poema</a>    <a href="galeria.html">Galería</a>    <a href="noticias.html">Noticias</a>    <a href="historia.html">Historia</a>    <a href="contacto.html">Contacto</a>
+    <a href="https://marianoconde.com/en/contact/" target="_blank" rel="noopener">English version ↗</a>
+  </nav>
+</header>
+<main id="main">
+<section class="page-hero" style="--hero-img:url('assets/img/Carrousel02_01.webp')">
+  <div class="container">
+    <p class="crumb"><a href="index.html">Inicio</a> &nbsp;/&nbsp; Contacto y encargos</p>
+    <h1>Ven al taller.<br>Hablemos de <em>tu guitarra.</em></h1>
+    <p class="lead">Calle de la Amnistía, 1 · 28013 Madrid. Consultas, visitas y encargos de guitarra. Lunes a viernes de 09:00 a 14:00 y de 17:00 a 19:00; sábados de 10:00 a 14:00.</p>
+  </div>
+  <div class="hero-index">08 / 08</div>
+</section><nav class="subnav" aria-label="Subsección"><div class="container"><a href="contacto.html" class='is-current'>Datos y formulario</a><a href="guitarras.html">Catálogo</a><a href="poema.html">Del Poema</a><a href="directo.html">Directo</a></div></nav><section class="section-cream"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Escríbenos</p><h2 class="display">Estamos<br><em>en Madrid.</em></h2></div>
+  <div class="contact-layout">
+    <div class="contact-info reveal">
+      <div class="contact-block"><h3>Dirección</h3><p>C. de la Amnistía, 1<br>28013 Madrid, España</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=C.+de+la+Amnist%C3%ADa+1+28013+Madrid" target="_blank" rel="noopener">Cómo llegar ↗</a></div>
+      <div class="contact-block"><h3>Horarios</h3><p>Lunes – viernes<br>09:00 – 14:00 · 17:00 – 19:00<br><br>Sábado<br>10:00 – 14:00</p></div>
+      <div class="contact-block"><h3>Teléfono y correo</h3><p><a href="tel:+34915218155">915 218 155</a><br><a href="mailto:Info@marianoconde.com">Info@marianoconde.com</a></p><a class="btn btn-outline btn-sm" href="assets/docs/lista-precios-2026.pdf" target="_blank" rel="noopener">Lista de precios 2026 (PDF) ↗</a></div>
+      <div class="contact-social"><a href="https://www.youtube.com/@Guitarras_MarianoConde" target="_blank" rel="noopener">YouTube</a><a href="https://www.twitch.tv/guitarrasmarianoconde" target="_blank" rel="noopener">Twitch</a><a href="https://www.instagram.com/guitarras_marianoconde/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/GuitarrasMarianoConde/" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@guitarras_marianoconde" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="form-row"><label>Nombre <input type="text" name="nombre" required autocomplete="name"></label><label>Email <input type="email" name="email" required autocomplete="email"></label></div>
+      <label>Número de teléfono <input type="tel" name="telefono" autocomplete="tel"></label>
+      <label>Asunto <select name="asunto"><option>Consulta general</option><option>Encargo de guitarra</option><option>Visita al taller</option><option>Guitarras del Poema</option><option>Prensa y medios</option></select></label>
+      <label>Mensaje <textarea name="mensaje" rows="5" required placeholder="Cuéntanos qué guitarra buscas, qué estilo tocas o qué necesitas saber..."></textarea></label>
+      <label class="checkbox"><input type="checkbox" name="privacidad" required> Acepto la <a href="privacidad.html">política de privacidad</a></label>
+      <button type="submit" class="btn btn-dark">Enviar mensaje ↗</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <div class="map-wrap reveal"><iframe title="Mapa: Guitarras Mariano Conde, calle Amnistía 1, Madrid" src="https://www.google.com/maps?q=C.%20de%20la%20Amnist%C3%ADa%201%2C%2028013%20Madrid&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/MC-Logo.svg" alt="MC — Mariano Conde" class="footer-logo">
+        <p>La guitarra española la firma Conde.<br>Madrid, desde 1915.</p>
+      </div>
+      <div class="footer-nav">
+        <div><h4>Explora</h4><a href="guitarras.html">Guitarras</a><a href="flamencas.html">Flamencas</a><a href="clasicas.html">Clásicas</a><a href="poema.html">Del Poema</a></div>
+        <div><h4>Descubre</h4><a href="directo.html">Taller en directo</a><a href="historia.html">Historia</a><a href="noticias.html">Noticias</a><a href="galeria.html">Galería</a><a href="contacto.html">Contacto</a></div>
+        <div><h4>En directo</h4><a href="https://www.youtube.com/@Guitarras_MarianoConde/live" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.twitch.tv/guitarrasmarianoconde" target="_blank" rel="noopener">Twitch ↗</a><a href="https://www.instagram.com/guitarras_marianoconde/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/GuitarrasMarianoConde/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/@guitarras_marianoconde" target="_blank" rel="noopener">TikTok ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Guitarras Mariano Conde · C. de la Amnistía, 1 · 28013 Madrid</p>
+      <div><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="feed.xml" type="application/rss+xml">RSS</a><button class="footer-cookie-btn" id="cookieSettings" type="button">Gestionar cookies</button></div>
+      <div class="view-switch"><button type="button" data-view="mobile">Ver versión móvil</button><button type="button" data-view="desktop">Ver versión escritorio</button></div>
+    </div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">›</button>
+</div>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden>
+  <div class="cookie-inner">
+    <div><h3 id="cookieTitle">Gestionar el consentimiento de las cookies</h3>
+    <p>Usamos cookies funcionales, de preferencias y estadísticas para ofrecerte la mejor experiencia. Puedes aceptarlas, rechazarlas o elegir tus preferencias. <a href="cookies.html">Leer más ↗</a></p></div>
+    <div class="cookie-actions"><button class="btn btn-ghost-light btn-sm" id="cookieDeny" type="button">Denegar</button><button class="btn btn-ghost-light btn-sm" id="cookiePrefs" type="button">Ver preferencias</button><button class="btn btn-gold btn-sm" id="cookieAccept" type="button">Aceptar</button></div>
+  </div>
+  <div class="cookie-prefs" id="cookiePrefsPanel" hidden>
+    <label><input type="checkbox" checked disabled> Funcionales <span>siempre activo</span></label>
+    <label><input type="checkbox" id="cookiePrefsPrefs"> Preferencias</label>
+    <label><input type="checkbox" id="cookiePrefsStats"> Estadísticas</label>
+    <label><input type="checkbox" id="cookiePrefsMarketing"> Marketing</label>
+    <button class="btn btn-outline btn-sm" id="cookieSave" type="button">Guardar preferencias</button>
+  </div>
+</div>
+<nav class="mobile-tabbar" aria-label="Navegación rápida móvil">
+  <a href="index.html"><span class="tab-icon" aria-hidden="true">⌂</span>Inicio</a><a href="guitarras.html"><span class="tab-icon" aria-hidden="true">♪</span>Guitarras</a><a href="poema.html"><span class="tab-icon" aria-hidden="true">✦</span>Poema</a><a href="directo.html"><span class="tab-icon" aria-hidden="true">◉</span>Directo</a><a href="contacto.html" class="is-current" aria-current="page"><span class="tab-icon" aria-hidden="true">✉</span>Contacto</a>
+</nav>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es" data-device="desktop">
+<head>
+<script>(function(){
+  try{
+    if(localStorage.getItem('mc-view')==='desktop') return;
+    var ua=navigator.userAgent||'';
+    var mobile=(navigator.userAgentData&&navigator.userAgentData.mobile===true)||
+      /Android|iPhone|iPod|Windows Phone|Mobile|Silk|BlackBerry|Opera Mini/i.test(ua)||
+      (/iPad|Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+    if(mobile!==true) return;
+    var p=location.pathname.split('/').pop()||'index.html';
+    if(!/\.html$/.test(p)) p='index.html';
+    location.replace('m/'+p);
+  }catch(e){}
+})();</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guitarras del Poema · Mariano Conde</title>
+  <meta name="description" content="Ediciones del Poema y Doble Tapa de Mariano Conde (48.400 € y 121.000 €, IVA incluido), con ensayo, catálogo numerado del Nº1 al Nº58 y formularios de encargo.">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="assets/img/MC_Favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-section="poema.html">
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Mariano Conde — inicio">
+      <img src="assets/img/Mariano-Conde-Logo.svg" alt="Mariano Conde" class="brand-logo">
+      <span class="brand-meta">Madrid · desde 1915</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="guitarras.html">Guitarras</a><a href="directo.html" nav-live><span class="live-dot"></span> Taller en directo</a><a href="poema.html" class="is-current">Guitarras del Poema</a><a href="galeria.html">Galería</a><a href="noticias.html">Noticias</a><a href="historia.html">Historia</a><a href="contacto.html">Contacto</a></nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">Español <span aria-hidden="true">▾</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <span class="is-current">Español</span>
+          <a href="https://marianoconde.com/en/poem-guitars/" target="_blank" rel="noopener">Inglés ↗</a>
+        </div>
+      </div>
+      <a class="btn btn-sm btn-outline" href="contacto.html">Encargos</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>    <a href="guitarras.html">Guitarras</a>    <a href="directo.html">Taller en directo</a>    <a href="poema.html">Guitarras del Poema</a>    <a href="galeria.html">Galería</a>    <a href="noticias.html">Noticias</a>    <a href="historia.html">Historia</a>    <a href="contacto.html">Contacto</a>
+    <a href="https://marianoconde.com/en/poem-guitars/" target="_blank" rel="noopener">English version ↗</a>
+  </nav>
+</header>
+<main id="main">
+<section class="page-hero" style="--hero-img:url('assets/img/PozueloPaloSanto_1.webp')">
+  <div class="container">
+    <p class="crumb"><a href="index.html">Inicio</a> &nbsp;/&nbsp; Guitarras del Poema</p>
+    <h1>Cuando la guitarra<br>se vuelve <em>poesía.</em></h1>
+    <p class="lead">Una colección concebida para coleccionistas y músicos que buscan algo más que un instrumento: una pieza única, numerada y firmada a mano.</p>
+  </div>
+  <div class="hero-index">04 / 08</div>
+</section><nav class="subnav" aria-label="Subsección"><div class="container"><a href="guitarras.html">Catálogo</a><a href="poema.html" class='is-current'>Colección</a><a href="#inspiracion">Inspiración</a><a href="#catalogo">Catálogo Nº1–58</a><a href="#solicita-poema">Encargos</a></div></nav><section class="section-cream"><div class="container">
+  <div class="split reverse reveal">
+    <div><p class="eyebrow">Edición del Poema</p><h3>Una guitarra para coleccionar</h3>
+    <p>Serie especial de piezas únicas. Cada una es un prototipo de una línea constructiva nueva con maderas que pueden llegar a ser centenarias. Valoradas en 48.400 € (IVA inc.). Fotos orientativas. No se corresponden con producto final.</p>
+    <div class="poema-prices"><div><span class="price">48.400 €</span><span class="price-label">IVA incluido</span></div></div>
+    <p><a class="btn btn-dark btn-sm" href="#solicita-poema">Solicita tu Guitarra del poema ↗</a></p></div>
+    <figure><img src="assets/img/PozueloPaloSanto_1.webp" alt="Guitarra del Poema" loading="lazy"><figcaption>Edición del Poema</figcaption></figure>
+  </div>
+  <div class="split reveal" style="margin-top:5rem">
+    <figure><img src="assets/img/DedicacionClasicoFlamenco.webp" alt="Guitarra del Poema doble tapa" loading="lazy"><figcaption>Edición Doble Tapa</figcaption></figure>
+    <div><p class="eyebrow">Edición Doble Tapa</p><h3>El instrumento extremo de la casa</h3>
+    <p>La doble tapa es la expresión más ambiciosa del taller: más proyección, más color y una construcción que exige decisiones críticas en cada capa. Valorada en 121.000 € (IVA inc.).</p>
+    <div class="poema-prices"><div><span class="price">121.000 €</span><span class="price-label">IVA incluido</span></div></div>
+    <p><a class="btn btn-dark btn-sm" href="#solicita-doble-tapa">Solicita tu Guitarra de Doble Tapa ↗</a></p></div>
+  </div>
+</div></section><section class="section-dark" id="inspiracion"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">¿Cómo las trabajamos?</p><h2 class="display">Lo que nos <em>inspira.</em></h2></div>
+  <div class="poema-essay"><p class="poema-para reveal">Desde mi infancia he tenido inquietudes literarias. Prosa, y especialmente verso, me han acompañado en todas las etapas de mi vida. Desde aquella niñez en el colegio de las Escuelas Pías de San Antón, donde capitaneé un equipo de compañeros al que instaba a escribir diariamente un corto relato, hasta que en 2009 surgiera «Anhelo», la primera de las Guitarras del Poema.</p>
+<p class="poema-para reveal">Lo primero fue descabezado y disuelto tras ser llamado al despacho del rector por las quejas de los padres de mis compañeros, que alegaban no hacer los deberes por tener que escribir los relatos que a la mañana siguiente me presentaban. Lo segundo ya va por el verso número 58 exhibido en la etiqueta de una Guitarra del Poema Mariano Conde, tras un pausado y constante goteo numérico al alza.</p>
+<p class="poema-para reveal">A las Guitarras del Poema las sitúo en el vértice superior de un imaginario rombo, según explico en el verso de «Rombo», la guitarra número 56 de la serie. Vértice y crisol de las buenas guitarras donde no hay distinción entre flamencas y clásicas de concierto, donde tienen cabida el pop, el jazz y los ritmos brasileños, entre otras corrientes musicales.</p>
+<p class="poema-para reveal">En la construcción de estas guitarras está la clave de todo lo anterior: una artesanía exhaustiva en la que cada guitarra tiene su propia personalidad constructiva, teniendo en cuenta la flexibilidad o rigidez de las maderas que la componen, algunas centenarias. Pruebas, comprobaciones y finísimo trabajo artesano que demoran su construcción durante meses.</p>
+<p class="poema-para reveal">La madera habla, y escucharla y lograr entenderla es la meta. No hay maderas mejores ni maderas peores. La madera está ahí, esperando, y cuantos más años espere, mejor. «De Todo», la número 33, está elaborada con once maderas diferentes e inicia la metamorfosis de la media luna en «luna entera».</p>
+<p class="poema-para reveal">En cuanto a la temática de los versos puedo decir que es muy variada: hay sentencias flamencas, breves biografías, descripciones, de matiz romántico y escatológicas. Las Guitarras del Poema están en manos de guitarristas profesionales y aficionados, normalmente con una o dos unidades, y coleccionistas con hasta cuatro. Sus poseedores se encuentran en España, Australia, Alemania, Turquía, Holanda, Francia, Nicaragua o Tailandia, entre otros países. Entre los profesionales destacan Amós Lora, Jesús Guerrero, Ed Sheeran, Raimundo Amador, Joni Jiménez y Antonio Sánchez.</p></div>
+</div></section><section class="section-cream" id="catalogo"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Catálogo · Nº1 a Nº58</p><h2 class="display">Cincuenta y ocho<br><em>versos afinados.</em></h2>
+  <p class="section-intro">Año, título, propietario, verso y materiales de cada una de las Guitarras del Poema construidas hasta hoy.</p></div>
+  <details class="poema-decade" open>
+      <summary>2000 <span>9 guitarras</span></summary>
+      <div class="poema-entries"><article class="poema-entry reveal">
+      <h4>Nº1 · Anhelo <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Colección particular · España</p><blockquote>Luz y sombra a lo mismo me han llevado; buscando una me llegó la otra. No es peor esperar en el pasado sino ver una esperanza rota</blockquote><p class="poema-materials"><span>Materiales</span> India, y pino.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº2 · Levante <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">David Stevens · Australia</p><blockquote>Que solo falta la copla para perseguir tu toque, dejémosle pues que brote cómo el levante que sopla y cuando salte: ¡que sobre!</blockquote><p class="poema-materials"><span>Materiales</span> India, y pino.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº3 · Tiempo <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Juan José Vargas (Ventorillo Santa Clara) · Málaga, España</p><blockquote>El “tic-tac” de los relojes le sienta muy bien al alma, le marca surcos profundos donde germina la calma. ¡Paso de la noche al alba!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº4 · Clamor <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">David Stevens · Australia</p><blockquote>De adentro surge pausado clamor en grata manera. Por tus manos, es llamado, el color elaborado por tocaor y madera.</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº5 · Baranda <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Amos Lora · España</p><blockquote>De tu balconada salen los ecos de mi guitarra” “Unida estas a sus cuerdas asomada a la baranda y, sin moveros, os vais por toda la calle Larga.</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº6 · Capricho <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Franciso Manuel Lucas · Cádiz, España</p><blockquote>Morena, mujer de antojo, que no me llamen tus ojos al finalizar la noche. Cuajados van de reproche; luceros en tintes rojos.</blockquote><p class="poema-materials"><span>Materiales</span> India y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº7 · Recopilación <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Colección particular · España</p><blockquote>Anhelo ver que levante a tiempo, de dos en dos, olas gruesas, un clamor en la baranda distante. Capricho de trovador.</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº8 · Vocablos <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Óscar Herrero · El Escorial, España</p><blockquote>Hoy dices cosas que mañana serán luces. No te conforma crear sonido. Usarás idioma.</blockquote><p class="poema-materials"><span>Materiales</span> India y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº9 · Rocío <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Rocío Saucedo · Madrid, España</p><blockquote>Primer estruendo dormido; frescor en la madrugada. El silencio se ha partido cayendo esa gota al agua; al estanque del olvido.</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article></div>
+    </details><details class="poema-decade" >
+      <summary>2010 <span>33 guitarras</span></summary>
+      <div class="poema-entries"><article class="poema-entry reveal">
+      <h4>Nº10 · Homenaje <span class="poema-year">2010</span></h4>
+      <p class="poema-owner">Colección particular</p><blockquote>Sonríe simpática, de lado, con tenue brillo, fina albura; reflejo de la luz del escenario o colgada en un cenit de negrura “Antigua y armoniosa“ media luna.</blockquote><p class="poema-materials"><span>Materiales</span> India y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº11 · Guajira <span class="poema-year">2010</span></h4>
+      <p class="poema-owner">Jesús Guerrero · España</p><blockquote>¡Ay madre! ¡Que voy y que vengo! ¡Ando de orilla en orilla y en ninguna, yo, me encuentro!</blockquote><p class="poema-materials"><span>Materiales</span> India y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº12 · Independencia <span class="poema-year">2010</span></h4>
+      <p class="poema-owner">Amós Lora · España</p><blockquote>Tomé caminos prestados, seguí sendas tortuosas, cargué comparsa a mi lado siendo apenas, dura sombra ¡Fresca brisa fluye ahora!</blockquote><p class="poema-materials"><span>Materiales</span> India y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº13 · De Palo <span class="poema-year">2010</span></h4>
+      <p class="poema-owner">David Stevens · Australia</p><blockquote>¡De mi padre; la primera! ¡Eres latín para el toque, fuiste sabia en la taberna, tienes antiguas hechuras, y clavijas, de madera!</blockquote><p class="poema-materials"><span>Materiales</span> India y cedro con clavijas de madera</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº14 · Espinel <span class="poema-year">2010</span></h4>
+      <p class="poema-owner">Raúl Castro · Murcia, España</p><blockquote>Del espinel de la vida apartarme, yo, quisiera. Más de la luz de tus ojos, dulces anzuelos sedosos, soltarme es una quimera.</blockquote><p class="poema-materials"><span>Materiales</span> India y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº15 · Triángulo <span class="poema-year">2012</span></h4>
+      <p class="poema-owner">José Moya · Madrid, España</p><blockquote>¡»La Guita” suena a dinero, “Solear” me suena a cante. Sanlúcar, Jerez y El Puerto me suenan a vino grande!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y cedro.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº19 · Colores <span class="poema-year">2011</span></h4>
+      <p class="poema-owner">Rayito · España</p><blockquote>Claveles en la ventana, de los blancos, reventones. En tu calle hay muchas flores que imitan tu reja clara. Que al viento dicen tu nombre.</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº20 · Envidia <span class="poema-year">2011</span></h4>
+      <p class="poema-owner">Ed Sheeran · España</p><blockquote>Plantado al borde del camino, un mojón reciente en autoría preguntóse así mismo su valía al ver traje rayado en su vecino. Molesto le increpó: ¡no tienes gracia; llevas tanto que no exhalas ya, ni aroma! El otro respondió: ¡deja la broma; trozo mierda, que yo marco la distancia!</blockquote><p class="poema-materials"><span>Materiales</span> Koa y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº21 · Condena <span class="poema-year">2011</span></h4>
+      <p class="poema-owner">Rafael Riqueni · Sevilla, España</p><blockquote>Condena por verme dentro de tu corazón ladino, condena por verme dentro. Hasta tu madre lo dijo, que los males que acarreas no vieron los ojos míos.</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y Engelmann</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº22 · Doble pulmonía o tiempo al tiempo <span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Colección particular · España</p><blockquote>Vete haciendo regalía a quién no se lo merece; que verás llegar el día en el que él, si pudiese, en cueros te dejaría… por mucho hermano que fuese.</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés 3 piezas, Engelmann</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº23 · El padrino <span class="poema-year">2012</span></h4>
+      <p class="poema-owner">Raimundo Amador · Sevilla, España</p><blockquote>Tengo un vecino a mi lado, pared, pared, con lo mío. La mujer se le ha largado, dejándole de regalo perro, suegra, gato y niño; cuyo padre, un italiano, en el lote va incluido. ¿Quién es padre? ¿Y quién padrino?</blockquote><p class="poema-materials"><span>Materiales</span> Madagascar y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº24 · Gabriela <span class="poema-year">2012</span></h4>
+      <p class="poema-owner">Javier Casanueva · Madrid, España</p><blockquote>De las hijas que yo tengo eres la mayor de ellas. Saltas de niña graciosa a ser jovencita bella. El reflejo de tu madre, su dulzura y la presencia que dimanáis las hermanas, va ten tu mirada serena.</blockquote><p class="poema-materials"><span>Materiales</span> Madagascar y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº25 · Evolución <span class="poema-year">2012</span></h4>
+      <p class="poema-owner">Juan José Camacho · Huelva, España</p><blockquote>Que las tripas que yo tengo nunca en mi especie se han visto. ¿Acaso me suenan mal…? ¡Preguntarle a los testigos! Sólo tendréis que pulsar mis “spaguettis” a ritmo.</blockquote><p class="poema-materials"><span>Materiales</span> Madagascar y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº26 · Iniciales <span class="poema-year">2012</span></h4>
+      <p class="poema-owner">Ramón Sánchez · Francia</p><blockquote>Tengo presente y pasado, pero un pasado distinto al resto, que cómo yo, compartimos apellido ¡M y C, dirán el mío!</blockquote><p class="poema-materials"><span>Materiales</span> Madagascar y cedro.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº27 · Remedio Casero <span class="poema-year">2013</span></h4>
+      <p class="poema-owner">Verónica Noval · Madrid, España</p><blockquote>De estreñido me trataban, hasta que grabé tu imagen en el fondo de mi taza.</blockquote><p class="poema-materials"><span>Materiales</span> Koa 3 piezas y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº28 · Lola <span class="poema-year">2013</span></h4>
+      <p class="poema-owner">Joni Jiménez · Madrid, España</p><blockquote>¡No me hacen falta doctores si los dolores me acechan, no me hacen falta doctores! ¡Que los males se me alejan al ver tu cara de bronce y tu baile de flamenca!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y sitka.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº29 · Villa Rosa <span class="poema-year">2013</span></h4>
+      <p class="poema-owner">Santiago Sánchez · Albacete, España</p><blockquote>Porque entrar en “Villa-Rosa” es la cosa más hermosa del flamenco de Madrid. Por eso di tú que sí, que verás villa graciosa, la más bella de las rosas que tenemos por aquí.</blockquote><p class="poema-materials"><span>Materiales</span> Imbuia y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº30 · Dedicatoria <span class="poema-year">2014</span></h4>
+      <p class="poema-owner">Jose María Cavanna · Holanda</p><blockquote>¡Se rinde Despeñaperros al cruzar el de Lucía! ¡Castilla, lo da llorosa, al cante de Andalucía! ¡Seguiriya silenciosa enmudece las bahías!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº31 · Antonia <span class="poema-year">2013</span></h4>
+      <p class="poema-owner">Raimundo Amador · Sevilla, España</p><blockquote>¡No se puede ser más libre que un gitano canastero! ¡Fuese tu padre, Mariano, para ti, luz y sendero! ¡Y en cestos de caña y mimbre almacenas el recuerdo!</blockquote><p class="poema-materials"><span>Materiales</span> India y cedro con cutaway</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº32 · Roneo <span class="poema-year">2014</span></h4>
+      <p class="poema-owner">Colección particular</p><blockquote>Dicen que dices que haces. Si haces todo lo que dices no tendrás tiempo bastante si quinientos años vives.</blockquote><p class="poema-materials"><span>Materiales</span> Imbuia y cedro amarillo</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº33 · De todo <span class="poema-year">2014</span></h4>
+      <p class="poema-owner">Jose María Cavanna · Holanda</p><blockquote>¡De todo en madera llevo. Principio de nueva era. Enraizada en “Media Luna”, Ha nacido, “Luna Entera”!</blockquote><p class="poema-materials"><span>Materiales</span> Cedro con fondo de arce y aros de koa. Primera guitarra con luna entera.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº34 · Santo y Seña <span class="poema-year">2014</span></h4>
+      <p class="poema-owner">Alfred Zill · Alemania</p><blockquote>¡Hacia el Genil ya se ven las once torres alerta. Al daros “alto”, diréis; de por Santo: Juan Manuel, de por Seña: Diaz Baena. Tener la conciencia plena de haber citado a quién es, de Écija…, su poeta!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y cedro amarillo</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº35 · Alejandra <span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Juan José Camacho · Huelva, España</p><blockquote>¡”El fandango y la saeta”! “Son tu Gabriel y Alegría el fandango y la saeta” ¿Qué mayor premio querrías? ¡Almonte flamenco, un día quiso verte, presidenta!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino. Cabeza de Luna Entera</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº36 · Carmen <span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Colección particular · España</p><blockquote>¡En donde la barca amarra y el marino bien se aferra. Presta su nombre y su garra a ciudades; y a novela, origen de la afamada, opera, que el mundo oyera. A hermosa casa en Granada…, a mujeres de mi tierra!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino. Cabeza de Luna Entera.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº37 · Equís <span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Jose María Cavanna · Holanda</p><blockquote>¡Hasta que acabe Mariano no sabré qué, yo diría; mas creo no ser en vano, incógnita de la vida!</blockquote><p class="poema-materials"><span>Materiales</span> Fondo de arce, aros palosanto india, tapa de pino. Cabeza de Luna Entera (Equís)</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº38 · Única <span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Iván G.V. · Madrid, España</p><blockquote>¡Qué tan antiguo diseño no es obra de cualquier “tío”…, ni del mayor, ni el pequeño…, fue la inventiva de un genio de padre y muy señor mío!</blockquote><p class="poema-materials"><span>Materiales</span> Arce y cedro. Cabeza de Luna Entera (ébano con medias lunas).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº39 · Aurea <span class="poema-year">2015/16</span></h4>
+      <p class="poema-owner">Colección particular · Madrid, España</p><blockquote>¡No me “ralles” con tamañas proporciones, llevo en ello ya metido media hora. Si no logro hacer bien las ecuaciones y no surgen los sonidos y los sones…, en estudio yo veré, llegar la aurora!</blockquote><p class="poema-materials"><span>Materiales</span> India y sitka. Fondo de palosanto india en colaboración con el artista Javier Liébana. Cabeza de Luna Entera (concha de nautilus).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº40 · De Lucía <span class="poema-year">2016</span></h4>
+      <p class="poema-owner">Antonio Sánchez · Madrid</p><blockquote>¡De la culata a la “roca”, llevo maderas y boca de quién la suya hizo mía. Paco fue, de mis ancestros…, sonido que guardo dentro cómo reliquia divina! ¡Ya en el Olimpo…, Maestro!</blockquote><p class="poema-materials"><span>Materiales</span> Cabeza de Luna Entera (peñón de Gibraltar) Palosanto de India y sitka.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº41 · Roneo 2 <span class="poema-year">2016</span></h4>
+      <p class="poema-owner">Colección particular · Madrid, España</p><blockquote>¡Dicen que dices que eres. Si eres todo lo que dices, no hay ministro ni almirante que te toque las narices!</blockquote><p class="poema-materials"><span>Materiales</span> Cedro amarillo y pino. Cabeza de Luna Entera removible (representación de cabeza masculina)</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº42 · Bajamar <span class="poema-year">2016/18</span></h4>
+      <p class="poema-owner">Paco Saucedo · Madrid, España</p><blockquote>¡Para atrás va a caminar, más no le tengas, tú, pena. Anda buscando su cena, es decir…! ¡que va a “jamar”!</blockquote><p class="poema-materials"><span>Materiales</span> Arce y pino. Cabeza de Luna Entera (cangrejo).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº43 · Duna <span class="poema-year">2016/18</span></h4>
+      <p class="poema-owner">Jose María Cavanna · Holanda</p><blockquote>¡Grano a grano va muy lento lo que la vida acumula de estupidez y talento!</blockquote><p class="poema-materials"><span>Materiales</span> Arce y pino. Cabeza de Luna Entera (camello).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº44 · Eli <span class="poema-year">2019</span></h4>
+      <p class="poema-owner">Fernando Prieto · Sevilla, España</p><blockquote>¡Se posa cómo la nieve en el roquedo más alto. Revolotea, va y viene, hasta que al libar mi canto se nutre de mis quereres. Afilados alfileres, testigos son de mi llanto!</blockquote><p class="poema-materials"><span>Materiales</span> Arce americano y cedro. Cabeza de Luna Entera (mariposa blanca).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº45 · Ma P’Tite maman <span class="poema-year">2019</span></h4>
+      <p class="poema-owner">Mathieu Ammari · Normandía, Francia</p><blockquote>¡Trabajadora y humilde. De familia numerosa. Coqueta que se casara con quién su amor no responda. Marcó su vida la tilde de luchar por su hijo, sola, aquella brava normanda de mitad sangre española!</blockquote><p class="poema-materials"><span>Materiales</span> Ébano exótico y cedro. Cabeza de Luna Entera (cabeza de león).</p>
+    </article></div>
+    </details><details class="poema-decade" >
+      <summary>2020 <span>10 guitarras</span></summary>
+      <div class="poema-entries"><article class="poema-entry reveal">
+      <h4>Nº46 · Encuentro <span class="poema-year">2020</span></h4>
+      <p class="poema-owner">Joaquín Gómez · Nicaragua</p><blockquote>¡Fuese un encuentro casual el “porqué” de esta guitarra. Con Joaquín me fui a cruzar por octubre… Hoy un mal, ese virus tan letal, a la humanidad amarra!</blockquote><p class="poema-materials"><span>Materiales</span> Ébano exótico y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº47 · Milonga <span class="poema-year">2020/21</span></h4>
+      <p class="poema-owner">Gilles (Knobloch) · España</p><blockquote>Guitarrero; creer que la madera va a obedecerte en tus pretensiones, Sencillamente es pura milonga.</blockquote><p class="poema-materials"><span>Materiales</span> India y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº48 · Colombiana del Manzanillo de la Muerte <span class="poema-year">2020/21</span></h4>
+      <p class="poema-owner">Jesús Guerrero · España</p><blockquote>Del “Manzanillo de la muerte” ¡Hay un palo americano de frutos, hojas y ramas que envenena a quién lo toca y a quién come sus manzanas. Y hay “palo” de son cubano, que flamenco llegó a España!</blockquote><p class="poema-materials"><span>Materiales</span> India y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº49 · Mar <span class="poema-year">2021/22</span></h4>
+      <p class="poema-owner">Udo Lampe · Alemania</p><blockquote>Cúmulo de inmensidad que a todos destinos baña. La literatura empaña tu mundo, de realidad. Profundidad musical donde se teje maraña de canciones y concierto que al navegar, con acierto, unen a Alemania a España.</blockquote><p class="poema-materials"><span>Materiales</span> Madagascar y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº50 · Cayetana <span class="poema-year">2021/22</span></h4>
+      <p class="poema-owner">Jose Manuel · Barcelona, España</p><blockquote>Con tu llegada estrenas a esta familia en el gozo, y siendo tú, la primera, extremas el alborozo tanto en mí, cómo en tu abuela. A la vida yo pidiera navegar, extenso trozo, al caminar a tu vera.</blockquote><p class="poema-materials"><span>Materiales</span> Dorado y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº51 · Unai <span class="poema-year">2021/22</span></h4>
+      <p class="poema-owner">Jose Manuel · Barcelona, España</p><blockquote>Una guitarra comparte nombre contigo. A tus cinco años nace… Inicio escribo.</blockquote><p class="poema-materials"><span>Materiales</span> Ébano exótico y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº52 · Nazarí <span class="poema-year">2022</span></h4>
+      <p class="poema-owner">Jose Manuel · Barcelona, España</p><blockquote>¡Arte en que tomas conciencia tras impacto sobre ti, de pensar tan sólo en algo… Agradecer su existencia, ya que de no ser así, no es posible imaginarlo!</blockquote><p class="poema-materials"><span>Materiales</span> Koa y cedro</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº53 · Santa Fé <span class="poema-year">2022</span></h4>
+      <p class="poema-owner">Jose Manuel · Barcelona, España</p><blockquote>¡Ambas capitulaciones allí tuvieron lugar; la rendición de Granada y la que cruzara el mar. No en vano en su lema reza: “Cuna de la Hispanidad”!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº55 · Marcita <span class="poema-year">2022</span></h4>
+      <p class="poema-owner">Dieter Lampe · Alemania</p><blockquote>¡Tiene el carácter “templado”, mezcla de lo ardiente hispano y la frialdad de cabeza. Germana de gran nobleza que al defender refugiado, destierra en él, la tristeza!</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº58 · Hongsa <span class="poema-year">2023</span></h4>
+      <p class="poema-owner">Colección particular · Tailandia</p><blockquote>¡No tienes tu nombre en vano al resurgir cómo el Fénix y nacer en día errado. Vencedor de ciencia y astros, hoy sabes de España, reyes. De política, de leyes y de armas bien versado. Un dulce amable “guerrero” de tan solo quince años.!</blockquote><p class="poema-materials"><span>Materiales</span> Guitarra del Poema de Doble Tapa. Madera de Majagua y cedro. Cabeza de Luna Entera removible (ave fénix).</p>
+    </article></div>
+    </details><details class="poema-decade" >
+      <summary>Sin fecha <span>6 guitarras</span></summary>
+      <div class="poema-entries"><article class="poema-entry reveal">
+      <h4>Nº16 · Ciprés </h4>
+      <p class="poema-owner">Alfred Zil · Alemania</p><blockquote>Al paso de la curva cimitarra inerte procesión marcó el sendero. Ahora a la abadía y a su cielo mecéis con vuestras copas centenarias. Tablón que fuiste ayer del carpintero hoy revives en alma de guitarra.</blockquote><p class="poema-materials"><span>Materiales</span> Ciprés y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº17 · Consejo </h4>
+      <p class="poema-owner">Colección particular · Turquía</p><blockquote>Amigo congestionado puesto que por tal te tengo no dejes que lo segundo me prive de lo primero ¡Muévete en niveles medios!</blockquote><p class="poema-materials"><span>Materiales</span> India y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº18 · Andalucía </h4>
+      <p class="poema-owner">Roberto Morón · España</p><blockquote>¡Cal y verde de aceituna. Luz ebullente de espuma salada! ¡Cresta de ola! ¡Viento amante de la duna. Sol que espera tras la bruma serrana! ¡Canto de mora!</blockquote><p class="poema-materials"><span>Materiales</span> Palosanto y pino</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº54 · Siwalee </h4>
+      <p class="poema-owner">Colección particular · Tailandia</p><blockquote>¡Sexteto que te enamora; las veinte treinta convoca a tu marido y tus hijos con sus guitarras cantoras! ¡En ti encuentran fiel cobijo, tanto el blanco conejito, cómo el candor de la rosa!</blockquote><p class="poema-materials"><span>Materiales</span> Cocobolo y pino. Cabeza de Luna Entera removible (conejo blanco).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº56 · Rombo </h4>
+      <p class="poema-owner">Colección particular · España</p><p class="poema-materials"><span>Materiales</span> En construcción</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº57 · Marianne </h4>
+      <p class="poema-owner">Udo Lampe · Alemania</p><blockquote>¡Königsberg viera nacer a la maestra más brava salvando casos perdidos desde el castillo del alma! ¡Artista del buen hacer, mucho hizo de la nada, la que de bebé se viera en Bavaria, refugiada!</blockquote><p class="poema-materials"><span>Materiales</span> Madera de arce y pino Cabeza de Luna Entera (Kandinsky).</p>
+    </article></div>
+    </details>
+</div></section><section class="section-dark" id="solicita-poema"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Encargos</p><h2 class="display">Solicita tu<br><em>Edición del Poema.</em></h2>
+  <p class="section-intro">48.400 € · IVA incluido. Cuéntanos qué te gustaría saber y nos pondremos en contacto contigo.</p></div>
+  <form class="poema-form reveal" data-mailform novalidate>
+    <div class="config-grid">
+      <label>Nombre <input type="text" name="nombre" required autocomplete="name"></label>
+      <label>Número de teléfono <input type="tel" name="telefono" autocomplete="tel"></label>
+      <label>Correo electrónico <input type="email" name="email" required autocomplete="email"></label>
+      <label>Asunto <input type="text" name="asunto" value="Solicitud Guitarra del Poema · Edición del Poema" readonly></label>
+      <label class="config-wide">Mensaje <textarea name="mensaje" rows="4" placeholder="Cuéntanos sobre tu encargo..."></textarea></label>
+      <label class="checkbox config-wide"><input type="checkbox" name="privacidad" required> Acepto la <a href="privacidad.html">política de privacidad</a></label>
+    </div>
+    <button type="submit" class="btn btn-gold">Encargar ↗</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</div></section><section class="section-dark" id="solicita-doble-tapa"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Encargos</p><h2 class="display">Solicita tu<br><em>Doble Tapa.</em></h2>
+  <p class="section-intro">121.000 € · IVA incluido. Cuéntanos qué te gustaría saber y nos pondremos en contacto contigo.</p></div>
+  <form class="poema-form reveal" data-mailform novalidate>
+    <div class="config-grid">
+      <label>Nombre <input type="text" name="nombre" required autocomplete="name"></label>
+      <label>Número de teléfono <input type="tel" name="telefono" autocomplete="tel"></label>
+      <label>Correo electrónico <input type="email" name="email" required autocomplete="email"></label>
+      <label>Asunto <input type="text" name="asunto" value="Solicitud Guitarra del Poema · Doble Tapa" readonly></label>
+      <label class="config-wide">Mensaje <textarea name="mensaje" rows="4" placeholder="Cuéntanos sobre tu encargo..."></textarea></label>
+      <label class="checkbox config-wide"><input type="checkbox" name="privacidad" required> Acepto la <a href="privacidad.html">política de privacidad</a></label>
+    </div>
+    <button type="submit" class="btn btn-gold">Encargar ↗</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</div></section><div class="container"><div class="next-section reveal">
+  <span>Siguiente sección · Galería de imágenes</span>
+  <a href="galeria.html">MC en pared, MC a escena <em>↗</em></a>
+</div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/MC-Logo.svg" alt="MC — Mariano Conde" class="footer-logo">
+        <p>La guitarra española la firma Conde.<br>Madrid, desde 1915.</p>
+      </div>
+      <div class="footer-nav">
+        <div><h4>Explora</h4><a href="guitarras.html">Guitarras</a><a href="flamencas.html">Flamencas</a><a href="clasicas.html">Clásicas</a><a href="poema.html">Del Poema</a></div>
+        <div><h4>Descubre</h4><a href="directo.html">Taller en directo</a><a href="historia.html">Historia</a><a href="noticias.html">Noticias</a><a href="galeria.html">Galería</a><a href="contacto.html">Contacto</a></div>
+        <div><h4>En directo</h4><a href="https://www.youtube.com/@Guitarras_MarianoConde/live" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.twitch.tv/guitarrasmarianoconde" target="_blank" rel="noopener">Twitch ↗</a><a href="https://www.instagram.com/guitarras_marianoconde/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/GuitarrasMarianoConde/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/@guitarras_marianoconde" target="_blank" rel="noopener">TikTok ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Guitarras Mariano Conde · C. de la Amnistía, 1 · 28013 Madrid</p>
+      <div><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="feed.xml" type="application/rss+xml">RSS</a><button class="footer-cookie-btn" id="cookieSettings" type="button">Gestionar cookies</button></div>
+      <div class="view-switch"><button type="button" data-view="mobile">Ver versión móvil</button><button type="button" data-view="desktop">Ver versión escritorio</button></div>
+    </div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">›</button>
+</div>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden>
+  <div class="cookie-inner">
+    <div><h3 id="cookieTitle">Gestionar el consentimiento de las cookies</h3>
+    <p>Usamos cookies funcionales, de preferencias y estadísticas para ofrecerte la mejor experiencia. Puedes aceptarlas, rechazarlas o elegir tus preferencias. <a href="cookies.html">Leer más ↗</a></p></div>
+    <div class="cookie-actions"><button class="btn btn-ghost-light btn-sm" id="cookieDeny" type="button">Denegar</button><button class="btn btn-ghost-light btn-sm" id="cookiePrefs" type="button">Ver preferencias</button><button class="btn btn-gold btn-sm" id="cookieAccept" type="button">Aceptar</button></div>
+  </div>
+  <div class="cookie-prefs" id="cookiePrefsPanel" hidden>
+    <label><input type="checkbox" checked disabled> Funcionales <span>siempre activo</span></label>
+    <label><input type="checkbox" id="cookiePrefsPrefs"> Preferencias</label>
+    <label><input type="checkbox" id="cookiePrefsStats"> Estadísticas</label>
+    <label><input type="checkbox" id="cookiePrefsMarketing"> Marketing</label>
+    <button class="btn btn-outline btn-sm" id="cookieSave" type="button">Guardar preferencias</button>
+  </div>
+</div>
+<nav class="mobile-tabbar" aria-label="Navegación rápida móvil">
+  <a href="index.html"><span class="tab-icon" aria-hidden="true">⌂</span>Inicio</a><a href="guitarras.html"><span class="tab-icon" aria-hidden="true">♪</span>Guitarras</a><a href="poema.html" class="is-current" aria-current="page"><span class="tab-icon" aria-hidden="true">✦</span>Poema</a><a href="directo.html"><span class="tab-icon" aria-hidden="true">◉</span>Directo</a><a href="contacto.html"><span class="tab-icon" aria-hidden="true">✉</span>Contacto</a>
+</nav>
+<script src="app.js"></script>
+</body>
+</html>

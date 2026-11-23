@@ -1,0 +1,2741 @@
+{
+  "guitarras_guitarras-clasicas-de-concierto_ac23-r": {
+    "price": "13.310",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Arce",
+            "price": 0
+          },
+          {
+            "label": "Madagascar",
+            "price": 0
+          },
+          {
+            "label": "Cocobolo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla antigua",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "AC23-R_2.webp",
+      "AC23-R_4.webp",
+      "AC23-R_5.webp",
+      "AC23-R_6.webp",
+      "AC23_R.webp",
+      "AC23_R_6.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_ac23": {
+    "price": "12.100",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Palo Santo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla antigua",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "AC23_01-1.webp",
+      "AC23_2.webp",
+      "AC23_3.webp",
+      "AC23_33.webp",
+      "AC23_5.webp",
+      "AC23_6.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_dedicacion-clasico": {
+    "price": "24.200",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Palo Santo Brasil",
+            "price": 0
+          },
+          {
+            "label": "Dorado",
+            "price": 0
+          },
+          {
+            "label": "Koa",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla antigua",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "10_DedicacionClasicoFlamenco.webp",
+      "DedicacionClasicoFlamenco_11.webp",
+      "DedicacionClasicoFlamenco_2.webp",
+      "DedicacionClasicoFlamenco_3.webp",
+      "DedicacionClasicoFlamenco_5.webp",
+      "DedicacionClasicoFlamenco_6.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_ec1": {
+    "price": "6.655",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Palo Santo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla antigua",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "EC1.webp",
+      "EC1_2.webp",
+      "EC1_3.webp",
+      "EC1_4.webp",
+      "EC1_5.webp",
+      "EC1_6.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_ec3": {
+    "price": "9.075",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Palo Santo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla antigua",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "EC3.webp",
+      "EC3_2.webp",
+      "EC3_3.webp",
+      "EC3_4.webp",
+      "EC3_5.webp",
+      "EC3_6.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_pozuelo-clasica-caoba": {
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla antigua",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "Pozuelo-Caoba_1-1.webp",
+      "Pozuelo-Caoba_5-2.webp",
+      "PozueloClasicaCaoba_2.webp",
+      "PozueloClasicaCaoba_3.webp",
+      "PozueloClasicaCaoba_4.webp",
+      "PozueloClasicaCaoba_6.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_pozuelo-clasica-palo-santo": {
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla antigua",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "PozueloClasica_3.webp",
+      "PozueloClasica_4.webp",
+      "PozueloClasica_5.webp",
+      "PozueloClasica_6.webp",
+      "PozueloPaloSanto_1.webp",
+      "PozueloPaloSanto_2.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_a26": {
+    "price": "12.100",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Ciprés",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla tradicional",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "A26.webp",
+      "A26_2.webp",
+      "A26_3.webp",
+      "A26_4.webp",
+      "A26_5.webp",
+      "A26_6.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_a27-n": {
+    "price": "9.075",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Palo Santo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla tradicional",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "A27-N_2.webp",
+      "A27-N_3.webp",
+      "A27-N_4.webp",
+      "A27-N_5.webp",
+      "A27-N_6.webp",
+      "A27_N.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_a28": {
+    "price": "9.075",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Ciprés",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla tradicional",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "A28.webp",
+      "A28_2.webp",
+      "A28_3.webp",
+      "A28_4.webp",
+      "A28_5.webp",
+      "A28_6.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_af25-r": {
+    "price": "13.100",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Madagascar",
+            "price": 0
+          },
+          {
+            "label": "Arce",
+            "price": 0
+          },
+          {
+            "label": "Cocobolo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla tradicional",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "AF25-R_3.webp",
+      "AF25-R_4.webp",
+      "AF25-R_5.webp",
+      "AF25-R_6.webp",
+      "AF25_R.webp",
+      "AF25_R_5.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_af25": {
+    "price": "12.100",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Palo Santo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla tradicional",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "AF25.webp",
+      "AF25_2.webp",
+      "AF25_3.webp",
+      "AF25_4.webp",
+      "AF25_5.webp",
+      "AF25_6.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_dedicacion-flamenco": {
+    "price": "24.200",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Palo Santo Brasil",
+            "price": 0
+          },
+          {
+            "label": "Dorado",
+            "price": 0
+          },
+          {
+            "label": "Koa",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          },
+          {
+            "label": "Boquilla tradicional",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "10_DedicacionClasicoFlamenco.webp",
+      "DedicacionClasicoFlamenco_11.webp",
+      "DedicacionClasicoFlamenco_2.webp",
+      "DedicacionClasicoFlamenco_3.webp",
+      "DedicacionClasicoFlamenco_5.webp",
+      "DedicacionClasicoFlamenco_6.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_ef4-5": {
+    "price": "6.655",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Ciprés",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "EF4-5_2.webp",
+      "EF4-5_4.webp",
+      "EF4-5_5.webp",
+      "EF4-5_6.webp",
+      "EF4_5.webp",
+      "EF4_5_3.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_ef5-n": {
+    "price": "6.655",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Palo Santo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla nueva",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "EF5_N_01.webp",
+      "EF5_N_02.webp",
+      "EF5_N_03.webp",
+      "EF5_N_04.webp",
+      "EF5_N_05.webp",
+      "EF5_N_06.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_pharaon": {
+    "price": "6.655",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          {
+            "label": "Ciprés",
+            "price": 0
+          },
+          {
+            "label": "Palo Santo",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla tradicional rosas",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "02_Pharaon.webp",
+      "Pharaon_2.webp",
+      "Pharaon_3.webp",
+      "Pharaon_5.webp",
+      "Pharaon_6.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_pozuelo-flamenco-caoba": {
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla tradicional espiga",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "Pozuelo-Caoba_1-1.webp",
+      "Pozuelo-Caoba_5-2.webp",
+      "PozueloFlamencoCaoba_2.webp",
+      "PozueloFlamencoCaoba_3.webp",
+      "PozueloFlamencoCaoba_4.webp",
+      "PozueloFlamencoCaoba_6.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_pozuelo-flamenco-palo-santo": {
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla tradicional espiga",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "PozueloFlamencoPaloSanto_1.webp",
+      "PozueloFlamencoPaloSanto_3.webp",
+      "PozueloFlamencoPaloSanto_4.webp",
+      "PozueloFlamencoPaloSanto_5.webp",
+      "PozueloFlamencoPaloSanto_6.webp",
+      "PozueloPaloSanto_2.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_pozuelo-flamenco": {
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          {
+            "label": "Boquilla tradicional espiga",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          {
+            "label": "Años 90",
+            "price": 0
+          },
+          {
+            "label": "Años 70",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          {
+            "label": "Pino abeto alemán",
+            "price": 0
+          },
+          {
+            "label": "Cedro rojo de Canadá",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          {
+            "label": "Ébano",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          {
+            "label": "Tiro corto (650 mm )",
+            "price": 0
+          },
+          {
+            "label": "Tiro largo (664 mm)",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          {
+            "label": "Rojo",
+            "price": 0
+          },
+          {
+            "label": "Naranja",
+            "price": 0
+          },
+          {
+            "label": "Oro",
+            "price": 0
+          },
+          {
+            "label": "Incoloro",
+            "price": 0
+          },
+          {
+            "label": "Incolor mate",
+            "price": 0
+          },
+          {
+            "label": "Goma laca muñequilla (+500€)",
+            "price": 500
+          }
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          {
+            "label": "Sin Cutaway",
+            "price": 0
+          },
+          {
+            "label": "Cutaway tradicional (+350€)",
+            "price": 350
+          },
+          {
+            "label": "Florentina (+600€)",
+            "price": 600
+          }
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          {
+            "label": "Clavijero mecánico tradicional",
+            "price": 0
+          },
+          {
+            "label": "Clavijero de palillos tradicional (+300€)",
+            "price": 300
+          },
+          {
+            "label": "Clavijero de palillos mecánicos (+350€)",
+            "price": 350
+          }
+        ]
+      }
+    ],
+    "gallery": [
+      "PozueloFlamenco.webp",
+      "PozueloFlamenco_2.webp",
+      "PozueloFlamenco_3.webp",
+      "PozueloFlamenco_4.webp",
+      "PozueloFlamenco_5.webp"
+    ]
+  }
+}

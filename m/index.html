@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es" data-device="mobile">
+<head>
+<script>(function(){
+  try{
+    if(localStorage.getItem('mc-view')==='mobile') return;
+    var ua=navigator.userAgent||'';
+    var mobile=(navigator.userAgentData&&navigator.userAgentData.mobile===true)||
+      /Android|iPhone|iPod|Windows Phone|Mobile|Silk|BlackBerry|Opera Mini/i.test(ua)||
+      (/iPad|Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+    if(mobile!==false) return;
+    var p=location.pathname.split('/').pop()||'index.html';
+    if(!/\.html$/.test(p)) p='index.html';
+    location.replace('../'+p);
+  }catch(e){}
+})();</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mariano Conde · Guitarras españolas desde 1915 · Mariano Conde</title>
+  <meta name="description" content="Guitarras flamencas y clásicas artesanales de Mariano Conde en Madrid desde 1915. Taller en directo, catálogo y noticias.">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/MC_Favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-section="index.html">
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Mariano Conde — inicio">
+      <img src="../assets/img/Mariano-Conde-Logo.svg" alt="Mariano Conde" class="brand-logo">
+      <span class="brand-meta">Madrid · desde 1915</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Navegación principal"><a href="index.html" class="is-current">Inicio</a><a href="guitarras.html">Guitarras</a><a href="directo.html" nav-live><span class="live-dot"></span> Taller en directo</a><a href="poema.html">Guitarras del Poema</a><a href="galeria.html">Galería</a><a href="noticias.html">Noticias</a><a href="historia.html">Historia</a><a href="contacto.html">Contacto</a></nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">Español <span aria-hidden="true">▾</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <span class="is-current">Español</span>
+          <a href="https://marianoconde.com/en/" target="_blank" rel="noopener">Inglés ↗</a>
+        </div>
+      </div>
+      <a class="btn btn-sm btn-outline" href="contacto.html">Encargos</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>    <a href="guitarras.html">Guitarras</a>    <a href="directo.html">Taller en directo</a>    <a href="poema.html">Guitarras del Poema</a>    <a href="galeria.html">Galería</a>    <a href="noticias.html">Noticias</a>    <a href="historia.html">Historia</a>    <a href="contacto.html">Contacto</a>
+    <a href="https://marianoconde.com/en/" target="_blank" rel="noopener">English version ↗</a>
+  </nav>
+</header>
+<main id="main">
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="hero-media"><img src="../assets/img/Carrousel01_01.webp" alt="Guitarra artesanal Mariano Conde" fetchpriority="high"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-kicker"><span class="kicker-line"></span><span>Guitarreros de Madrid · desde 1915</span></div>
+    <h1 id="hero-title">La guitarra española<br><em>la firma Conde.</em></h1>
+    <p class="hero-text">Cinco generaciones construyendo instrumentos que han acompañado a Paco de Lucía, Leonard Cohen, Bob Dylan y Ed Sheeran. Madera maciza, secado natural y una media luna reconocible en cualquier escenario del mundo.</p>
+    <div class="hero-actions"><a href="guitarras.html" class="btn btn-gold">Descubrir las guitarras ↗</a><a href="directo.html" class="btn btn-ghost-light"><span class="live-dot"></span> Entrar al taller</a></div>
+    <div class="hero-seal"><span class="seal-top">Guitarreros de Madrid</span><span class="seal-mid">MC</span><span class="seal-bottom">desde 1915</span></div>
+  </div>
+  <a class="scroll-cue" href="#legado" aria-label="Desplazarse"><span>Desliza</span><span class="scroll-line"></span></a>
+  <div class="hero-counter" aria-hidden="true">01 / 08</div>
+</section>
+<section class="legacy section-dark" id="legado"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">01 — El legado</p><h2 class="display">Una familia.<br><em>Una tradición.</em></h2>
+  <p class="section-intro">Cada instrumento nace de una decisión tomada a mano, en un taller de la calle Amnistía donde el tiempo se mide en años de secado de la madera.</p></div>
+  <div class="stats-grid"><div class="stat reveal"><span class="stat-number">1915</span><span class="stat-label">Año de fundación</span></div><div class="stat reveal"><span class="stat-number">5</span><span class="stat-label">Generaciones de guitarreros</span></div><div class="stat reveal"><span class="stat-number">20+</span><span class="stat-label">Años mínimos de secado natural</span></div><div class="stat reveal"><span class="stat-number">~60</span><span class="stat-label">Guitarras al año, una a una</span></div></div>
+  <div class="pillars"><article class="pillar reveal"><span class="pillar-num">01</span><h3>Cabeza de media luna</h3><p>El rasgo más reconocible de la casa Conde, heredado de Domingo Esteso.</p></article><article class="pillar reveal"><span class="pillar-num">02</span><h3>Iniciales a fuego</h3><p>Las letras MC marcan la tapa junto a una etiqueta numerada escrita a mano.</p></article><article class="pillar reveal"><span class="pillar-num">03</span><h3>Madera maciza</h3><p>Cinco o seis maderas por guitarra, secadas entre 10 y 30 años.</p></article></div>
+</div></section>
+<section class="section-cream"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Explora por secciones</p><h2 class="display">Todo el mundo<br><em>Mariano Conde.</em></h2></div>
+  <div class="model-grid">
+    <a class="model-card reveal" href="guitarras.html"><img src="../assets/img/Guitarras-flamencas-Mariano-Conde.webp" alt="Guitarras" loading="lazy"><div class="model-info"><span class="model-tag">01 · Catálogo</span><h3>Guitarras</h3><p>Flamencas, clásicas y modelos singulares.</p></div></a>
+    <a class="model-card reveal" href="directo.html"><img src="../assets/img/MC_Historia_4.webp" alt="Taller en directo" loading="lazy"><div class="model-info"><span class="model-tag">02 · En vivo</span><h3>Taller en directo</h3><p>YouTube, Twitch y documental.</p></div></a>
+    <a class="model-card reveal" href="poema.html"><img src="../assets/img/PozueloPaloSanto_1.webp" alt="Del Poema" loading="lazy"><div class="model-info"><span class="model-tag">03 · Colección</span><h3>Del Poema</h3><p>Ediciones únicas y numeradas.</p></div></a>
+    <a class="model-card reveal" href="historia.html"><img src="../assets/img/MC_Historia_9.webp" alt="Historia" loading="lazy"><div class="model-info"><span class="model-tag">04 · Legado</span><h3>Historia</h3><p>De 1915 a la actualidad.</p></div></a>
+    <a class="model-card reveal" href="noticias.html"><img src="../assets/img/_ESTRENO-MUNDIAL-Mariano-Conde-Los-guitarreros-que-enamoraron-al-maestro-Paco-de-Lucia.webp" alt="Noticias" loading="lazy"><div class="model-info"><span class="model-tag">05 · Actualidad</span><h3>Noticias</h3><p>Estrenos, premios y prensa.</p></div></a>
+    <a class="model-card reveal" href="galeria.html"><img src="../assets/img/MCenPared_1.webp" alt="Galería" loading="lazy"><div class="model-info"><span class="model-tag">06 · Imágenes</span><h3>Galería</h3><p>MC en pared y a escena.</p></div></a>
+    <a class="model-card reveal" href="contacto.html"><img src="../assets/img/Carrousel02_01.webp" alt="Contacto" loading="lazy"><div class="model-info"><span class="model-tag">07 · Encargos</span><h3>Contacto</h3><p>Visítanos en Madrid.</p></div></a>
+  </div>
+</div></section><div class="container"><div class="next-section reveal">
+  <span>Siguiente sección · Catálogo de guitarras</span>
+  <a href="guitarras.html">Cada guitarra, una voz propia <em>↗</em></a>
+</div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../assets/img/MC-Logo.svg" alt="MC — Mariano Conde" class="footer-logo">
+        <p>La guitarra española la firma Conde.<br>Madrid, desde 1915.</p>
+      </div>
+      <div class="footer-nav">
+        <div><h4>Explora</h4><a href="guitarras.html">Guitarras</a><a href="flamencas.html">Flamencas</a><a href="clasicas.html">Clásicas</a><a href="poema.html">Del Poema</a></div>
+        <div><h4>Descubre</h4><a href="directo.html">Taller en directo</a><a href="historia.html">Historia</a><a href="noticias.html">Noticias</a><a href="galeria.html">Galería</a><a href="contacto.html">Contacto</a></div>
+        <div><h4>En directo</h4><a href="https://www.youtube.com/@Guitarras_MarianoConde/live" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.twitch.tv/guitarrasmarianoconde" target="_blank" rel="noopener">Twitch ↗</a><a href="https://www.instagram.com/guitarras_marianoconde/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/GuitarrasMarianoConde/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/@guitarras_marianoconde" target="_blank" rel="noopener">TikTok ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Guitarras Mariano Conde · C. de la Amnistía, 1 · 28013 Madrid</p>
+      <div><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="../feed.xml" type="application/rss+xml">RSS</a><button class="footer-cookie-btn" id="cookieSettings" type="button">Gestionar cookies</button></div>
+      <div class="view-switch"><button type="button" data-view="mobile">Ver versión móvil</button><button type="button" data-view="desktop">Ver versión escritorio</button></div>
+    </div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">›</button>
+</div>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden>
+  <div class="cookie-inner">
+    <div><h3 id="cookieTitle">Gestionar el consentimiento de las cookies</h3>
+    <p>Usamos cookies funcionales, de preferencias y estadísticas para ofrecerte la mejor experiencia. Puedes aceptarlas, rechazarlas o elegir tus preferencias. <a href="cookies.html">Leer más ↗</a></p></div>
+    <div class="cookie-actions"><button class="btn btn-ghost-light btn-sm" id="cookieDeny" type="button">Denegar</button><button class="btn btn-ghost-light btn-sm" id="cookiePrefs" type="button">Ver preferencias</button><button class="btn btn-gold btn-sm" id="cookieAccept" type="button">Aceptar</button></div>
+  </div>
+  <div class="cookie-prefs" id="cookiePrefsPanel" hidden>
+    <label><input type="checkbox" checked disabled> Funcionales <span>siempre activo</span></label>
+    <label><input type="checkbox" id="cookiePrefsPrefs"> Preferencias</label>
+    <label><input type="checkbox" id="cookiePrefsStats"> Estadísticas</label>
+    <label><input type="checkbox" id="cookiePrefsMarketing"> Marketing</label>
+    <button class="btn btn-outline btn-sm" id="cookieSave" type="button">Guardar preferencias</button>
+  </div>
+</div>
+<nav class="mobile-tabbar" aria-label="Navegación rápida móvil">
+  <a href="index.html" class="is-current" aria-current="page"><span class="tab-icon" aria-hidden="true">⌂</span>Inicio</a><a href="guitarras.html"><span class="tab-icon" aria-hidden="true">♪</span>Guitarras</a><a href="poema.html"><span class="tab-icon" aria-hidden="true">✦</span>Poema</a><a href="directo.html"><span class="tab-icon" aria-hidden="true">◉</span>Directo</a><a href="contacto.html"><span class="tab-icon" aria-hidden="true">✉</span>Contacto</a>
+</nav>
+<script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1701 @@
+{
+  "guitarras_guitarras-clasicas-de-concierto_ac23-r": {
+    "title": "AC23/R",
+    "price": "13.310",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Arce",
+          "Madagascar",
+          "Cocobolo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla antigua"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "AC23-R_2-180x300.webp",
+      "AC23-R_2.webp",
+      "AC23-R_4-200x300.webp",
+      "AC23-R_4.webp",
+      "AC23-R_5-180x300.webp",
+      "AC23-R_5.webp",
+      "AC23-R_6-180x300.webp",
+      "AC23-R_6.webp",
+      "AC23_R-180x300.webp",
+      "AC23_R-614x1024.webp",
+      "AC23_R-768x1280.webp",
+      "AC23_R-922x1536.webp",
+      "AC23_R.webp",
+      "AC23_R_6-180x300.webp",
+      "AC23_R_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_ac23": {
+    "title": "AC23",
+    "price": "12.100",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Palo Santo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla antigua"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "AC23_01-1-180x300.webp",
+      "AC23_01-1-614x1024.webp",
+      "AC23_01-1-768x1280.webp",
+      "AC23_01-1-922x1536.webp",
+      "AC23_01-1.webp",
+      "AC23_2-180x300.webp",
+      "AC23_2.webp",
+      "AC23_3-180x300.webp",
+      "AC23_3.webp",
+      "AC23_33-180x300.webp",
+      "AC23_33.webp",
+      "AC23_5-180x300.webp",
+      "AC23_5.webp",
+      "AC23_6-180x300.webp",
+      "AC23_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_dedicacion-clasico": {
+    "title": "Dedicación clásico",
+    "price": "24.200",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Palo Santo Brasil",
+          "Dorado",
+          "Koa"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla antigua"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "10_DedicacionClasicoFlamenco-180x300.webp",
+      "10_DedicacionClasicoFlamenco.webp",
+      "DedicacionClasicoFlamenco_11-180x300.webp",
+      "DedicacionClasicoFlamenco_11.webp",
+      "DedicacionClasicoFlamenco_2-180x300.webp",
+      "DedicacionClasicoFlamenco_2.webp",
+      "DedicacionClasicoFlamenco_3-180x300.webp",
+      "DedicacionClasicoFlamenco_3.webp",
+      "DedicacionClasicoFlamenco_5-180x300.webp",
+      "DedicacionClasicoFlamenco_5.webp",
+      "DedicacionClasicoFlamenco_6-180x300.webp",
+      "DedicacionClasicoFlamenco_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_ec1": {
+    "title": "EC1",
+    "price": "6.655",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Palo Santo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla antigua"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "EC1-180x300.webp",
+      "EC1-614x1024.webp",
+      "EC1-768x1280.webp",
+      "EC1-922x1536.webp",
+      "EC1.webp",
+      "EC1_2-180x300.webp",
+      "EC1_2.webp",
+      "EC1_3-180x300.webp",
+      "EC1_3.webp",
+      "EC1_4-180x300.webp",
+      "EC1_4.webp",
+      "EC1_5-180x300.webp",
+      "EC1_5.webp",
+      "EC1_6-180x300.webp",
+      "EC1_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_ec3": {
+    "title": "EC3",
+    "price": "9.075",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Palo Santo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla antigua"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "EC3-180x300.webp",
+      "EC3-614x1024.webp",
+      "EC3-768x1280.webp",
+      "EC3-922x1536.webp",
+      "EC3.webp",
+      "EC3_2-180x300.webp",
+      "EC3_2.webp",
+      "EC3_3-180x300.webp",
+      "EC3_3.webp",
+      "EC3_4-180x300.webp",
+      "EC3_4.webp",
+      "EC3_5-180x300.webp",
+      "EC3_5.webp",
+      "EC3_6-180x300.webp",
+      "EC3_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_pozuelo-clasica-caoba": {
+    "title": "Pozuelo clásica",
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla antigua"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "MaderaCaoba.webp",
+      "MaderaPaloSantoIndia.webp",
+      "Mariano-Conde-Logo.webp",
+      "Pozuelo-Caoba_1-1-180x300.webp",
+      "Pozuelo-Caoba_1-1-614x1024.webp",
+      "Pozuelo-Caoba_1-1-768x1280.webp",
+      "Pozuelo-Caoba_1-1-922x1536.webp",
+      "Pozuelo-Caoba_1-1.webp",
+      "Pozuelo-Caoba_5-2-180x300.webp",
+      "Pozuelo-Caoba_5-2.webp",
+      "PozueloClasicaCaoba_2-180x300.webp",
+      "PozueloClasicaCaoba_2.webp",
+      "PozueloClasicaCaoba_3-180x300.webp",
+      "PozueloClasicaCaoba_3.webp",
+      "PozueloClasicaCaoba_4-180x300.webp",
+      "PozueloClasicaCaoba_4.webp",
+      "PozueloClasicaCaoba_6-180x300.webp",
+      "PozueloClasicaCaoba_6.webp"
+    ]
+  },
+  "guitarras_guitarras-clasicas-de-concierto_pozuelo-clasica-palo-santo": {
+    "title": "Pozuelo clásica",
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla antigua"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "MaderaCaoba.webp",
+      "MaderaPaloSantoIndia.webp",
+      "Mariano-Conde-Logo.webp",
+      "PozueloClasica_3-180x300.webp",
+      "PozueloClasica_3.webp",
+      "PozueloClasica_4-180x300.webp",
+      "PozueloClasica_4.webp",
+      "PozueloClasica_5-180x300.webp",
+      "PozueloClasica_5.webp",
+      "PozueloClasica_6-180x300.webp",
+      "PozueloClasica_6.webp",
+      "PozueloPaloSanto_1-180x300.webp",
+      "PozueloPaloSanto_1-614x1024.webp",
+      "PozueloPaloSanto_1-768x1280.webp",
+      "PozueloPaloSanto_1-922x1536.webp",
+      "PozueloPaloSanto_1.webp",
+      "PozueloPaloSanto_2-180x300.webp",
+      "PozueloPaloSanto_2.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_a26": {
+    "title": "A26",
+    "price": "12.100",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Ciprés"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla tradicional"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "A26-180x300.webp",
+      "A26-614x1024.webp",
+      "A26-768x1280.webp",
+      "A26-922x1536.webp",
+      "A26.webp",
+      "A26_2-180x300.webp",
+      "A26_2.webp",
+      "A26_3-180x300.webp",
+      "A26_3.webp",
+      "A26_4-180x300.webp",
+      "A26_4.webp",
+      "A26_5-180x300.webp",
+      "A26_5.webp",
+      "A26_6-180x300.webp",
+      "A26_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_a27-n": {
+    "title": "A27/N",
+    "price": "9.075",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Palo Santo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla tradicional"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "A27-N_2-180x300.webp",
+      "A27-N_2.webp",
+      "A27-N_3-180x300.webp",
+      "A27-N_3.webp",
+      "A27-N_4-180x300.webp",
+      "A27-N_4.webp",
+      "A27-N_5-180x300.webp",
+      "A27-N_5.webp",
+      "A27-N_6-180x300.webp",
+      "A27-N_6.webp",
+      "A27_N-180x300.webp",
+      "A27_N-614x1024.webp",
+      "A27_N-768x1280.webp",
+      "A27_N-922x1536.webp",
+      "A27_N.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_a28": {
+    "title": "A28",
+    "price": "9.075",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Ciprés"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla tradicional"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "A28-180x300.webp",
+      "A28-614x1024.webp",
+      "A28-768x1280.webp",
+      "A28-922x1536.webp",
+      "A28.webp",
+      "A28_2-180x300.webp",
+      "A28_2.webp",
+      "A28_3-180x300.webp",
+      "A28_3.webp",
+      "A28_4-180x300.webp",
+      "A28_4.webp",
+      "A28_5-180x300.webp",
+      "A28_5.webp",
+      "A28_6-180x300.webp",
+      "A28_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_af25-r": {
+    "title": "AF25/R",
+    "price": "13.100",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Madagascar",
+          "Arce",
+          "Cocobolo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla tradicional"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "AF25-R_3-180x300.webp",
+      "AF25-R_3.webp",
+      "AF25-R_4-180x300.webp",
+      "AF25-R_4.webp",
+      "AF25-R_5-180x300.webp",
+      "AF25-R_5.webp",
+      "AF25-R_6-180x300.webp",
+      "AF25-R_6.webp",
+      "AF25_R-180x300.webp",
+      "AF25_R-614x1024.webp",
+      "AF25_R-768x1280.webp",
+      "AF25_R-922x1536.webp",
+      "AF25_R.webp",
+      "AF25_R_5-180x300.webp",
+      "AF25_R_5.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_af25": {
+    "title": "AF25",
+    "price": "12.100",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Palo Santo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla tradicional"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "AF25-180x300.webp",
+      "AF25-614x1024.webp",
+      "AF25-768x1280.webp",
+      "AF25-922x1536.webp",
+      "AF25.webp",
+      "AF25_2-180x300.webp",
+      "AF25_2.webp",
+      "AF25_3-180x300.webp",
+      "AF25_3.webp",
+      "AF25_4-180x300.webp",
+      "AF25_4.webp",
+      "AF25_5-180x300.webp",
+      "AF25_5.webp",
+      "AF25_6-180x300.webp",
+      "AF25_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_dedicacion-flamenco": {
+    "title": "Dedicación flamenco",
+    "price": "24.200",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Palo Santo Brasil",
+          "Dorado",
+          "Koa"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva",
+          "Boquilla tradicional"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "10_DedicacionClasicoFlamenco-180x300.webp",
+      "10_DedicacionClasicoFlamenco.webp",
+      "DedicacionClasicoFlamenco_11-180x300.webp",
+      "DedicacionClasicoFlamenco_11.webp",
+      "DedicacionClasicoFlamenco_2-180x300.webp",
+      "DedicacionClasicoFlamenco_2.webp",
+      "DedicacionClasicoFlamenco_3-180x300.webp",
+      "DedicacionClasicoFlamenco_3.webp",
+      "DedicacionClasicoFlamenco_5-180x300.webp",
+      "DedicacionClasicoFlamenco_5.webp",
+      "DedicacionClasicoFlamenco_6-180x300.webp",
+      "DedicacionClasicoFlamenco_6.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_ef4-5": {
+    "title": "EF4/5",
+    "price": "6.655",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Ciprés"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "EF4-5_2-180x300.webp",
+      "EF4-5_2.webp",
+      "EF4-5_4-180x300.webp",
+      "EF4-5_4.webp",
+      "EF4-5_5-180x300.webp",
+      "EF4-5_5.webp",
+      "EF4-5_6-180x300.webp",
+      "EF4-5_6.webp",
+      "EF4_5-180x300.webp",
+      "EF4_5-614x1024.webp",
+      "EF4_5-768x1280.webp",
+      "EF4_5-922x1536.webp",
+      "EF4_5.webp",
+      "EF4_5_3-180x300.webp",
+      "EF4_5_3.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_ef5-n": {
+    "title": "EF5/N",
+    "price": "6.655",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Palo Santo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla nueva"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "EF5_N_01-180x300.webp",
+      "EF5_N_01-614x1024.webp",
+      "EF5_N_01-768x1280.webp",
+      "EF5_N_01-922x1536.webp",
+      "EF5_N_01.webp",
+      "EF5_N_02-180x300.webp",
+      "EF5_N_02.webp",
+      "EF5_N_03-180x300.webp",
+      "EF5_N_03.webp",
+      "EF5_N_04-180x300.webp",
+      "EF5_N_04.webp",
+      "EF5_N_05-180x300.webp",
+      "EF5_N_05.webp",
+      "EF5_N_06-180x300.webp",
+      "EF5_N_06.webp",
+      "Mariano-Conde-Logo.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_pharaon": {
+    "title": "Pharaón",
+    "price": "6.655",
+    "groups": [
+      {
+        "label": "Aros y fondo",
+        "options": [
+          "Ciprés",
+          "Palo Santo"
+        ]
+      },
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla tradicional rosas"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "02_Pharaon-180x300.webp",
+      "02_Pharaon.webp",
+      "Mariano-Conde-Logo.webp",
+      "Pharaon_2-180x300.webp",
+      "Pharaon_2.webp",
+      "Pharaon_3-180x300.webp",
+      "Pharaon_3.webp",
+      "Pharaon_5-180x300.webp",
+      "Pharaon_5.webp",
+      "Pharaon_6-180x300.webp",
+      "Pharaon_6.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_pozuelo-flamenco-caoba": {
+    "title": "Pozuelo flamenco",
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla tradicional espiga"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "MaderaCaoba.webp",
+      "MaderaPaloSantoIndia.webp",
+      "MaderaSicomoro.webp",
+      "Mariano-Conde-Logo.webp",
+      "Pozuelo-Caoba_1-1-180x300.webp",
+      "Pozuelo-Caoba_1-1-614x1024.webp",
+      "Pozuelo-Caoba_1-1-768x1280.webp",
+      "Pozuelo-Caoba_1-1-922x1536.webp",
+      "Pozuelo-Caoba_1-1.webp",
+      "Pozuelo-Caoba_5-2-180x300.webp",
+      "Pozuelo-Caoba_5-2.webp",
+      "PozueloFlamencoCaoba_2-180x300.webp",
+      "PozueloFlamencoCaoba_2.webp",
+      "PozueloFlamencoCaoba_3-180x300.webp",
+      "PozueloFlamencoCaoba_3.webp",
+      "PozueloFlamencoCaoba_4-180x300.webp",
+      "PozueloFlamencoCaoba_4.webp",
+      "PozueloFlamencoCaoba_6-180x300.webp",
+      "PozueloFlamencoCaoba_6.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_pozuelo-flamenco-palo-santo": {
+    "title": "Pozuelo flamenco",
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla tradicional espiga"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "MaderaCaoba.webp",
+      "MaderaPaloSantoIndia.webp",
+      "MaderaSicomoro.webp",
+      "Mariano-Conde-Logo.webp",
+      "PozueloFlamencoPaloSanto_1-180x300.webp",
+      "PozueloFlamencoPaloSanto_1.webp",
+      "PozueloFlamencoPaloSanto_3-180x300.webp",
+      "PozueloFlamencoPaloSanto_3.webp",
+      "PozueloFlamencoPaloSanto_4-180x300.webp",
+      "PozueloFlamencoPaloSanto_4.webp",
+      "PozueloFlamencoPaloSanto_5-180x300.webp",
+      "PozueloFlamencoPaloSanto_5.webp",
+      "PozueloFlamencoPaloSanto_6-180x300.webp",
+      "PozueloFlamencoPaloSanto_6.webp",
+      "PozueloPaloSanto_2-180x300.webp",
+      "PozueloPaloSanto_2.webp"
+    ]
+  },
+  "guitarras_guitarras-flamencas_pozuelo-flamenco": {
+    "title": "Pozuelo flamenco",
+    "price": "4.840",
+    "groups": [
+      {
+        "label": "Boquilla",
+        "options": [
+          "Boquilla tradicional espiga"
+        ]
+      },
+      {
+        "label": "Cabeza",
+        "options": [
+          "Años 90",
+          "Años 70"
+        ]
+      },
+      {
+        "label": "Tapa",
+        "options": [
+          "Pino abeto alemán",
+          "Cedro rojo de Canadá"
+        ]
+      },
+      {
+        "label": "Diapasón",
+        "options": [
+          "Ébano"
+        ]
+      },
+      {
+        "label": "Tiro de cuerda",
+        "options": [
+          "Tiro corto (650 mm )",
+          "Tiro largo (664 mm)"
+        ]
+      },
+      {
+        "label": "Barnizado",
+        "options": [
+          "Rojo|00",
+          "Naranja|000",
+          "Oro|00000",
+          "Incoloro|000000",
+          "Incolor mate|0",
+          "Goma laca muñequilla (+500€)|500"
+        ]
+      },
+      {
+        "label": "Cutway",
+        "options": [
+          "Sin Cutaway|0",
+          "Cutaway tradicional (+350€)|350",
+          "Florentina (+600€)|600"
+        ]
+      },
+      {
+        "label": "Clavijero y palillos",
+        "options": [
+          "Clavijero mecánico tradicional|0",
+          "Clavijero de palillos tradicional (+300€)|300",
+          "Clavijero de palillos mecánicos (+350€)|350"
+        ]
+      }
+    ],
+    "images": [
+      "MaderaCaoba.webp",
+      "MaderaPaloSantoIndia.webp",
+      "MaderaSicomoro.webp",
+      "Mariano-Conde-Logo.webp",
+      "PozueloFlamenco-180x300.webp",
+      "PozueloFlamenco-614x1024.webp",
+      "PozueloFlamenco-768x1280.webp",
+      "PozueloFlamenco-922x1536.webp",
+      "PozueloFlamenco.webp",
+      "PozueloFlamenco_2-180x300.webp",
+      "PozueloFlamenco_2.webp",
+      "PozueloFlamenco_3-180x300.webp",
+      "PozueloFlamenco_3.webp",
+      "PozueloFlamenco_4-180x300.webp",
+      "PozueloFlamenco_4.webp",
+      "PozueloFlamenco_5-180x300.webp",
+      "PozueloFlamenco_5.webp"
+    ]
+  }
+}

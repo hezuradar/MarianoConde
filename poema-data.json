@@ -1,0 +1,524 @@
+[
+  {
+    "num": 1,
+    "year": "2009",
+    "name": "Anhelo",
+    "owner": "Colección particular",
+    "place": "España",
+    "verse": "Luz y sombra a lo mismo me han llevado; buscando una me llegó la otra. No es peor esperar en el pasado sino ver una esperanza rota",
+    "materials": "India, y pino."
+  },
+  {
+    "num": 2,
+    "year": "2009",
+    "name": "Levante",
+    "owner": "David Stevens",
+    "place": "Australia",
+    "verse": "Que solo falta la copla para perseguir tu toque, dejémosle pues que brote cómo el levante que sopla y cuando salte: ¡que sobre!",
+    "materials": "India, y pino."
+  },
+  {
+    "num": 3,
+    "year": "2009",
+    "name": "Tiempo",
+    "owner": "Juan José Vargas (Ventorillo Santa Clara)",
+    "place": "Málaga, España",
+    "verse": "El “tic-tac” de los relojes le sienta muy bien al alma, le marca surcos profundos donde germina la calma. ¡Paso de la noche al alba!",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 4,
+    "year": "2009",
+    "name": "Clamor",
+    "owner": "David Stevens",
+    "place": "Australia",
+    "verse": "De adentro surge pausado clamor en grata manera. Por tus manos, es llamado, el color elaborado por tocaor y madera.",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 5,
+    "year": "2009",
+    "name": "Baranda",
+    "owner": "Amos Lora",
+    "place": "España",
+    "verse": "De tu balconada salen los ecos de mi guitarra” “Unida estas a sus cuerdas asomada a la baranda y, sin moveros, os vais por toda la calle Larga.",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 6,
+    "year": "2009",
+    "name": "Capricho",
+    "owner": "Franciso Manuel Lucas",
+    "place": "Cádiz, España",
+    "verse": "Morena, mujer de antojo, que no me llamen tus ojos al finalizar la noche. Cuajados van de reproche; luceros en tintes rojos.",
+    "materials": "India y pino"
+  },
+  {
+    "num": 7,
+    "year": "2009",
+    "name": "Recopilación",
+    "owner": "Colección particular",
+    "place": "España",
+    "verse": "Anhelo ver que levante a tiempo, de dos en dos, olas gruesas, un clamor en la baranda distante. Capricho de trovador.",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 8,
+    "year": "2009",
+    "name": "Vocablos",
+    "owner": "Óscar Herrero",
+    "place": "El Escorial, España",
+    "verse": "Hoy dices cosas que mañana serán luces. No te conforma crear sonido. Usarás idioma.",
+    "materials": "India y pino"
+  },
+  {
+    "num": 9,
+    "year": "2009",
+    "name": "Rocío",
+    "owner": "Rocío Saucedo",
+    "place": "Madrid, España",
+    "verse": "Primer estruendo dormido; frescor en la madrugada. El silencio se ha partido cayendo esa gota al agua; al estanque del olvido.",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 10,
+    "year": "2010",
+    "name": "Homenaje",
+    "owner": "Colección particular",
+    "place": "",
+    "verse": "Sonríe simpática, de lado, con tenue brillo, fina albura; reflejo de la luz del escenario o colgada en un cenit de negrura “Antigua y armoniosa“ media luna.",
+    "materials": "India y pino"
+  },
+  {
+    "num": 11,
+    "year": "2010",
+    "name": "Guajira",
+    "owner": "Jesús Guerrero",
+    "place": "España",
+    "verse": "¡Ay madre! ¡Que voy y que vengo! ¡Ando de orilla en orilla y en ninguna, yo, me encuentro!",
+    "materials": "India y cedro"
+  },
+  {
+    "num": 12,
+    "year": "2010",
+    "name": "Independencia",
+    "owner": "Amós Lora",
+    "place": "España",
+    "verse": "Tomé caminos prestados, seguí sendas tortuosas, cargué comparsa a mi lado siendo apenas, dura sombra ¡Fresca brisa fluye ahora!",
+    "materials": "India y cedro"
+  },
+  {
+    "num": 13,
+    "year": "2010",
+    "name": "De Palo",
+    "owner": "David Stevens",
+    "place": "Australia",
+    "verse": "¡De mi padre; la primera! ¡Eres latín para el toque, fuiste sabia en la taberna, tienes antiguas hechuras, y clavijas, de madera!",
+    "materials": "India y cedro con clavijas de madera"
+  },
+  {
+    "num": 14,
+    "year": "2010",
+    "name": "Espinel",
+    "owner": "Raúl Castro",
+    "place": "Murcia, España",
+    "verse": "Del espinel de la vida apartarme, yo, quisiera. Más de la luz de tus ojos, dulces anzuelos sedosos, soltarme es una quimera.",
+    "materials": "India y cedro"
+  },
+  {
+    "num": 15,
+    "year": "2012",
+    "name": "Triángulo",
+    "owner": "José Moya",
+    "place": "Madrid, España",
+    "verse": "¡»La Guita” suena a dinero, “Solear” me suena a cante. Sanlúcar, Jerez y El Puerto me suenan a vino grande!",
+    "materials": "Ciprés y cedro."
+  },
+  {
+    "num": 16,
+    "year": "",
+    "name": "Ciprés",
+    "owner": "Alfred Zil",
+    "place": "Alemania",
+    "verse": "Al paso de la curva cimitarra inerte procesión marcó el sendero. Ahora a la abadía y a su cielo mecéis con vuestras copas centenarias. Tablón que fuiste ayer del carpintero hoy revives en alma de guitarra.",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 17,
+    "year": "",
+    "name": "Consejo",
+    "owner": "Colección particular",
+    "place": "Turquía",
+    "verse": "Amigo congestionado puesto que por tal te tengo no dejes que lo segundo me prive de lo primero ¡Muévete en niveles medios!",
+    "materials": "India y pino"
+  },
+  {
+    "num": 18,
+    "year": "",
+    "name": "Andalucía",
+    "owner": "Roberto Morón",
+    "place": "España",
+    "verse": "¡Cal y verde de aceituna. Luz ebullente de espuma salada! ¡Cresta de ola! ¡Viento amante de la duna. Sol que espera tras la bruma serrana! ¡Canto de mora!",
+    "materials": "Palosanto y pino"
+  },
+  {
+    "num": 19,
+    "year": "2011",
+    "name": "Colores",
+    "owner": "Rayito",
+    "place": "España",
+    "verse": "Claveles en la ventana, de los blancos, reventones. En tu calle hay muchas flores que imitan tu reja clara. Que al viento dicen tu nombre.",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 20,
+    "year": "2011",
+    "name": "Envidia",
+    "owner": "Ed Sheeran",
+    "place": "España",
+    "verse": "Plantado al borde del camino, un mojón reciente en autoría preguntóse así mismo su valía al ver traje rayado en su vecino. Molesto le increpó: ¡no tienes gracia; llevas tanto que no exhalas ya, ni aroma! El otro respondió: ¡deja la broma; trozo mierda, que yo marco la distancia!",
+    "materials": "Koa y pino"
+  },
+  {
+    "num": 21,
+    "year": "2011",
+    "name": "Condena",
+    "owner": "Rafael Riqueni",
+    "place": "Sevilla, España",
+    "verse": "Condena por verme dentro de tu corazón ladino, condena por verme dentro. Hasta tu madre lo dijo, que los males que acarreas no vieron los ojos míos.",
+    "materials": "Ciprés y Engelmann"
+  },
+  {
+    "num": 22,
+    "year": "2015",
+    "name": "Doble pulmonía o tiempo al tiempo",
+    "owner": "Colección particular",
+    "place": "España",
+    "verse": "Vete haciendo regalía a quién no se lo merece; que verás llegar el día en el que él, si pudiese, en cueros te dejaría… por mucho hermano que fuese.",
+    "materials": "Ciprés 3 piezas, Engelmann"
+  },
+  {
+    "num": 23,
+    "year": "2012",
+    "name": "El padrino",
+    "owner": "Raimundo Amador",
+    "place": "Sevilla, España",
+    "verse": "Tengo un vecino a mi lado, pared, pared, con lo mío. La mujer se le ha largado, dejándole de regalo perro, suegra, gato y niño; cuyo padre, un italiano, en el lote va incluido. ¿Quién es padre? ¿Y quién padrino?",
+    "materials": "Madagascar y cedro"
+  },
+  {
+    "num": 24,
+    "year": "2012",
+    "name": "Gabriela",
+    "owner": "Javier Casanueva",
+    "place": "Madrid, España",
+    "verse": "De las hijas que yo tengo eres la mayor de ellas. Saltas de niña graciosa a ser jovencita bella. El reflejo de tu madre, su dulzura y la presencia que dimanáis las hermanas, va ten tu mirada serena.",
+    "materials": "Madagascar y pino"
+  },
+  {
+    "num": 25,
+    "year": "2012",
+    "name": "Evolución",
+    "owner": "Juan José Camacho",
+    "place": "Huelva, España",
+    "verse": "Que las tripas que yo tengo nunca en mi especie se han visto. ¿Acaso me suenan mal…? ¡Preguntarle a los testigos! Sólo tendréis que pulsar mis “spaguettis” a ritmo.",
+    "materials": "Madagascar y pino"
+  },
+  {
+    "num": 26,
+    "year": "2012",
+    "name": "Iniciales",
+    "owner": "Ramón Sánchez",
+    "place": "Francia",
+    "verse": "Tengo presente y pasado, pero un pasado distinto al resto, que cómo yo, compartimos apellido ¡M y C, dirán el mío!",
+    "materials": "Madagascar y cedro."
+  },
+  {
+    "num": 27,
+    "year": "2013",
+    "name": "Remedio Casero",
+    "owner": "Verónica Noval",
+    "place": "Madrid, España",
+    "verse": "De estreñido me trataban, hasta que grabé tu imagen en el fondo de mi taza.",
+    "materials": "Koa 3 piezas y cedro"
+  },
+  {
+    "num": 28,
+    "year": "2013",
+    "name": "Lola",
+    "owner": "Joni Jiménez",
+    "place": "Madrid, España",
+    "verse": "¡No me hacen falta doctores si los dolores me acechan, no me hacen falta doctores! ¡Que los males se me alejan al ver tu cara de bronce y tu baile de flamenca!",
+    "materials": "Ciprés y sitka."
+  },
+  {
+    "num": 29,
+    "year": "2013",
+    "name": "Villa Rosa",
+    "owner": "Santiago Sánchez",
+    "place": "Albacete, España",
+    "verse": "Porque entrar en “Villa-Rosa” es la cosa más hermosa del flamenco de Madrid. Por eso di tú que sí, que verás villa graciosa, la más bella de las rosas que tenemos por aquí.",
+    "materials": "Imbuia y pino"
+  },
+  {
+    "num": 30,
+    "year": "2014",
+    "name": "Dedicatoria",
+    "owner": "Jose María Cavanna",
+    "place": "Holanda",
+    "verse": "¡Se rinde Despeñaperros al cruzar el de Lucía! ¡Castilla, lo da llorosa, al cante de Andalucía! ¡Seguiriya silenciosa enmudece las bahías!",
+    "materials": "Ciprés y pino."
+  },
+  {
+    "num": 31,
+    "year": "2013",
+    "name": "Antonia",
+    "owner": "Raimundo Amador",
+    "place": "Sevilla, España",
+    "verse": "¡No se puede ser más libre que un gitano canastero! ¡Fuese tu padre, Mariano, para ti, luz y sendero! ¡Y en cestos de caña y mimbre almacenas el recuerdo!",
+    "materials": "India y cedro con cutaway"
+  },
+  {
+    "num": 32,
+    "year": "2014",
+    "name": "Roneo",
+    "owner": "Colección particular",
+    "place": "",
+    "verse": "Dicen que dices que haces. Si haces todo lo que dices no tendrás tiempo bastante si quinientos años vives.",
+    "materials": "Imbuia y cedro amarillo"
+  },
+  {
+    "num": 33,
+    "year": "2014",
+    "name": "De todo",
+    "owner": "Jose María Cavanna",
+    "place": "Holanda",
+    "verse": "¡De todo en madera llevo. Principio de nueva era. Enraizada en “Media Luna”, Ha nacido, “Luna Entera”!",
+    "materials": "Cedro con fondo de arce y aros de koa. Primera guitarra con luna entera."
+  },
+  {
+    "num": 34,
+    "year": "2014",
+    "name": "Santo y Seña",
+    "owner": "Alfred Zill",
+    "place": "Alemania",
+    "verse": "¡Hacia el Genil ya se ven las once torres alerta. Al daros “alto”, diréis; de por Santo: Juan Manuel, de por Seña: Diaz Baena. Tener la conciencia plena de haber citado a quién es, de Écija…, su poeta!",
+    "materials": "Ciprés y cedro amarillo"
+  },
+  {
+    "num": 35,
+    "year": "2015",
+    "name": "Alejandra",
+    "owner": "Juan José Camacho",
+    "place": "Huelva, España",
+    "verse": "¡”El fandango y la saeta”! “Son tu Gabriel y Alegría el fandango y la saeta” ¿Qué mayor premio querrías? ¡Almonte flamenco, un día quiso verte, presidenta!",
+    "materials": "Ciprés y pino. Cabeza de Luna Entera"
+  },
+  {
+    "num": 36,
+    "year": "2015",
+    "name": "Carmen",
+    "owner": "Colección particular",
+    "place": "España",
+    "verse": "¡En donde la barca amarra y el marino bien se aferra. Presta su nombre y su garra a ciudades; y a novela, origen de la afamada, opera, que el mundo oyera. A hermosa casa en Granada…, a mujeres de mi tierra!",
+    "materials": "Ciprés y pino. Cabeza de Luna Entera."
+  },
+  {
+    "num": 37,
+    "year": "2015",
+    "name": "Equís",
+    "owner": "Jose María Cavanna",
+    "place": "Holanda",
+    "verse": "¡Hasta que acabe Mariano no sabré qué, yo diría; mas creo no ser en vano, incógnita de la vida!",
+    "materials": "Fondo de arce, aros palosanto india, tapa de pino. Cabeza de Luna Entera (Equís)"
+  },
+  {
+    "num": 38,
+    "year": "2015",
+    "name": "Única",
+    "owner": "Iván G.V.",
+    "place": "Madrid, España",
+    "verse": "¡Qué tan antiguo diseño no es obra de cualquier “tío”…, ni del mayor, ni el pequeño…, fue la inventiva de un genio de padre y muy señor mío!",
+    "materials": "Arce y cedro. Cabeza de Luna Entera (ébano con medias lunas)."
+  },
+  {
+    "num": 39,
+    "year": "2015/16",
+    "name": "Aurea",
+    "owner": "Colección particular",
+    "place": "Madrid, España",
+    "verse": "¡No me “ralles” con tamañas proporciones, llevo en ello ya metido media hora. Si no logro hacer bien las ecuaciones y no surgen los sonidos y los sones…, en estudio yo veré, llegar la aurora!",
+    "materials": "India y sitka. Fondo de palosanto india en colaboración con el artista Javier Liébana. Cabeza de Luna Entera (concha de nautilus)."
+  },
+  {
+    "num": 40,
+    "year": "2016",
+    "name": "De Lucía",
+    "owner": "Antonio Sánchez",
+    "place": "Madrid",
+    "verse": "¡De la culata a la “roca”, llevo maderas y boca de quién la suya hizo mía. Paco fue, de mis ancestros…, sonido que guardo dentro cómo reliquia divina! ¡Ya en el Olimpo…, Maestro!",
+    "materials": "Cabeza de Luna Entera (peñón de Gibraltar) Palosanto de India y sitka."
+  },
+  {
+    "num": 41,
+    "year": "2016",
+    "name": "Roneo 2",
+    "owner": "Colección particular",
+    "place": "Madrid, España",
+    "verse": "¡Dicen que dices que eres. Si eres todo lo que dices, no hay ministro ni almirante que te toque las narices!",
+    "materials": "Cedro amarillo y pino. Cabeza de Luna Entera removible (representación de cabeza masculina)"
+  },
+  {
+    "num": 42,
+    "year": "2016/18",
+    "name": "Bajamar",
+    "owner": "Paco Saucedo",
+    "place": "Madrid, España",
+    "verse": "¡Para atrás va a caminar, más no le tengas, tú, pena. Anda buscando su cena, es decir…! ¡que va a “jamar”!",
+    "materials": "Arce y pino. Cabeza de Luna Entera (cangrejo)."
+  },
+  {
+    "num": 43,
+    "year": "2016/18",
+    "name": "Duna",
+    "owner": "Jose María Cavanna",
+    "place": "Holanda",
+    "verse": "¡Grano a grano va muy lento lo que la vida acumula de estupidez y talento!",
+    "materials": "Arce y pino. Cabeza de Luna Entera (camello)."
+  },
+  {
+    "num": 44,
+    "year": "2019",
+    "name": "Eli",
+    "owner": "Fernando Prieto",
+    "place": "Sevilla, España",
+    "verse": "¡Se posa cómo la nieve en el roquedo más alto. Revolotea, va y viene, hasta que al libar mi canto se nutre de mis quereres. Afilados alfileres, testigos son de mi llanto!",
+    "materials": "Arce americano y cedro. Cabeza de Luna Entera (mariposa blanca)."
+  },
+  {
+    "num": 45,
+    "year": "2019",
+    "name": "Ma P’Tite maman",
+    "owner": "Mathieu Ammari",
+    "place": "Normandía, Francia",
+    "verse": "¡Trabajadora y humilde. De familia numerosa. Coqueta que se casara con quién su amor no responda. Marcó su vida la tilde de luchar por su hijo, sola, aquella brava normanda de mitad sangre española!",
+    "materials": "Ébano exótico y cedro. Cabeza de Luna Entera (cabeza de león)."
+  },
+  {
+    "num": 46,
+    "year": "2020",
+    "name": "Encuentro",
+    "owner": "Joaquín Gómez",
+    "place": "Nicaragua",
+    "verse": "¡Fuese un encuentro casual el “porqué” de esta guitarra. Con Joaquín me fui a cruzar por octubre… Hoy un mal, ese virus tan letal, a la humanidad amarra!",
+    "materials": "Ébano exótico y cedro"
+  },
+  {
+    "num": 47,
+    "year": "2020/21",
+    "name": "Milonga",
+    "owner": "Gilles (Knobloch)",
+    "place": "España",
+    "verse": "Guitarrero; creer que la madera va a obedecerte en tus pretensiones, Sencillamente es pura milonga.",
+    "materials": "India y cedro"
+  },
+  {
+    "num": 48,
+    "year": "2020/21",
+    "name": "Colombiana del Manzanillo de la Muerte",
+    "owner": "Jesús Guerrero",
+    "place": "España",
+    "verse": "Del “Manzanillo de la muerte” ¡Hay un palo americano de frutos, hojas y ramas que envenena a quién lo toca y a quién come sus manzanas. Y hay “palo” de son cubano, que flamenco llegó a España!",
+    "materials": "India y cedro"
+  },
+  {
+    "num": 49,
+    "year": "2021/22",
+    "name": "Mar",
+    "owner": "Udo Lampe",
+    "place": "Alemania",
+    "verse": "Cúmulo de inmensidad que a todos destinos baña. La literatura empaña tu mundo, de realidad. Profundidad musical donde se teje maraña de canciones y concierto que al navegar, con acierto, unen a Alemania a España.",
+    "materials": "Madagascar y cedro"
+  },
+  {
+    "num": 50,
+    "year": "2021/22",
+    "name": "Cayetana",
+    "owner": "Jose Manuel",
+    "place": "Barcelona, España",
+    "verse": "Con tu llegada estrenas a esta familia en el gozo, y siendo tú, la primera, extremas el alborozo tanto en mí, cómo en tu abuela. A la vida yo pidiera navegar, extenso trozo, al caminar a tu vera.",
+    "materials": "Dorado y pino"
+  },
+  {
+    "num": 51,
+    "year": "2021/22",
+    "name": "Unai",
+    "owner": "Jose Manuel",
+    "place": "Barcelona, España",
+    "verse": "Una guitarra comparte nombre contigo. A tus cinco años nace… Inicio escribo.",
+    "materials": "Ébano exótico y cedro"
+  },
+  {
+    "num": 52,
+    "year": "2022",
+    "name": "Nazarí",
+    "owner": "Jose Manuel",
+    "place": "Barcelona, España",
+    "verse": "¡Arte en que tomas conciencia tras impacto sobre ti, de pensar tan sólo en algo… Agradecer su existencia, ya que de no ser así, no es posible imaginarlo!",
+    "materials": "Koa y cedro"
+  },
+  {
+    "num": 53,
+    "year": "2022",
+    "name": "Santa Fé",
+    "owner": "Jose Manuel",
+    "place": "Barcelona, España",
+    "verse": "¡Ambas capitulaciones allí tuvieron lugar; la rendición de Granada y la que cruzara el mar. No en vano en su lema reza: “Cuna de la Hispanidad”!",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 54,
+    "year": "",
+    "name": "Siwalee",
+    "owner": "Colección particular",
+    "place": "Tailandia",
+    "verse": "¡Sexteto que te enamora; las veinte treinta convoca a tu marido y tus hijos con sus guitarras cantoras! ¡En ti encuentran fiel cobijo, tanto el blanco conejito, cómo el candor de la rosa!",
+    "materials": "Cocobolo y pino. Cabeza de Luna Entera removible (conejo blanco)."
+  },
+  {
+    "num": 55,
+    "year": "2022",
+    "name": "Marcita",
+    "owner": "Dieter Lampe",
+    "place": "Alemania",
+    "verse": "¡Tiene el carácter “templado”, mezcla de lo ardiente hispano y la frialdad de cabeza. Germana de gran nobleza que al defender refugiado, destierra en él, la tristeza!",
+    "materials": "Ciprés y pino"
+  },
+  {
+    "num": 56,
+    "year": "",
+    "name": "Rombo",
+    "owner": "Colección particular",
+    "place": "España",
+    "verse": "",
+    "materials": "En construcción"
+  },
+  {
+    "num": 57,
+    "year": "",
+    "name": "Marianne",
+    "owner": "Udo Lampe",
+    "place": "Alemania",
+    "verse": "¡Königsberg viera nacer a la maestra más brava salvando casos perdidos desde el castillo del alma! ¡Artista del buen hacer, mucho hizo de la nada, la que de bebé se viera en Bavaria, refugiada!",
+    "materials": "Madera de arce y pino Cabeza de Luna Entera (Kandinsky)."
+  },
+  {
+    "num": 58,
+    "year": "2023",
+    "name": "Hongsa",
+    "owner": "Colección particular",
+    "place": "Tailandia",
+    "verse": "¡No tienes tu nombre en vano al resurgir cómo el Fénix y nacer en día errado. Vencedor de ciencia y astros, hoy sabes de España, reyes. De política, de leyes y de armas bien versado. Un dulce amable “guerrero” de tan solo quince años.!",
+    "materials": "Guitarra del Poema de Doble Tapa. Madera de Majagua y cedro. Cabeza de Luna Entera removible (ave fénix)."
+  }
+]
