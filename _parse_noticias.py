@@ -51,6 +51,7 @@ EXTERNAL = [
         'title': '115 años de una saga de guitarreros de Madrid',
         'description': 'ExpoFlamenco repasa la historia de cinco generaciones de guitarreros de la familia Conde en Madrid.',
         'date': '2026-01-01',
+        'date_label': '2026',
         'image': 'MC_Historia_9.webp',
         'category': 'oficio',
         'source': 'ExpoFlamenco',
@@ -368,7 +369,7 @@ def main():
         e['title'] = item['title']
         e['description'] = item['description']
         e['image'] = local_image(item['image'], 'assets/img/Carrousel03_01.webp')
-        e['date_label'] = label_date(item['date'])
+        e['date_label'] = item.get('date_label') or label_date(item['date'])
         e['en_url'] = ''
         e['external'] = True
         e['body'] = external_body(item)
