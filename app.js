@@ -124,7 +124,7 @@
     });
   }
   setupFilters('.filter-btn[data-filter]', '.guitar-card', 'filter');
-  setupFilters('.filter-btn[data-news-filter]', '.news-card', 'newsFilter');
+  setupFilters('.filter-btn[data-news-filter]', '.article-row[data-cat]', 'newsFilter');
 
   /* ---------- Reproductor ---------- */
   const playerFrame = $('#playerFrame');

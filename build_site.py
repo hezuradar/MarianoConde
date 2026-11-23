@@ -12,6 +12,8 @@ ORIG = Path('contenido-original')
 IMGPATH = Path('assets/img')
 MODEL_DATA = json.loads(Path('model-data.json').read_text(encoding='utf-8'))
 POEMA_DATA = json.loads(Path('poema-data.json').read_text(encoding='utf-8'))
+NOTICIAS_DATA = json.loads(Path('noticias-data.json').read_text(encoding='utf-8'))
+SITE_URL = 'https://hezuradar.github.io/MarianoConde/'
 
 REVERB_URL = (
     'https://reverb.com/shop/guitarras-mariano-conde-conde-hermanos-'
@@ -30,15 +32,6 @@ VIDEOS = [
     ('Leonard Cohen & Mariano Conde', 'glCERZfJTBc', 'MC_Historia_2.webp', 'Música'),
     ('Amós Lora en Telemadrid', 'wIEEt_3pAOk', 'MC_Escenario_13.webp', 'Prensa'),
     ('Entrevista por Íñigo Cifuentes', 'yuIomU2WYoQ', 'MC_Historia_9.webp', 'Entrevista'),
-]
-
-FEATURED_NEWS = [
-    ('«Los guitarreros que enamoraron al maestro Paco de Lucía»','_ESTRENO-MUNDIAL-Mariano-Conde-Los-guitarreros-que-enamoraron-al-maestro-Paco-de-Lucia.webp','Documental · 2026','https://marianoconde.com/estreno-mundial-mariano-conde-los-guitarreros-que-enamoraron-al-maestro-paco-de-lucia/','marianoconde.com'),
-    ('115 años de una saga de guitarreros de Madrid','MC_Historia_9.webp','Prensa · 2026','https://expoflamenco.com/revista/mariano-conde-ciento-quince-anos-de-una-saga-de-guitarreros-de-madrid/','ExpoFlamenco'),
-    ('Samuel del Río Carmona, primer Premio Mariano Conde','65-Festival-Internacional-del-Cante-de-las-Minas-Premio-Mariano-Conde.webp','Premios · 2025','https://marianoconde.com/la-emocion-de-una-guitarra-con-alma-samuel-del-rio-carmona-primer-ganador-del-premio-mariano-conde-en-el-festival-internacional-del-cante-de-las-minas/','marianoconde.com'),
-    ('El secreto de la guitarra «madrileña» de Ed Sheeran','MC_Escenario_22-768x330.webp','Prensa · ABC','https://www.abc.es/espana/madrid/abci-secreto-guitarra-madrilena-sheeran-201701270021_noticia.html','ABC'),
-    ('Cuatro generaciones de luthiers','MC_Historia_4.webp','Prensa · 2016','https://www.elconfidencial.com/cultura/2016-08-07/luthier-mariano-conde-guitarra-oficios-cultura_1243339/','El Confidencial'),
-    ('Unas 60 guitarras al año y maderas secadas hasta 30 años','barnizado-guitarras.webp','El oficio · 2018','https://www.elmundo.es/papel/historias/2018/04/28/5ae3061046163f25178b4629.html','El Mundo'),
 ]
 
 PRESS_EVENTS = [
@@ -234,6 +227,15 @@ def header(active, en_url=None):
         if extra:
             label = '<span class="live-dot"></span> ' + label
         links.append(f'<a href="{href}"{cls}{extra}>{label}</a>')
+    en_link = en_url if en_url is not None else EN_PAGES.get(active, EN_PAGES['index.html'])
+    lang_switch = '' if not en_link else f'''      <div class="lang-switch">
+        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">Español <span aria-hidden="true">▾</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <span class="is-current">Español</span>
+          <a href="{en_link}" target="_blank" rel="noopener">Inglés ↗</a>
+        </div>
+      </div>'''
+    en_mobile = '' if not en_link else f'    <a href="{en_link}" target="_blank" rel="noopener">English version ↗</a>\n'
     return f'''<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 <a class="skip-link" href="#main">Saltar al contenido principal</a>
@@ -245,21 +247,14 @@ def header(active, en_url=None):
     </a>
     <nav class="nav-desktop" aria-label="Navegación principal">{''.join(links)}</nav>
     <div class="header-actions">
-      <div class="lang-switch">
-        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">Español <span aria-hidden="true">▾</span></button>
-        <div class="lang-menu" id="langMenu" hidden>
-          <span class="is-current">Español</span>
-          <a href="{en_url or EN_PAGES.get(active, EN_PAGES['index.html'])}" target="_blank" rel="noopener">Inglés ↗</a>
-        </div>
-      </div>
+{lang_switch}
       <a class="btn btn-sm btn-outline" href="contacto.html">Encargos</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
     </div>
   </div>
   <nav class="nav-mobile" id="navMobile" aria-label="Navegación móvil">
 {''.join(f'    <a href="{a}">{l}</a>' for a, l in NAV)}
-    <a href="{en_url or EN_PAGES.get(active, EN_PAGES['index.html'])}" target="_blank" rel="noopener">English version ↗</a>
-  </nav>
+{en_mobile}  </nav>
 </header>'''
 
 def footer(active=None):
@@ -734,70 +729,66 @@ def build_historia():
     page('historia.html', 'Historia', 'La historia de Mariano Conde: de Domingo Esteso en 1915 al taller actual de la calle Amnistía en Madrid.', 'historia.html', body)
 
 # ---------------------------------------------------------------- noticias
-SKIP = ('guitarras_', 'galeria_', 'en_', 'noticias', 'index', 'aviso', 'politica',
-        'contacto', 'historia', 'taller', 'ed-sheeran', 'modelo-', 'flamencas', 'clasicas')
+CAT_LABELS = {'maderas': 'Maderas', 'sonido': 'Sonido', 'oficio': 'Oficio'}
 
-def extract_articles():
-    out = []
-    for f in sorted(ORIG.glob('*.html')):
-        if f.name.startswith(SKIP):
-            continue
-        s = f.read_text(encoding='utf-8', errors='ignore')
-        m = re.search(r'<h1[^>]*>(.*?)</h1>', s, re.S)
-        if not m:
-            continue
-        title = htmlmod.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
-        title = re.sub(r'\s+', ' ', title)
-        if not title or len(title) < 12 or title.lower() in ('noticias','menu','historia','contacto'):
-            continue
-        urls = re.findall(r'https://marianoconde\.com/wp-content/uploads/[^"\s\)]+?\.(?:webp|jpg|jpeg|png)', s)
-        local = 'Carrousel03_01.webp'
-        for u in urls:
-            cand = sanitize(u.split('/')[-1])
-            if img_exists(cand) and 'logo' not in cand.lower():
-                local = cand
-                break
-        slug = f.stem
-        # Descarts bogus pages captured during the download (JS/CSS responses and redirects)
-        if slug.startswith(('wp-content_', 'en_')) or slug in ('en', 'wp-content_plugins'):
-            continue
-        if 'moved permanently' in title.lower():
-            continue
-        out.append((title, local, slug))
-    return out
+def build_news_articles():
+    """Una página propia por noticia, en escritorio y móvil, con el contenido original."""
+    total = len(NOTICIAS_DATA)
+    for i, item in enumerate(NOTICIAS_DATA):
+        older = NOTICIAS_DATA[i + 1] if i + 1 < total else None
+        newer = NOTICIAS_DATA[i - 1] if i > 0 else None
+        older_html = (f'<a class="article-nav-link" href="{older["file"]}">'
+                      f'<span>← Anterior</span><strong>{h(older["title"])}</strong></a>'
+                      if older else '<span></span>')
+        newer_html = (f'<a class="article-nav-link is-next" href="{newer["file"]}">'
+                      f'<span>Siguiente →</span><strong>{h(newer["title"])}</strong></a>'
+                      if newer else '<span></span>')
+        source_html = ''
+        if item['external']:
+            source_html = (f'<p class="article-source">Publicado originalmente por '
+                           f'<a href="{h(item["source_url"])}" target="_blank" rel="noopener">'
+                           f'{h(item["source"])} ↗</a></p>')
+        body = f'''<section class="article-hero">
+  <div class="article-hero-media"><img src="{h(item['image'])}" alt="{h(item['title'])}"></div>
+  <div class="container article-hero-inner">
+    <nav class="breadcrumb" aria-label="Migas de pan"><a href="index.html">Inicio</a><span>/</span><a href="noticias.html">Noticias</a><span>/</span><span>{h(CAT_LABELS[item['category']])}</span></nav>
+    <p class="eyebrow">{h(item['date_label'])} · {h(CAT_LABELS[item['category']])}</p>
+    <h1 class="display">{h(item['title'])}</h1>
+    <p class="article-lead">{h(item['description'])}</p>
+    <p class="article-by">{h(item['source'])}</p>
+  </div>
+</section>
+<section class="section-cream"><div class="container article-layout">
+  <article class="article-prose reveal">
+{item['body']}
+{source_html}
+  </article>
+  <aside class="article-aside">
+    <div class="article-aside-box">
+      <p class="eyebrow">Mariano Conde</p>
+      <p>Guitarras artesanales desde 1915 en Madrid.</p>
+      <a class="btn btn-sm btn-outline" href="noticias.html">Volver a noticias</a>
+    </div>
+  </aside>
+</div></section>
+<nav class="article-nav" aria-label="Más noticias"><div class="container article-nav-inner">
+  {older_html}
+  {newer_html}
+</div></nav>'''
+        page(item['file'], item['title'], item['description'], 'noticias.html', body, en_url='')
 
 def build_noticias():
-    articles = extract_articles()
-    # Dos artículos del original que no tienen <h1> y quedaron fuera del archivo
-    articles += [
-        ('Ed sheeran & Mariano Conde, periodico ABC', 'MC_Escenario_22.webp', 'ed-sheeran-mariano-conde-periodico-abc'),
-        ('Leonard Cohen & Mariano Conde', 'MC_Historia_2.webp', 'leonard-cohen-mariano-conde'),
-    ]
-    # Los seis artículos destacados con fuentes verificadas van primero
-    featured = FEATURED_NEWS
+    featured = [e for e in NOTICIAS_DATA if e['featured']]
     cards_html = '\n'.join(f'''<article class="news-card reveal">
-  <a href="{url}" target="_blank" rel="noopener">
-    <div class="news-img"><img src="assets/img/{im}" alt="{h(t)}" loading="lazy"></div>
-    <div class="news-body"><div class="news-meta"><span>{h(meta)}</span></div><h3>{h(t)}</h3>
-    <span class="news-source">{h(src)} ↗</span></div>
-  </a></article>''' for t, im, meta, url, src in featured)
-    real_rows = []
-    for t, im, slug in articles:
-        low = t.lower()
-        if any(k in low for k in ('madera','abeto','cedro','koa','caoba','ébano','ebano','palo santo','palosanto','arce')):
-            cat = 'maderas'
-        elif any(k in low for k in ('sonido','sustain','cuerda','desafina','seco','boca','tapa','resonancia')):
-            cat = 'sonido'
-        else:
-            cat = 'oficio'
-        if slug.startswith('guitarras-del-poema_'):
-            href, source = 'poema.html', 'Guitarras del Poema →'
-        else:
-            href, source = f'https://marianoconde.com/{slug}/', 'marianoconde.com ↗'
-        target = ' target="_blank" rel="noopener"' if href.startswith('https://') else ''
-        real_rows.append(f'''<a class="article-row" data-cat="{cat}" href="{href}"{target}>
-  <time>Archivo</time><h3>{h(t)}</h3><span class="source">{source}</span><span class="go">↗</span>
-</a>''')
+  <a href="{h(e['file'])}">
+    <div class="news-img"><img src="{h(e['image'])}" alt="{h(e['title'])}" loading="lazy"></div>
+    <div class="news-body"><div class="news-meta"><span>{h(e['date_label'])} · {h(CAT_LABELS[e['category']])}</span></div><h3>{h(e['title'])}</h3>
+    <span class="news-source">{h(e['source'])} →</span></div>
+  </a></article>''' for e in featured)
+    real_rows = '\n'.join(f'''<a class="article-row" data-cat="{h(e['category'])}" href="{h(e['file'])}">
+  <time>{h(e['date_label'])}</time><h3>{h(e['title'])}</h3><span class="source">{h(e['source'])}</span><span class="go">↗</span>
+</a>''' for e in NOTICIAS_DATA)
+    total = len(NOTICIAS_DATA)
     body = hero('noticias.html', 'Noticias', 'Estrenos, premios, artículos de prensa y todas las historias que explican por qué una guitarra de Mariano Conde es diferente.', '05 / 08')
     body += subnav([('noticias.html','Destacadas'),('directo.html','Documental'),('historia.html','Historia'),('contacto.html','Prensa')], 'noticias.html')
     body += f'''<section class="section-cream"><div class="container">
@@ -805,16 +796,16 @@ def build_noticias():
   <div class="news-grid">{cards_html}</div>
 </div></section>
 <section class="section-dark"><div class="container">
-  <div class="section-head reveal"><p class="eyebrow">Archivo · {len(articles)} artículos</p><h2 class="display">Historias sobre<br><em>el oficio.</em></h2>
+  <div class="section-head reveal"><p class="eyebrow">Archivo · {total} artículos</p><h2 class="display">Historias sobre<br><em>el oficio.</em></h2>
   <p class="section-intro">Maderas, barnices, varetaje, sustain, mantenimiento y todo lo que hay detrás de una guitarra artesanal, publicado por el taller.</p></div>
   <div class="filter-bar reveal" role="group" aria-label="Filtrar artículos">
-    <button class="filter-btn is-active" data-news-filter="all" aria-pressed="true">Todos <span>{len(articles)}</span></button>
+    <button class="filter-btn is-active" data-news-filter="all" aria-pressed="true">Todos <span>{total}</span></button>
     <button class="filter-btn" data-news-filter="maderas" aria-pressed="false">Maderas</button>
     <button class="filter-btn" data-news-filter="oficio" aria-pressed="false">Oficio</button>
     <button class="filter-btn" data-news-filter="sonido" aria-pressed="false">Sonido</button>
   </div>
   <div class="article-list" id="newsGrid">
-{''.join(real_rows)}
+{real_rows}
   </div>
 </div></section>'''
     press_rows = '\n'.join(
@@ -826,7 +817,7 @@ def build_noticias():
   <div class="press-list">{press_rows}</div>
 </div></section>'''
     body += next_section('Historia', 'historia.html', 'Una familia, una tradición')
-    page('noticias.html', 'Noticias', 'Noticias, premios, documentales y artículos sobre Mariano Conde y la construcción artesanal de guitarras en Madrid.', 'noticias.html', body)
+    page('noticias.html', 'Noticias', 'Noticias, premios, documentales y artículos sobre Mariano Conde y la construcción artesanal de guitarras en Madrid.', 'noticias.html', body, en_url='')
 
 def build_galeria():
     pared = ['MCenPared_1.webp','MCenPared_2.webp','MCenPared_3.webp','Galeria_1.webp','MC_Historia_4.webp','Mariano-Conde-Joss.fernandez__-6.webp','MC_Historia_3.webp','MarianoCondeGuitarras_102.webp']
@@ -957,29 +948,20 @@ def build_legal(file, title, source, desc):
 def build_feed():
     esc = lambda s: htmlmod.escape(str(s), quote=True)
     items = []
-    for title, im, meta, url, src in FEATURED_NEWS:
+    for item in NOTICIAS_DATA:
+        url = SITE_URL + item['file']
         items.append(f'''  <item>
-    <title>{esc(title)}</title>
+    <title>{esc(item['title'])}</title>
     <link>{esc(url)}</link>
-    <guid isPermaLink="false">{esc(url)}</guid>
-    <description>{esc(meta)} — {esc(src)}. {esc(title)}</description>
-  </item>''')
-    for title, im, slug in extract_articles():
-        if slug.startswith('guitarras-del-poema_'):
-            url = 'https://marianoconde.com/poema.html'
-        else:
-            url = f'https://marianoconde.com/{slug}/'
-        items.append(f'''  <item>
-    <title>{esc(title)}</title>
-    <link>{esc(url)}</link>
-    <guid isPermaLink="false">{esc(url)}</guid>
-    <description>{esc(title)} — archivo de noticias de Mariano Conde.</description>
+    <guid isPermaLink="true">{esc(url)}</guid>
+    <pubDate>{esc(item['date'])}</pubDate>
+    <description>{esc(item['description'])} — {esc(item['source'])}.</description>
   </item>''')
     xml = f'''<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
   <title>Mariano Conde · Noticias</title>
-  <link>https://marianoconde.com/noticias.html</link>
+  <link>{SITE_URL}noticias.html</link>
   <description>Estrenos, premios y artículos sobre las guitarras de Mariano Conde.</description>
   <language>es</language>
 {chr(10).join(items)}
@@ -1000,6 +982,7 @@ if __name__ == '__main__':
     build_poema()
     build_historia()
     build_noticias()
+    build_news_articles()
     build_galeria()
     build_contacto()
     build_legal('aviso-legal.html', 'Aviso legal', '_legal_text.txt',

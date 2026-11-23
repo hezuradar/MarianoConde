@@ -747,3 +747,59 @@ html[data-device="mobile"] .cookie-banner{bottom:calc(58px + env(safe-area-inset
   html[data-device="mobile"] .live-header,
   html[data-device="mobile"] .footer-top{grid-template-columns:1fr}
 }
+
+/* ============================================================
+   NOTICIAS — página propia de cada artículo
+   ============================================================ */
+.article-hero{position:relative;overflow:hidden;background:var(--ink-2);padding:clamp(9rem,16vw,13rem) 0 clamp(3rem,6vw,5rem)}
+.article-hero-media{position:absolute;inset:0;opacity:.3}
+.article-hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35)}
+.article-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,12,11,.82) 0%,rgba(13,12,11,.6) 55%,var(--ink) 100%)}
+.article-hero-inner{position:relative;z-index:2}
+.breadcrumb{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:2.5rem}
+.breadcrumb a{color:var(--gold);text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+.article-hero h1{max-width:19ch;font-size:clamp(2.6rem,6vw,5.2rem);line-height:1.03;font-weight:500;margin:1rem 0 1.5rem}
+.article-lead{max-width:62ch;font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.75;color:var(--cream-2)}
+.article-by{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:1.75rem}
+.article-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:clamp(2rem,6vw,6rem);padding-top:clamp(3rem,6vw,6rem);padding-bottom:clamp(3rem,6vw,6rem)}
+.article-prose{max-width:76ch;color:var(--muted-light)}
+.article-prose p{font-size:1rem;line-height:1.95;margin-bottom:1.5rem}
+.article-prose h2,.article-prose h3,.article-prose h4{font-family:var(--serif);font-weight:600;color:var(--ink);line-height:1.15;margin:2.5rem 0 1rem}
+.article-prose h2{font-size:clamp(1.8rem,3vw,2.5rem)}
+.article-prose h3{font-size:1.6rem}
+.article-prose h4{font-size:1.3rem}
+.article-prose ul,.article-prose ol{margin:0 0 1.5rem 1.2rem}
+.article-prose li{padding-left:.4rem;margin-bottom:.6rem}
+.article-prose a{color:#8a6529;text-decoration:underline;text-underline-offset:3px}
+.article-prose strong{color:var(--ink)}
+.article-prose img{display:block;width:100%;height:auto;margin:2rem 0;border:1px solid var(--line-light)}
+.article-prose iframe{width:100%;aspect-ratio:16/9;border:0;margin:2rem 0;background:#000}
+.article-prose blockquote{margin:2.5rem 0;padding-left:1.5rem;border-left:2px solid var(--gold);font-family:var(--serif);font-size:1.5rem;line-height:1.4;color:var(--ink)}
+.article-source{font-size:.85rem !important;color:var(--muted-light)}
+.article-aside-box{position:sticky;top:110px;background:#fffaf1;border:1px solid var(--line-light);padding:1.75rem}
+.article-aside-box .eyebrow{color:#9a7434}
+.article-aside-box p{font-size:.88rem;line-height:1.7;color:var(--muted-light)}
+.article-aside-box .btn{margin-top:1rem}
+.article-nav{border-top:1px solid var(--line-dark);background:var(--ink-2)}
+.article-nav-inner{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding-top:2.5rem;padding-bottom:2.5rem}
+.article-nav-link{display:flex;flex-direction:column;gap:.5rem;min-height:44px;text-decoration:none;color:var(--cream)}
+.article-nav-link span{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.article-nav-link strong{font-family:var(--serif);font-size:1.35rem;font-weight:500;line-height:1.25}
+.article-nav-link:hover strong{color:var(--gold)}
+.article-nav-link.is-next{text-align:right;align-items:flex-end}
+@media(max-width:900px){
+  .article-layout{grid-template-columns:1fr}
+  .article-aside-box{position:static}
+}
+@media(max-width:600px){
+  .article-hero{padding-top:8rem}
+  .article-hero h1{font-size:2.4rem}
+  .article-nav-inner{grid-template-columns:1fr;gap:1.5rem}
+  .article-nav-link.is-next{text-align:left;align-items:flex-start}
+}
+html[data-device="mobile"] .article-layout{grid-template-columns:1fr}
+html[data-device="mobile"] .article-aside-box{position:static}
+html[data-device="mobile"] .article-nav-inner{grid-template-columns:1fr}
+html[data-device="mobile"] .article-hero{padding-top:8rem}
+html[data-device="mobile"] .article-hero h1{font-size:2.4rem}
