@@ -1057,8 +1057,20 @@ def legal_blocks(lines):
             i += 1
     return '\n'.join(out)
 
+_UZTAI_LINK = re.compile(
+    r'<a\b[^>]*href=["\']https?://(?:www\.)?uztai\.com/?["\'][^>]*>(.*?)</a>',
+    re.I | re.S)
+_UZTAI_URL = re.compile(r'https?://(?:www\.)?uztai\.com/?', re.I)
+
+
+def strip_legacy_credit(text):
+    """Elimina el antiguo crédito a uztai.com aunque reaparezca en una fuente."""
+    text = _UZTAI_LINK.sub(lambda m: re.sub(r'<[^>]+>', '', m.group(1)), text)
+    return _UZTAI_URL.sub('', text)
+
+
 def build_legal(file, title, source, desc):
-    lines = Path(source).read_text(encoding='utf-8').splitlines()
+    lines = strip_legacy_credit(Path(source).read_text(encoding='utf-8')).splitlines()
     body = f'''<section class="section-cream"><div class="container">
   <div class="section-head reveal"><p class="eyebrow">Información legal</p><h1 class="display">{h(title)}</h1></div>
   <div class="legal-content">{legal_blocks(lines)}</div>

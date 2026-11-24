@@ -36,7 +36,7 @@ PROTECT = [
     'Domingo Esteso', 'Íñigo Cifuentes', 'Amós Lora', 'Samuel del Río',
     'Joaquín', 'Gregorio Moya', 'José Viñas', 'Encarni', 'ExpoFlamenco',
     'Telemadrid', 'Teatro Isabel la Católica', 'Isabel la Católica',
-    'Uztai', 'AEPD', 'CIF', 'MC', 'RGPD', 'LOPDGDD',
+    'AEPD', 'CIF', 'MC', 'RGPD', 'LOPDGDD',
 ]
 
 
