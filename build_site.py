@@ -439,8 +439,8 @@ def english_doc(doc, filename, prefix):
     d = d.replace('>Spanish <span', '>English <span', 1)
     d = d.replace('<span class="is-current">Spanish</span>',
                   '<span class="is-current">English</span>', 1)
-    # Enlaces internos a páginas: se prefijan con ../ (en/) o ../../ (en/m/).
-    d = _I18N_LINK.sub(lambda m: f'href="{prefix}{m.group(1)}"', d)
+    # Los enlaces internos permanecen relativos: las páginas EN existen dentro
+    # de en/ (y en/m/), así que prefijarlos con ../ devolvería al sitio español.
     # El enlace al español se reescribe después para no prefijarlo dos veces.
     d = d.replace(f'href="en/{filename}">English</a>',
                   f'href="{prefix}{filename}">Español</a>', 1)
