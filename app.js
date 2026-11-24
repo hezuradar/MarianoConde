@@ -14,8 +14,8 @@
     openMenu: EN ? 'Open menu' : 'Abrir menú',
     closeMenu: EN ? 'Close menu' : 'Cerrar menú',
     liveIdle: EN
-      ? 'Live broadcast from the workshop. If there is no live stream, YouTube will show the latest broadcast or a not-connected notice.'
-      : 'Emisión en directo del taller. Si no hay emisión activa, YouTube mostrará el último directo o el aviso de que no está conectado.',
+      ? 'Live broadcast from the workshop. When it is not live, YouTube shows the latest broadcast; use the link below to open the channel.'
+      : 'Emisión en directo del taller. Si no hay emisión activa, YouTube mostrará el último directo; usa el enlace inferior para abrir el canal.',
     liveOpen: EN ? 'Open live on YouTube ↗' : 'Abrir directo en YouTube ↗',
     now: EN ? 'Now: ' : 'Ahora: ',
     nowDocumentary: EN
@@ -173,9 +173,13 @@
     const tabs = $$('.player-tab');
     const thumbs = $$('.video-thumb, .video-card-play');
     const goLiveBtn = $('#goLiveBtn');
-    const CHANNEL_ID = 'UC_7i0vCY24zd_6t-MjkeMjw';
     const YT_VIDEO = id => `https://www.youtube-nocookie.com/embed/${id}?rel=0&modestbranding=1`;
-    const YT_LIVE  = `https://www.youtube.com/embed/live_stream?channel=${CHANNEL_ID}&autoplay=1&mute=1`;
+    // YouTube retiró embed/live_stream (mostraba «Este vídeo no está disponible»).
+    // Se incrusta el ID de la emisión vigente; se obtiene en
+    // https://www.youtube.com/@Guitarras_MarianoConde/live (URL del vídeo en directo).
+    // El enlace «Abrir en YouTube» apunta siempre al directo del canal.
+    const LIVE_VIDEO_ID = 'ELvwXjxxZjM';
+    const YT_LIVE = YT_VIDEO(LIVE_VIDEO_ID);
     const host = window.location.hostname;
     const parent = host && host !== 'localhost' && host !== '127.0.0.1' ? host : 'marianoconde.com';
     const TWITCH = `https://player.twitch.tv/?channel=guitarrasmarianoconde&parent=${parent}&muted=true`;
