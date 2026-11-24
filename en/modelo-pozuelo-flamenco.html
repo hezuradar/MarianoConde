@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-device="desktop">
+<head>
+<script>(function(){
+  try{
+    if(localStorage.getItem('mc-view')==='desktop') return;
+    var ua=navigator.userAgent||'';
+    var mobile=(navigator.userAgentData&&navigator.userAgentData.mobile===true)||
+      /Android|iPhone|iPod|Windows Phone|Mobile|Silk|BlackBerry|Opera Mini/i.test(ua)||
+      (/iPad|Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+    if(mobile!==true) return;
+    var p=location.pathname.split('/').pop()||'index.html';
+    if(!/\.html$/.test(p)) p='index.html';
+    location.replace('m/'+p);
+  }catch(e){}
+})();</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pozuelo Flamenco · Mariano Conde</title>
+  <meta name="description" content="Pozuelo Flamenco: singular edition guitar of Sicomoro · spruce. From €4,840 (VAT included). Hand built by Mariano Conde in Madrid.">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/MC_Favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-section="guitarras.html">
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="../index.html" aria-label="Mariano Conde — home">
+      <img src="../assets/img/Mariano-Conde-Logo.svg" alt="Mariano Conde" class="brand-logo">
+      <span class="brand-meta">Madrid · since 1915</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main navigation"><a href="../index.html">Home</a><a href="../guitarras.html" class="is-current">Guitars</a><a href="../directo.html" class="nav-live"><span class="live-dot"></span>Live workshop</a><a href="../poema.html">Poem Guitars</a><a href="../galeria.html">Gallery</a><a href="../noticias.html">News</a><a href="../historia.html">History</a><a href="../contacto.html">Contact</a></nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">English <span aria-hidden="true">▾</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <span class="is-current">English</span>
+          <a href="../modelo-pozuelo-flamenco.html">Español</a>
+        </div>
+      </div>
+      <a class="btn btn-sm btn-outline" href="../contacto.html">Orders</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>    <a href="../guitarras.html">Guitars</a>    <a href="../directo.html">Live workshop</a>    <a href="../poema.html">Poem Guitars</a>    <a href="../galeria.html">Gallery</a>    <a href="../noticias.html">News</a>    <a href="../historia.html">History</a>    <a href="../contacto.html">Contact</a>
+    <a href="../modelo-pozuelo-flamenco.html">Spanish version</a>
+  </nav>
+</header>
+<main id="main">
+<section class="page-hero" style="--hero-img:url('../assets/img/PozueloFlamenco.webp')">
+  <div class="container">
+    <p class="crumb"><a href="../index.html">Home</a> / <a href="../guitarras.html">Guitars</a> / Pozuelo Flamenco</p>
+    <h1>Pozuelo Flamenco</h1>
+    <p class="lead">Piece of its own character, with a direct attack and a projection designed for the stage.</p>
+  </div>
+</section>
+<section class="section-dark"><div class="container">
+  <a class="back-link" href="../guitarras.html">← Return to catalog</a>
+  <div class="model-detail reveal">
+    <div class="model-photo"><img src="../assets/img/PozueloFlamenco.webp" alt="Guitar Pozuelo Flamenco Mariano Conde" loading="lazy"></div>
+    <div>
+      <p class="eyebrow">Model sheet</p>
+      <h2>Pozuelo Flamenco</h2>
+      <p class="model-price">Since<strong>€4,840</strong>· VAT included</p>
+      <p class="model-desc">Piece of its own character, with a direct attack and a projection designed for the stage. All our guitars are built by hand in the workshop on Amnistía street, in Madrid, with naturally dried solid wood.</p>
+      <p class="model-disclaimer">Orientative photos. They do not correspond to the final product.</p>
+      <ul class="detail-list">
+        <li><span>Category</span><strong>Singular edition</strong></li>
+        <li><span>Woods</span><strong>sycamore fir</strong></li>
+        <li><span>head</span><strong>Half moon</strong></li>
+        <li><span>Marked</span><strong>Initials MC in fire</strong></li>
+        <li><span>Label</span><strong>Hand numbered</strong></li>
+        <li><span>Drying</span><strong>Natural · 20 years minimum</strong></li>
+      </ul>
+      <p style="margin-top:2rem"><a class="btn btn-gold" href="#personalizacion">Customize and consult ↗</a></p>
+    </div>
+  </div>
+</div></section><section class="section-cream" id="personalizacion"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Personalization</p><h2 class="display">do it<em>yours</em></h2>
+  <p class="section-intro">Choose woods, top, varnish and headstock. The total price is calculated with the supplements of each option, as in the original workshop configurator.</p></div>
+  <form class="config-form reveal" data-mailform data-base="4840" novalidate>
+    <div class="config-grid"><label>Nozzle<select name="Boquilla" data-config><option value="Boquilla tradicional espiga" data-price="0">Traditional spigot mouthpiece</option></select></label><label>head<select name="Cabeza" data-config><option value="Años 90" data-price="0">90s</option><option value="Años 70" data-price="0">70s</option></select></label><label>Lid<select name="Tapa" data-config><option value="Pino abeto alemán" data-price="0">German spruce</option><option value="Cedro rojo de Canadá" data-price="0">Canadian red cedar</option></select></label><label>Fingerboard<select name="Diapasón" data-config><option value="Ébano" data-price="0">Ebony</option></select></label><label>rope pull<select name="Tiro de cuerda" data-config><option value="Tiro corto (650 mm )" data-price="0">Short throw (650 mm)</option><option value="Tiro largo (664 mm)" data-price="0">Long throw (664 mm)</option></select></label><label>Varnished<select name="Barnizado" data-config><option value="Rojo" data-price="0">Red</option><option value="Naranja" data-price="0">Orange</option><option value="Oro" data-price="0">Gold</option><option value="Incoloro" data-price="0">Colorless</option><option value="Incolor mate" data-price="0">Matte colorless</option><option value="Goma laca muñequilla (+500€)" data-price="500">Doll shellac (+€500)</option></select></label><label>Cutaway<select name="Cutaway" data-config><option value="Sin Cutaway" data-price="0">Without Cutaway</option><option value="Cutaway tradicional (+350€)" data-price="350">Traditional cutaway (+350€)</option><option value="Florentina (+600€)" data-price="600">Florentina (+€600)</option></select></label><label>Headstock and sticks<select name="Clavijero y palillos" data-config><option value="Clavijero mecánico tradicional" data-price="0">Traditional mechanical tuners</option><option value="Clavijero de palillos tradicional (+300€)" data-price="300">Traditional drumstick headstock (+€300)</option><option value="Clavijero de palillos mecánicos (+350€)" data-price="350">Mechanical stick headstock (+€350)</option></select></label></div>
+    <div class="config-total"><span>Estimated total price · VAT included</span><strong><span data-config-total>4,840</span> €</strong></div>
+    <div class="config-contact">
+      <label>Name<input type="text" name="nombre" required autocomplete="name"></label>
+      <label>Telephone<input type="tel" name="telefono" autocomplete="tel"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Subject<input type="text" name="asunto" value="Encargo de guitarra · Pozuelo Flamenco" readonly></label>
+      <label class="config-wide">Message<textarea name="mensaje" rows="3" placeholder="Tell us what you need to know about this guitar..."></textarea></label>
+      <label class="checkbox config-wide"><input type="checkbox" name="privacidad" required>I accept the<a href="../privacidad.html">privacy policy</a></label>
+    </div>
+    <button type="submit" class="btn btn-dark">Request ↗</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</div></section><section class="section-dark"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Instrument details</p><h2 class="display">Pozuelo Flamenco,<br><em>in images.</em></h2>
+  <p class="section-intro"><em>Orientative photos. They do not correspond to the final product.</em></p></div>
+  <div class="masonry model-gallery"><button class="gallery-item reveal" data-full="../assets/img/PozueloFlamenco.webp" aria-label="Expand image of Pozuelo Flamenco"><img src="../assets/img/PozueloFlamenco.webp" alt="Pozuelo Flamenco — view 1" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../assets/img/PozueloFlamenco_2.webp" aria-label="Expand image of Pozuelo Flamenco"><img src="../assets/img/PozueloFlamenco_2.webp" alt="Pozuelo Flamenco — view 2" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../assets/img/PozueloFlamenco_3.webp" aria-label="Expand image of Pozuelo Flamenco"><img src="../assets/img/PozueloFlamenco_3.webp" alt="Pozuelo Flamenco — view 3" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../assets/img/PozueloFlamenco_4.webp" aria-label="Expand image of Pozuelo Flamenco"><img src="../assets/img/PozueloFlamenco_4.webp" alt="Pozuelo Flamenco — view 4" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../assets/img/PozueloFlamenco_5.webp" aria-label="Expand image of Pozuelo Flamenco"><img src="../assets/img/PozueloFlamenco_5.webp" alt="Pozuelo Flamenco — view 5" loading="lazy"></button></div>
+</div></section><div class="container"><div class="next-section reveal">
+  <span>Next section · Inquiries and orders</span>
+  <a href="../contacto.html">Let's talk about your guitar<em>↗</em></a>
+</div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../assets/img/MC-Logo.svg" alt="MC — Mariano Conde" class="footer-logo">
+        <p>The Spanish guitar bears the Conde signature.<br>Madrid, since 1915.</p>
+      </div>
+      <div class="footer-nav">
+        <div><h4>Explore</h4><a href="../guitarras.html">Guitars</a><a href="../flamencas.html">Flamenco</a><a href="../clasicas.html">Classical</a><a href="../poema.html">Poem Edition</a></div>
+        <div><h4>Discover</h4><a href="../directo.html">Live workshop</a><a href="../historia.html">History</a><a href="../noticias.html">News</a><a href="../galeria.html">Gallery</a><a href="../contacto.html">Contact</a></div>
+        <div><h4>Live</h4><a href="https://www.youtube.com/@Guitarras_MarianoConde/live" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.twitch.tv/guitarrasmarianoconde" target="_blank" rel="noopener">Twitch ↗</a><a href="https://www.instagram.com/guitarras_marianoconde/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/GuitarrasMarianoConde/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/@guitarras_marianoconde" target="_blank" rel="noopener">TikTok ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span>Guitars Mariano Conde · C. de la Amnistía, 1 · 28013 Madrid</p>
+      <div><a href="../aviso-legal.html">Legal notice</a><a href="../privacidad.html">Privacy</a><a href="../cookies.html">Cookies</a><a href="../feed.xml" type="application/rss+xml">RSS</a><button class="footer-cookie-btn" id="cookieSettings" type="button">Cookie settings</button></div>
+      <div class="view-switch"><button type="button" data-view="mobile">View mobile version</button><button type="button" data-view="desktop">View desktop version</button></div>
+    </div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+</div>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden>
+  <div class="cookie-inner">
+    <div><h3 id="cookieTitle">Manage cookie consent</h3>
+    <p>We use functional, preference and statistics cookies to give you the best experience. You can accept, reject or choose your preferences.<a href="../cookies.html">Read more ↗</a></p></div>
+    <div class="cookie-actions"><button class="btn btn-ghost-light btn-sm" id="cookieDeny" type="button">Reject</button><button class="btn btn-ghost-light btn-sm" id="cookiePrefs" type="button">See preferences</button><button class="btn btn-gold btn-sm" id="cookieAccept" type="button">Accept</button></div>
+  </div>
+  <div class="cookie-prefs" id="cookiePrefsPanel" hidden>
+    <label><input type="checkbox" checked disabled>Functional<span>always active</span></label>
+    <label><input type="checkbox" id="cookiePrefsPrefs">Preferences</label>
+    <label><input type="checkbox" id="cookiePrefsStats">Statistics</label>
+    <label><input type="checkbox" id="cookiePrefsMarketing">Marketing</label>
+    <button class="btn btn-outline btn-sm" id="cookieSave" type="button">Save preferences</button>
+  </div>
+</div>
+<nav class="mobile-tabbar" aria-label="Mobile quick navigation">
+  <a href="../index.html"><span class="tab-icon" aria-hidden="true">⌂</span>Home</a><a href="../guitarras.html" class="is-current" aria-current="page"><span class="tab-icon" aria-hidden="true">♪</span>Guitars</a><a href="../poema.html"><span class="tab-icon" aria-hidden="true">✦</span>Poem</a><a href="../directo.html"><span class="tab-icon" aria-hidden="true">◉</span>Live</a><a href="../contacto.html"><span class="tab-icon" aria-hidden="true">✉</span>Contact</a>
+</nav>
+<script src="../app.js"></script>
+</body>
+</html>

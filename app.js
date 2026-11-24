@@ -7,6 +7,45 @@
   const $  = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 
+  const EN = document.documentElement.lang === 'en';
+  const DOCUMENTARY = EN ? 'documentary «The guardians of tradition»'
+                         : 'documental «Los guardianes de la tradición»';
+  const T = {
+    openMenu: EN ? 'Open menu' : 'Abrir menú',
+    closeMenu: EN ? 'Close menu' : 'Cerrar menú',
+    liveIdle: EN
+      ? 'Live broadcast from the workshop. If there is no live stream, YouTube will show the latest broadcast or a not-connected notice.'
+      : 'Emisión en directo del taller. Si no hay emisión activa, YouTube mostrará el último directo o el aviso de que no está conectado.',
+    liveOpen: EN ? 'Open live on YouTube ↗' : 'Abrir directo en YouTube ↗',
+    now: EN ? 'Now: ' : 'Ahora: ',
+    nowDocumentary: EN
+      ? 'Ahora: documental «Los guardianes de la tradición». Pulsa en directo para conectarte en cuanto comience.'
+      : '',
+    watchYouTube: EN ? 'Watch on YouTube ↗' : 'Ver en YouTube ↗',
+    twitchIdle: EN
+      ? 'Workshop broadcast on Twitch. If it does not load from a local file, use the “Open on Twitch” link.'
+      : 'Emisión del taller en Twitch. Si no carga desde un archivo local, usa el enlace «Abrir en Twitch».',
+    openTwitch: EN ? 'Open on Twitch ↗' : 'Abrir en Twitch ↗',
+    pauseCarousel: EN ? 'Pause carousel' : 'Pausar carrusel',
+    resumeCarousel: EN ? 'Resume carousel' : 'Reanudar carrusel',
+    formRequired: EN ? 'Please fill in all fields and accept the privacy policy.'
+                     : 'Completa todos los campos y acepta la política de privacidad.',
+    formEmail: EN ? 'Please enter a valid email address.'
+                  : 'Introduce un correo electrónico válido.',
+    formReady: EN ? 'Your email app will open with the message ready to send.'
+                  : 'Se abrirá tu aplicación de correo con el mensaje listo para enviar.',
+    subject: EN ? 'General enquiry' : 'Consulta general',
+    name: EN ? 'Name' : 'Nombre',
+    phone: EN ? 'Phone' : 'Teléfono',
+    email: EN ? 'Email' : 'Email',
+    topic: EN ? 'Subject' : 'Asunto',
+    configuration: EN ? 'Selected configuration:' : 'Configuración elegida:',
+    estimatedTotal: EN ? 'Estimated total price:' : 'Precio total estimado:'
+  };
+  if (EN) {
+    T.nowDocumentary = `Now: ${DOCUMENTARY}. Press Live to connect as soon as it starts.`;
+  }
+
   /* ---------- Año en el footer ---------- */
   const yearEl = $('#year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -48,13 +87,13 @@
     function closeMenu() {
       navMobile.classList.remove('is-open');
       menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'Abrir menú');
+      menuToggle.setAttribute('aria-label', T.openMenu);
       document.body.style.overflow = '';
     }
     menuToggle.addEventListener('click', () => {
       const open = navMobile.classList.toggle('is-open');
       menuToggle.setAttribute('aria-expanded', String(open));
-      menuToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      menuToggle.setAttribute('aria-label', open ? T.closeMenu : T.openMenu);
       document.body.style.overflow = open ? 'hidden' : '';
     });
     $$('a', navMobile).forEach(a => a.addEventListener('click', closeMenu));
@@ -154,12 +193,12 @@
       setActiveTab('youtube');
       if (id === 'live') {
         playerFrame.src = YT_LIVE;
-        if (playerCaption) playerCaption.textContent = 'Emisión en directo del taller. Si no hay emisión activa, YouTube mostrará el último directo o el aviso de que no está conectado.';
-        if (openPlatform) { openPlatform.href = 'https://www.youtube.com/@Guitarras_MarianoConde/live'; openPlatform.textContent = 'Abrir directo en YouTube ↗'; }
+        if (playerCaption) playerCaption.textContent = T.liveIdle;
+        if (openPlatform) { openPlatform.href = 'https://www.youtube.com/@Guitarras_MarianoConde/live'; openPlatform.textContent = T.liveOpen; }
       } else {
         playerFrame.src = YT_VIDEO(id);
-        if (playerCaption) playerCaption.textContent = label ? `Ahora: ${label}.` : 'Ahora: documental «Los guardianes de la tradición». Pulsa en directo para conectarte en cuanto comience.';
-        if (openPlatform) { openPlatform.href = `https://www.youtube.com/watch?v=${id}`; openPlatform.textContent = 'Ver en YouTube ↗'; }
+        if (playerCaption) playerCaption.textContent = label ? `${T.now}${label}.` : T.nowDocumentary;
+        if (openPlatform) { openPlatform.href = `https://www.youtube.com/watch?v=${id}`; openPlatform.textContent = T.watchYouTube; }
       }
       thumbs.forEach(t => t.classList.toggle('is-active', t.dataset.video === id));
     }
@@ -167,11 +206,11 @@
       const name = tab.dataset.platform;
       setActiveTab(name);
       if (name === 'youtube') {
-        loadVideo('0KmZT-WlaTs', 'documental «Los guardianes de la tradición»');
+        loadVideo('0KmZT-WlaTs', DOCUMENTARY);
       } else {
         playerFrame.src = TWITCH;
-        if (playerCaption) playerCaption.textContent = 'Emisión del taller en Twitch. Si no carga desde un archivo local, usa el enlace «Abrir en Twitch».';
-        if (openPlatform) { openPlatform.href = 'https://www.twitch.tv/guitarrasmarianoconde'; openPlatform.textContent = 'Abrir en Twitch ↗'; }
+        if (playerCaption) playerCaption.textContent = T.twitchIdle;
+        if (openPlatform) { openPlatform.href = 'https://www.twitch.tv/guitarrasmarianoconde'; openPlatform.textContent = T.openTwitch; }
         thumbs.forEach(t => t.classList.remove('is-active'));
       }
     }));
@@ -280,8 +319,8 @@
       if (toggleBtn) {
         const paused = reasons.has('manual');
         toggleBtn.setAttribute('aria-pressed', paused ? 'true' : 'false');
-        toggleBtn.setAttribute('aria-label', paused ? 'Reanudar carrusel' : 'Pausar carrusel');
-        toggleBtn.title = paused ? 'Reanudar carrusel' : 'Pausar carrusel';
+        toggleBtn.setAttribute('aria-label', paused ? T.resumeCarousel : T.pauseCarousel);
+        toggleBtn.title = paused ? T.resumeCarousel : T.pauseCarousel;
       }
     }
     function goTo(index) {
@@ -349,7 +388,7 @@
     const selects = $$('select[data-config]', form);
     if (!totalEl || !selects.length) return;
     const base = Number(form.dataset.base) || 0;
-    const format = n => new Intl.NumberFormat('es-ES').format(n);
+    const format = n => new Intl.NumberFormat(EN ? 'en-GB' : 'es-ES').format(n);
     function updateTotal() {
       const extra = selects.reduce((sum, select) => {
         const opt = select.selectedOptions[0];
@@ -372,29 +411,29 @@
       const mensaje = String(data.get('mensaje') || '').trim();
       if (!nombre || !email || !data.get('privacidad')) {
         if (formStatus) {
-          formStatus.textContent = 'Completa todos los campos y acepta la política de privacidad.';
+          formStatus.textContent = T.formRequired;
           formStatus.style.color = '#a63d2f';
         }
         return;
       }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         if (formStatus) {
-          formStatus.textContent = 'Introduce un correo electrónico válido.';
+          formStatus.textContent = T.formEmail;
           formStatus.style.color = '#a63d2f';
         }
         return;
       }
-      const asunto = String(data.get('asunto') || 'Consulta general');
+      const asunto = String(data.get('asunto') || T.subject);
       const subject = encodeURIComponent(`[Web Mariano Conde] ${asunto} — ${nombre}`);
-      let bodyText = `Nombre: ${nombre}\nTeléfono: ${String(data.get('telefono') || '—')}\nEmail: ${email}\nAsunto: ${asunto}\n\n${mensaje}`;
+      let bodyText = `${T.name}: ${nombre}\n${T.phone}: ${String(data.get('telefono') || '—')}\n${T.email}: ${email}\n${T.topic}: ${asunto}\n\n${mensaje}`;
       const config = $$('select[data-config]', form).map(select =>
         `${select.name}: ${select.value}${Number(select.selectedOptions[0]?.dataset.price || 0) ? ` (+${select.selectedOptions[0].dataset.price} €)` : ''}`);
       if (config.length) {
         const totalEl = $('[data-config-total]', form);
-        bodyText += `\n\nConfiguración elegida:\n${config.join('\n')}\nPrecio total estimado: ${totalEl ? totalEl.textContent : ''} €`;
+        bodyText += `\n\n${T.configuration}\n${config.join('\n')}\n${T.estimatedTotal} ${totalEl ? totalEl.textContent : ''} €`;
       }
       if (formStatus) {
-        formStatus.textContent = 'Se abrirá tu aplicación de correo con el mensaje listo para enviar.';
+        formStatus.textContent = T.formReady;
         formStatus.style.color = '#9a7434';
       }
       window.location.href = `mailto:Info@marianoconde.com?subject=${subject}&body=${encodeURIComponent(bodyText)}`;

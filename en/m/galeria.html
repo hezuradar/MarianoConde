@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" data-device="mobile">
+<head>
+<script>(function(){
+  try{
+    if(localStorage.getItem('mc-view')==='mobile') return;
+    var ua=navigator.userAgent||'';
+    var mobile=(navigator.userAgentData&&navigator.userAgentData.mobile===true)||
+      /Android|iPhone|iPod|Windows Phone|Mobile|Silk|BlackBerry|Opera Mini/i.test(ua)||
+      (/iPad|Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+    if(mobile!==false) return;
+    var p=location.pathname.split('/').pop()||'index.html';
+    if(!/\.html$/.test(p)) p='index.html';
+    location.replace('../'+p);
+  }catch(e){}
+})();</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery · Mariano Conde</title>
+  <meta name="description" content="Mariano Conde photo gallery: the workshop, the tools and the guitars on stage.">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="../../assets/img/MC_Favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body data-section="galeria.html">
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="../../index.html" aria-label="Mariano Conde — home">
+      <img src="../../assets/img/Mariano-Conde-Logo.svg" alt="Mariano Conde" class="brand-logo">
+      <span class="brand-meta">Madrid · since 1915</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main navigation"><a href="../../index.html">Home</a><a href="../../guitarras.html">Guitars</a><a href="../../directo.html" class="nav-live"><span class="live-dot"></span>Live workshop</a><a href="../../poema.html">Poem Guitars</a><a href="../../galeria.html" class="is-current">Gallery</a><a href="../../noticias.html">News</a><a href="../../historia.html">History</a><a href="../../contacto.html">Contact</a></nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">English <span aria-hidden="true">▾</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <span class="is-current">English</span>
+          <a href="../../galeria.html">Español</a>
+        </div>
+      </div>
+      <a class="btn btn-sm btn-outline" href="../../contacto.html">Orders</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <a href="../../index.html">Home</a>    <a href="../../guitarras.html">Guitars</a>    <a href="../../directo.html">Live workshop</a>    <a href="../../poema.html">Poem Guitars</a>    <a href="../../galeria.html">Gallery</a>    <a href="../../noticias.html">News</a>    <a href="../../historia.html">History</a>    <a href="../../contacto.html">Contact</a>
+    <a href="../../galeria.html">Spanish version</a>
+  </nav>
+</header>
+<main id="main">
+<section class="page-hero" style="--hero-img:url('../../assets/img/MCenPared_1.webp')">
+  <div class="container">
+    <p class="crumb"><a href="../../index.html">Home</a>/ Gallery</p>
+    <h1>MC on wall.<br>MC to<em>scene.</em></h1>
+    <p class="lead">A visual tour of the workshop on Amnistía street and the stages where Mariano Conde's guitars have been played.</p>
+  </div>
+  <div class="hero-index">07/08</div>
+</section><nav class="subnav" aria-label="Subsection"><div class="container"><a href="../../galeria.html" class='is-current'>All</a><a href="../../directo.html">On video</a><a href="../../historia.html">Historical archive</a><a href="../../poema.html">Editions</a></div></nav><section class="section-dark"><div class="container">
+  <div class="gallery-tabs reveal" role="group" aria-label="Filter gallery">
+    <button class="gallery-tab is-active" data-gallery="pared" aria-pressed="true">MC on wall</button>
+    <button class="gallery-tab" data-gallery="escena" aria-pressed="false">MC to scene</button>
+  </div>
+  <div class="gallery-panel is-active" id="pared"><div class="masonry"><button class="gallery-item reveal" data-full="../../assets/img/MCenPared_1.webp" aria-label="Enlarge image: Workshop and wall"><img src="../../assets/img/MCenPared_1.webp" alt="Workshop and wall — Mariano Conde" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../../assets/img/MCenPared_2.webp" aria-label="Enlarge image: Workshop and wall"><img src="../../assets/img/MCenPared_2.webp" alt="Workshop and wall — Mariano Conde" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../../assets/img/MCenPared_3.webp" aria-label="Enlarge image: Workshop and wall"><img src="../../assets/img/MCenPared_3.webp" alt="Workshop and wall — Mariano Conde" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../../assets/img/Galeria_1.webp" aria-label="Enlarge image: Workshop and wall"><img src="../../assets/img/Galeria_1.webp" alt="Workshop and wall — Mariano Conde" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../../assets/img/MC_Historia_4.webp" aria-label="Enlarge image: Workshop and wall"><img src="../../assets/img/MC_Historia_4.webp" alt="Workshop and wall — Mariano Conde" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../../assets/img/Mariano-Conde-Joss.fernandez__-6.webp" aria-label="Enlarge image: Workshop and wall"><img src="../../assets/img/Mariano-Conde-Joss.fernandez__-6.webp" alt="Workshop and wall — Mariano Conde" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../../assets/img/MC_Historia_3.webp" aria-label="Enlarge image: Workshop and wall"><img src="../../assets/img/MC_Historia_3.webp" alt="Workshop and wall — Mariano Conde" loading="lazy"></button>
+<button class="gallery-item reveal" data-full="../../assets/img/MarianoCondeGuitarras_102.webp" aria-label="Enlarge image: Workshop and wall"><img src="../../assets/img/MarianoCondeGuitarras_102.webp" alt="Workshop and wall — Mariano Conde" loading="lazy"></button></div></div><div class="gallery-panel" id="escena">
+  <div class="escena-carousel" data-carousel aria-roledescription="carrusel" aria-label="guitar on stage">
+    <div class="escena-viewport"><div class="escena-track"><button class="escena-slide gallery-item is-active" type="button" data-full="../../assets/img/4k/MC_Escenario_2-4k.webp" data-index="0" tabindex="0" aria-label="Expand photo 1 of 34"><img src="../../assets/img/4k/MC_Escenario_2-4k.webp" alt="Guitar on stage — Mariano Conde 1" loading="eager" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_3-4k.webp" data-index="1" tabindex="-1" aria-label="Expand photo 2 of 34"><img src="../../assets/img/4k/MC_Escenario_3-4k.webp" alt="Guitar on stage — Mariano Conde 2" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_4-4k.webp" data-index="2" tabindex="-1" aria-label="Expand photo 3 of 34"><img src="../../assets/img/4k/MC_Escenario_4-4k.webp" alt="Guitar on stage — Mariano Conde 3" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_5-4k.webp" data-index="3" tabindex="-1" aria-label="Expand photo 4 of 34"><img src="../../assets/img/4k/MC_Escenario_5-4k.webp" alt="Guitar on stage — Mariano Conde 4" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_6-4k.webp" data-index="4" tabindex="-1" aria-label="Expand photo 5 of 34"><img src="../../assets/img/4k/MC_Escenario_6-4k.webp" alt="Guitar on stage — Mariano Conde 5" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_7-4k.webp" data-index="5" tabindex="-1" aria-label="Expand photo 6 of 34"><img src="../../assets/img/4k/MC_Escenario_7-4k.webp" alt="Guitar on stage — Mariano Conde 6" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_8-4k.webp" data-index="6" tabindex="-1" aria-label="Expand photo 7 of 34"><img src="../../assets/img/4k/MC_Escenario_8-4k.webp" alt="Guitar on stage — Mariano Conde 7" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_9-4k.webp" data-index="7" tabindex="-1" aria-label="Expand photo 8 of 34"><img src="../../assets/img/4k/MC_Escenario_9-4k.webp" alt="Guitar on stage — Mariano Conde 8" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_10-4k.webp" data-index="8" tabindex="-1" aria-label="Expand photo 9 of 34"><img src="../../assets/img/4k/MC_Escenario_10-4k.webp" alt="Guitar on stage — Mariano Conde 9" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_11-4k.webp" data-index="9" tabindex="-1" aria-label="Expand photo 10 of 34"><img src="../../assets/img/4k/MC_Escenario_11-4k.webp" alt="Guitar on stage — Mariano Conde 10" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_12-4k.webp" data-index="10" tabindex="-1" aria-label="Expand photo 11 of 34"><img src="../../assets/img/4k/MC_Escenario_12-4k.webp" alt="Guitar on stage — Mariano Conde 11" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_13-4k.webp" data-index="11" tabindex="-1" aria-label="Expand photo 12 of 34"><img src="../../assets/img/4k/MC_Escenario_13-4k.webp" alt="Guitar on stage — Mariano Conde 12" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_14-4k.webp" data-index="12" tabindex="-1" aria-label="Expand photo 13 of 34"><img src="../../assets/img/4k/MC_Escenario_14-4k.webp" alt="Guitar on stage — Mariano Conde 13" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_15-4k.webp" data-index="13" tabindex="-1" aria-label="Expand photo 14 of 34"><img src="../../assets/img/4k/MC_Escenario_15-4k.webp" alt="Guitar on stage — Mariano Conde 14" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_16-4k.webp" data-index="14" tabindex="-1" aria-label="Expand photo 15 of 34"><img src="../../assets/img/4k/MC_Escenario_16-4k.webp" alt="Guitar on stage — Mariano Conde 15" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_17-4k.webp" data-index="15" tabindex="-1" aria-label="Expand photo 16 of 34"><img src="../../assets/img/4k/MC_Escenario_17-4k.webp" alt="Guitar on stage — Mariano Conde 16" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_18-4k.webp" data-index="16" tabindex="-1" aria-label="Expand photo 17 of 34"><img src="../../assets/img/4k/MC_Escenario_18-4k.webp" alt="Guitar on stage — Mariano Conde 17" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_19-4k.webp" data-index="17" tabindex="-1" aria-label="Expand photo 18 of 34"><img src="../../assets/img/4k/MC_Escenario_19-4k.webp" alt="Guitar on stage — Mariano Conde 18" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_20-4k.webp" data-index="18" tabindex="-1" aria-label="Expand photo 19 of 34"><img src="../../assets/img/4k/MC_Escenario_20-4k.webp" alt="Guitar on stage — Mariano Conde 19" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_21-4k.webp" data-index="19" tabindex="-1" aria-label="Expand photo 20 of 34"><img src="../../assets/img/4k/MC_Escenario_21-4k.webp" alt="Guitar on stage — Mariano Conde 20" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_22-4k.webp" data-index="20" tabindex="-1" aria-label="Expand photo 21 of 34"><img src="../../assets/img/4k/MC_Escenario_22-4k.webp" alt="Guitar on stage — Mariano Conde 21" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_23-4k.webp" data-index="21" tabindex="-1" aria-label="Expand photo 22 of 34"><img src="../../assets/img/4k/MC_Escenario_23-4k.webp" alt="Guitar on stage — Mariano Conde 22" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_24-4k.webp" data-index="22" tabindex="-1" aria-label="Expand photo 23 of 34"><img src="../../assets/img/4k/MC_Escenario_24-4k.webp" alt="Guitar on stage — Mariano Conde 23" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_25-4k.webp" data-index="23" tabindex="-1" aria-label="Expand photo 24 of 34"><img src="../../assets/img/4k/MC_Escenario_25-4k.webp" alt="Guitar on stage — Mariano Conde 24" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_26-4k.webp" data-index="24" tabindex="-1" aria-label="Expand photo 25 of 34"><img src="../../assets/img/4k/MC_Escenario_26-4k.webp" alt="Guitar on stage — Mariano Conde 25" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_27-4k.webp" data-index="25" tabindex="-1" aria-label="Expand photo 26 of 34"><img src="../../assets/img/4k/MC_Escenario_27-4k.webp" alt="Guitar on stage — Mariano Conde 26" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Escenario_28-4k.webp" data-index="26" tabindex="-1" aria-label="Expand photo 27 of 34"><img src="../../assets/img/4k/MC_Escenario_28-4k.webp" alt="Guitar on stage — Mariano Conde 27" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Esecnario_29-4k.webp" data-index="27" tabindex="-1" aria-label="Expand photo 28 of 34"><img src="../../assets/img/4k/MC_Esecnario_29-4k.webp" alt="Guitar on stage — Mariano Conde 28" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/MC_Esecnario_30-4k.webp" data-index="28" tabindex="-1" aria-label="Expand photo 29 of 34"><img src="../../assets/img/4k/MC_Esecnario_30-4k.webp" alt="Guitar on stage — Mariano Conde 29" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/Escena_13-4k.webp" data-index="29" tabindex="-1" aria-label="Expand photo 30 of 34"><img src="../../assets/img/4k/Escena_13-4k.webp" alt="Guitar on stage — Mariano Conde 30" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/Escena_32-4k.webp" data-index="30" tabindex="-1" aria-label="Expand photo 31 of 34"><img src="../../assets/img/4k/Escena_32-4k.webp" alt="Guitar on stage — Mariano Conde 31" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/Escena_33-4k.webp" data-index="31" tabindex="-1" aria-label="Expand photo 32 of 34"><img src="../../assets/img/4k/Escena_33-4k.webp" alt="Guitar on stage — Mariano Conde 32" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/Escena_34-4k.webp" data-index="32" tabindex="-1" aria-label="Expand photo 33 of 34"><img src="../../assets/img/4k/Escena_34-4k.webp" alt="Guitar on stage — Mariano Conde 33" loading="lazy" decoding="async"></button><button class="escena-slide gallery-item" type="button" data-full="../../assets/img/4k/Escena_35-4k.webp" data-index="33" tabindex="-1" aria-label="Expand photo 34 of 34"><img src="../../assets/img/4k/Escena_35-4k.webp" alt="Guitar on stage — Mariano Conde 34" loading="lazy" decoding="async"></button></div></div>
+    <button class="escena-nav escena-prev" type="button" aria-label="Previous photo">‹</button>
+    <button class="escena-nav escena-next" type="button" aria-label="Next photo">›</button>
+    <button class="escena-toggle" type="button" aria-label="Pause carousel" aria-pressed="false"><span class="pause-icon" aria-hidden="true"></span></button>
+    <div class="escena-caption"><span class="escena-count" aria-live="polite"><strong>1</strong> / 34</span><span class="escena-label">guitar on stage</span></div>
+    <div class="escena-dots" role="group" aria-label="Choose photo"><button class="escena-dot is-active" type="button" data-slide="0" aria-label="Go to photo 1" aria-current="true"></button><button class="escena-dot" type="button" data-slide="1" aria-label="Go to photo 2" aria-current="false"></button><button class="escena-dot" type="button" data-slide="2" aria-label="Go to photo 3" aria-current="false"></button><button class="escena-dot" type="button" data-slide="3" aria-label="Go to photo 4" aria-current="false"></button><button class="escena-dot" type="button" data-slide="4" aria-label="Go to photo 5" aria-current="false"></button><button class="escena-dot" type="button" data-slide="5" aria-label="Go to photo 6" aria-current="false"></button><button class="escena-dot" type="button" data-slide="6" aria-label="Go to photo 7" aria-current="false"></button><button class="escena-dot" type="button" data-slide="7" aria-label="Go to photo 8" aria-current="false"></button><button class="escena-dot" type="button" data-slide="8" aria-label="Go to photo 9" aria-current="false"></button><button class="escena-dot" type="button" data-slide="9" aria-label="Go to photo 10" aria-current="false"></button><button class="escena-dot" type="button" data-slide="10" aria-label="Go to photo 11" aria-current="false"></button><button class="escena-dot" type="button" data-slide="11" aria-label="Go to photo 12" aria-current="false"></button><button class="escena-dot" type="button" data-slide="12" aria-label="Go to photo 13" aria-current="false"></button><button class="escena-dot" type="button" data-slide="13" aria-label="Go to photo 14" aria-current="false"></button><button class="escena-dot" type="button" data-slide="14" aria-label="Go to photo 15" aria-current="false"></button><button class="escena-dot" type="button" data-slide="15" aria-label="Go to photo 16" aria-current="false"></button><button class="escena-dot" type="button" data-slide="16" aria-label="Go to photo 17" aria-current="false"></button><button class="escena-dot" type="button" data-slide="17" aria-label="Go to photo 18" aria-current="false"></button><button class="escena-dot" type="button" data-slide="18" aria-label="Go to photo 19" aria-current="false"></button><button class="escena-dot" type="button" data-slide="19" aria-label="Go to photo 20" aria-current="false"></button><button class="escena-dot" type="button" data-slide="20" aria-label="Go to photo 21" aria-current="false"></button><button class="escena-dot" type="button" data-slide="21" aria-label="Go to photo 22" aria-current="false"></button><button class="escena-dot" type="button" data-slide="22" aria-label="Go to photo 23" aria-current="false"></button><button class="escena-dot" type="button" data-slide="23" aria-label="Go to photo 24" aria-current="false"></button><button class="escena-dot" type="button" data-slide="24" aria-label="Go to photo 25" aria-current="false"></button><button class="escena-dot" type="button" data-slide="25" aria-label="Go to photo 26" aria-current="false"></button><button class="escena-dot" type="button" data-slide="26" aria-label="Go to photo 27" aria-current="false"></button><button class="escena-dot" type="button" data-slide="27" aria-label="Go to photo 28" aria-current="false"></button><button class="escena-dot" type="button" data-slide="28" aria-label="Go to photo 29" aria-current="false"></button><button class="escena-dot" type="button" data-slide="29" aria-label="Go to photo 30" aria-current="false"></button><button class="escena-dot" type="button" data-slide="30" aria-label="Go to photo 31" aria-current="false"></button><button class="escena-dot" type="button" data-slide="31" aria-label="Go to photo 32" aria-current="false"></button><button class="escena-dot" type="button" data-slide="32" aria-label="Go to photo 33" aria-current="false"></button><button class="escena-dot" type="button" data-slide="33" aria-label="Go to photo 34" aria-current="false"></button></div>
+  </div>
+</div>
+</div></section><div class="container"><div class="next-section reveal">
+  <span>Next section · Contact</span>
+  <a href="../../contacto.html">Come to the workshop<em>↗</em></a>
+</div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../../assets/img/MC-Logo.svg" alt="MC — Mariano Conde" class="footer-logo">
+        <p>The Spanish guitar bears the Conde signature.<br>Madrid, since 1915.</p>
+      </div>
+      <div class="footer-nav">
+        <div><h4>Explore</h4><a href="../../guitarras.html">Guitars</a><a href="../../flamencas.html">Flamenco</a><a href="../../clasicas.html">Classical</a><a href="../../poema.html">Poem Edition</a></div>
+        <div><h4>Discover</h4><a href="../../directo.html">Live workshop</a><a href="../../historia.html">History</a><a href="../../noticias.html">News</a><a href="../../galeria.html">Gallery</a><a href="../../contacto.html">Contact</a></div>
+        <div><h4>Live</h4><a href="https://www.youtube.com/@Guitarras_MarianoConde/live" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.twitch.tv/guitarrasmarianoconde" target="_blank" rel="noopener">Twitch ↗</a><a href="https://www.instagram.com/guitarras_marianoconde/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/GuitarrasMarianoConde/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/@guitarras_marianoconde" target="_blank" rel="noopener">TikTok ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span>Guitars Mariano Conde · C. de la Amnistía, 1 · 28013 Madrid</p>
+      <div><a href="../../aviso-legal.html">Legal notice</a><a href="../../privacidad.html">Privacy</a><a href="../../cookies.html">Cookies</a><a href="../../feed.xml" type="application/rss+xml">RSS</a><button class="footer-cookie-btn" id="cookieSettings" type="button">Cookie settings</button></div>
+      <div class="view-switch"><button type="button" data-view="mobile">View mobile version</button><button type="button" data-view="desktop">View desktop version</button></div>
+    </div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+</div>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden>
+  <div class="cookie-inner">
+    <div><h3 id="cookieTitle">Manage cookie consent</h3>
+    <p>We use functional, preference and statistics cookies to give you the best experience. You can accept, reject or choose your preferences.<a href="../../cookies.html">Read more ↗</a></p></div>
+    <div class="cookie-actions"><button class="btn btn-ghost-light btn-sm" id="cookieDeny" type="button">Reject</button><button class="btn btn-ghost-light btn-sm" id="cookiePrefs" type="button">See preferences</button><button class="btn btn-gold btn-sm" id="cookieAccept" type="button">Accept</button></div>
+  </div>
+  <div class="cookie-prefs" id="cookiePrefsPanel" hidden>
+    <label><input type="checkbox" checked disabled>Functional<span>always active</span></label>
+    <label><input type="checkbox" id="cookiePrefsPrefs">Preferences</label>
+    <label><input type="checkbox" id="cookiePrefsStats">Statistics</label>
+    <label><input type="checkbox" id="cookiePrefsMarketing">Marketing</label>
+    <button class="btn btn-outline btn-sm" id="cookieSave" type="button">Save preferences</button>
+  </div>
+</div>
+<nav class="mobile-tabbar" aria-label="Mobile quick navigation">
+  <a href="../../index.html"><span class="tab-icon" aria-hidden="true">⌂</span>Home</a><a href="../../guitarras.html"><span class="tab-icon" aria-hidden="true">♪</span>Guitars</a><a href="../../poema.html"><span class="tab-icon" aria-hidden="true">✦</span>Poem</a><a href="../../directo.html"><span class="tab-icon" aria-hidden="true">◉</span>Live</a><a href="../../contacto.html"><span class="tab-icon" aria-hidden="true">✉</span>Contact</a>
+</nav>
+<script src="../../app.js"></script>
+</body>
+</html>

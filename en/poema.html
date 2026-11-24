@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en" data-device="desktop">
+<head>
+<script>(function(){
+  try{
+    if(localStorage.getItem('mc-view')==='desktop') return;
+    var ua=navigator.userAgent||'';
+    var mobile=(navigator.userAgentData&&navigator.userAgentData.mobile===true)||
+      /Android|iPhone|iPod|Windows Phone|Mobile|Silk|BlackBerry|Opera Mini/i.test(ua)||
+      (/iPad|Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+    if(mobile!==true) return;
+    var p=location.pathname.split('/').pop()||'index.html';
+    if(!/\.html$/.test(p)) p='index.html';
+    location.replace('m/'+p);
+  }catch(e){}
+})();</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poem Guitars · Mariano Conde</title>
+  <meta name="description" content="Editions of the Poem and Double Cover of Mariano Conde (€48,400 and €121,000, VAT included), with essay, catalog numbered from No. 1 to No. 58 and order forms.">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/MC_Favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-section="poema.html">
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="../index.html" aria-label="Mariano Conde — home">
+      <img src="../assets/img/Mariano-Conde-Logo.svg" alt="Mariano Conde" class="brand-logo">
+      <span class="brand-meta">Madrid · since 1915</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main navigation"><a href="../index.html">Home</a><a href="../guitarras.html">Guitars</a><a href="../directo.html" class="nav-live"><span class="live-dot"></span>Live workshop</a><a href="../poema.html" class="is-current">Poem Guitars</a><a href="../galeria.html">Gallery</a><a href="../noticias.html">News</a><a href="../historia.html">History</a><a href="../contacto.html">Contact</a></nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">English <span aria-hidden="true">▾</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <span class="is-current">English</span>
+          <a href="../poema.html">Español</a>
+        </div>
+      </div>
+      <a class="btn btn-sm btn-outline" href="../contacto.html">Orders</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>    <a href="../guitarras.html">Guitars</a>    <a href="../directo.html">Live workshop</a>    <a href="../poema.html">Poem Guitars</a>    <a href="../galeria.html">Gallery</a>    <a href="../noticias.html">News</a>    <a href="../historia.html">History</a>    <a href="../contacto.html">Contact</a>
+    <a href="../poema.html">Spanish version</a>
+  </nav>
+</header>
+<main id="main">
+<section class="page-hero" style="--hero-img:url('../assets/img/PozueloPaloSanto_1.webp')">
+  <div class="container">
+    <p class="crumb"><a href="../index.html">Home</a>/ Poem Guitars</p>
+    <h1>When the guitar<br>turns<em>poetry.</em></h1>
+    <p class="lead">A collection conceived for collectors and musicians looking for something more than an instrument: a unique piece, numbered and signed by hand.</p>
+  </div>
+  <div class="hero-index">04 / 08</div>
+</section><nav class="subnav" aria-label="Subsection"><div class="container"><a href="../guitarras.html">Catalog</a><a href="../poema.html" class='is-current'>Collection</a><a href="#inspiracion">Inspiration</a><a href="#catalogo">Catalog Nº1–58</a><a href="#solicita-poema">Orders</a></div></nav><section class="section-cream"><div class="container">
+  <div class="split reverse reveal">
+    <div><p class="eyebrow">Poem Edition</p><h3>A guitar to collect</h3>
+    <p>Special series of unique pieces. Each one is a prototype of a new construction line with wood that can be centuries old. Valued at €48,400 (VAT included). Orientative photos. They do not correspond to the final product.</p>
+    <div class="poema-prices"><div><span class="price">€48,400</span><span class="price-label">VAT included</span></div></div>
+    <p><a class="btn btn-dark btn-sm" href="#solicita-poema">Request your Guitar of the poem ↗</a></p></div>
+    <figure><img src="../assets/img/PozueloPaloSanto_1.webp" alt="Poem Guitar" loading="lazy"><figcaption>Poem Edition</figcaption></figure>
+  </div>
+  <div class="split reveal" style="margin-top:5rem">
+    <figure><img src="../assets/img/DedicacionClasicoFlamenco.webp" alt="Poem guitar double cover" loading="lazy"><figcaption>Double Cover Edition</figcaption></figure>
+    <div><p class="eyebrow">Double Cover Edition</p><h3>The extreme instrument of the house</h3>
+    <p>The double lid is the most ambitious expression of the workshop: more projection, more color and a construction that requires critical decisions in each layer. Valued at €121,000 (VAT included).</p>
+    <div class="poema-prices"><div><span class="price">€121,000</span><span class="price-label">VAT included</span></div></div>
+    <p><a class="btn btn-dark btn-sm" href="#solicita-doble-tapa">Request your Double Top Guitar ↗</a></p></div>
+  </div>
+</div></section><section class="section-dark" id="inspiracion"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">How do we work them?</p><h2 class="display">What we<em>inspire.</em></h2></div>
+  <div class="poema-essay"><p class="poema-para reveal">Since my childhood I have had literary interests. Prose, and especially verse, have accompanied me in all stages of my life. From that childhood at the Escuelas Pías de San Antón school, where I led a team of classmates who I urged to write a short story daily, until in 2009 “Anhelo” emerged, the first of the Guitars of the Poem.</p>
+<p class="poema-para reveal">The first was beheaded and dissolved after being called to the rector's office due to complaints from the parents of my classmates, who claimed not to do their homework because they had to write the stories that they presented to me the next morning. The second is already in verse number 58 displayed on the label of a Guitar of the Poem Mariano Conde, after a slow and constant numerical trickle upwards.</p>
+<p class="poema-para reveal">I place the Guitars of the Poem at the upper vertex of an imaginary rhombus, as explained in the verse of “Rombo”, guitar number 56 in the series. Vertex and crucible of good guitars where there is no distinction between flamenco and classical concert guitars, where pop, jazz and Brazilian rhythms, among other musical currents, have a place.</p>
+<p class="poema-para reveal">The key to all of the above lies in the construction of these guitars: exhaustive craftsmanship in which each guitar has its own constructive personality, taking into account the flexibility or rigidity of the woods that make it up, some of which are centuries old. Tests, verifications and extremely fine craftsmanship that delay its construction for months.</p>
+<p class="poema-para reveal">Wood speaks, and listening to it and understanding it is the goal. There are no better woods or worse woods. The wood is there, waiting, and the more years it waits, the better. “De Todo”, number 33, is made with eleven different woods and begins the metamorphosis of the half moon into a “full moon”.</p>
+<p class="poema-para reveal">As for the theme of the verses, I can say that it is very varied: there are flamenco sentences, brief biographies, descriptions, romantic and eschatological nuances. The Poema Guitars are in the hands of professional and amateur guitarists, usually with one or two units, and collectors with up to four. Its owners are located in España, Australia, Germany, Türkiye, Holland, France, Nicaragua or Thailand, among other countries. Among the professionals, Amós Lora, Jesús Guerrero, Ed Sheeran, Raimundo Amador, Joni Jiménez and Antonio Sánchez stand out.</p></div>
+</div></section><section class="section-cream" id="catalogo"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Catalog · Nº1 to Nº58</p><h2 class="display">fifty eight<br><em>tuned verses.</em></h2>
+  <p class="section-intro">Year, title, owner, verse and materials of each of the Poema Guitars built to date.</p></div>
+  <details class="poema-decade" open>
+      <summary>2000 <span>9 guitars</span></summary>
+      <div class="poema-entries"><article class="poema-entry reveal">
+      <h4>No. 1 · Longing<span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Private collection · España</p><blockquote>Light and shadow have led me to the same thing; Looking for one, the other came to me. It is not worse to wait in the past but to see a broken hope</blockquote><p class="poema-materials"><span>Materials</span>India, and pine.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº2 · Lift<span class="poema-year">2009</span></h4>
+      <p class="poema-owner">David Stevens · Australia</p><blockquote>The only thing missing is the couplet to chase your touch, let's let it sprout like the wind that blows and when it jumps: let it be over!</blockquote><p class="poema-materials"><span>Materials</span>India, and pine.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº3 · Time<span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Juan José Vargas (Ventorillo Santa Clara) · Málaga, España</p><blockquote>The “ticking” of clocks feels very good to the soul, it marks deep grooves where calm germinates. Passage from night to dawn!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº4 · Clamor <span class="poema-year">2009</span></h4>
+      <p class="poema-owner">David Stevens · Australia</p><blockquote>From within, a slow clamor arises in a pleasant way. By your hands, it is called, the color made by tumbaor and wood.</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº5 · Railing<span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Amos Lora · España</p><blockquote>From your balcony come the echoes of my guitar” “You are attached to its strings, leaning over the railing and, without moving, you go through the entire Long Street.</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº6 · Whim<span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Franciso Manuel Lucas · Cádiz, España</p><blockquote>Brunette, woman of desire, don't let your eyes catch my eye at the end of the night. Curdled they go with reproach; lights in red tints.</blockquote><p class="poema-materials"><span>Materials</span>India and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº7 · Compilation<span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Private collection · España</p><blockquote>I long to see it rise in time, two by two, thick waves, a clamor on the distant railing. Troubadour's whim.</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº8 · Vocables<span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Óscar Herrero · El Escorial, España</p><blockquote>Today you say things that tomorrow will be lights. You are not satisfied with creating sound. You will use language.</blockquote><p class="poema-materials"><span>Materials</span>India and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº9 · Dew<span class="poema-year">2009</span></h4>
+      <p class="poema-owner">Rocío Saucedo · Madrid, España</p><blockquote>First sleeping rumble; freshness in the early morning. The silence has been broken by dropping that drop into the water; to the pond of oblivion.</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article></div>
+    </details><details class="poema-decade" >
+      <summary>2010 <span>33 guitars</span></summary>
+      <div class="poema-entries"><article class="poema-entry reveal">
+      <h4>Nº10 · Tribute<span class="poema-year">2010</span></h4>
+      <p class="poema-owner">Private collection</p><blockquote>She smiles pleasantly, from the side, with a faint shine, fine sapwood; reflection of the stage light or hanging in a zenith of blackness “Ancient and harmonious” half moon.</blockquote><p class="poema-materials"><span>Materials</span>India and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº11 · Guajira <span class="poema-year">2010</span></h4>
+      <p class="poema-owner">Jesus Guerrero · España</p><blockquote>Oh mother! I come and I come! I walk from shore to shore and I find myself nowhere!</blockquote><p class="poema-materials"><span>Materials</span>India and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº12 · Independence<span class="poema-year">2010</span></h4>
+      <p class="poema-owner">Amós Lora · España</p><blockquote>I took borrowed roads, I followed tortuous paths, I carried a troupe at my side being barely a hard shadow. Fresh breeze flows now!</blockquote><p class="poema-materials"><span>Materials</span>India and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº13 · Wooden<span class="poema-year">2010</span></h4>
+      <p class="poema-owner">David Stevens · Australia</p><blockquote>From my father the first! You are Latin for the touch, you were wise in the tavern, you have ancient workmanship, and pegs, of wood!</blockquote><p class="poema-materials"><span>Materials</span>India and cedar with wooden pegs</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº14 · Espinel <span class="poema-year">2010</span></h4>
+      <p class="poema-owner">Raúl Castro · Murcia, España</p><blockquote>I would like to get away from the spin of life. More of the light of your eyes, sweet silky hooks, letting go is a chimera.</blockquote><p class="poema-materials"><span>Materials</span>India and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº15 · Triangle<span class="poema-year">2012</span></h4>
+      <p class="poema-owner">José Moya · Madrid, España</p><blockquote>»La Guita” sounds like money, “Solear” sounds like cante to me. Sanlúcar, Jerez and El Puerto sound like big wine to me!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and cedar.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº19 · Colors<span class="poema-year">2011</span></h4>
+      <p class="poema-owner">Rayito · España</p><blockquote>Carnations in the window, white people, blowouts. On your street there are many flowers that imitate your clear fence. That in the wind they say your name.</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº20 · Envy<span class="poema-year">2011</span></h4>
+      <p class="poema-owner">Ed Sheeran · España</p><blockquote>Standing on the side of the road, a recent landmark in authorship also questioned his worth when he saw his neighbor's striped suit. Annoyed, he rebuked him: you're not funny; You've been wearing it so much that you can't even exhale any aroma! The other replied: stop the joke; piece of shit, I mark the distance!</blockquote><p class="poema-materials"><span>Materials</span>Koa and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº21 · Condena <span class="poema-year">2011</span></h4>
+      <p class="poema-owner">Rafael Riqueni · Seville, España</p><blockquote>Condena for seeing me inside your ladino heart, condemnation for seeing me inside. Even your mother said it, that my eyes did not see the evils you carry.</blockquote><p class="poema-materials"><span>Materials</span>Cypress and Engelmann</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº22 · Double pneumonia or time at the same time<span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Private collection · España</p><blockquote>Go give gifts to those who don't deserve it; that you will see the day arrive when, if he could, he would leave you naked... no matter how much of a brother he was.</blockquote><p class="poema-materials"><span>Materials</span>Cypress 3 pieces, Engelmann</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº23 · The godfather<span class="poema-year">2012</span></h4>
+      <p class="poema-owner">Raimundo Amador · Seville, España</p><blockquote>I have a neighbor next to me, wall, wall, with my thing. The woman has left him, leaving him a gift of a dog, mother-in-law, cat and child; whose father, an Italian, is included in the lot. Who is father? And who is the godfather?</blockquote><p class="poema-materials"><span>Materials</span>Madagascar and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº24 · Gabriela <span class="poema-year">2012</span></h4>
+      <p class="poema-owner">Javier Casanueva · Madrid, España</p><blockquote>Of the daughters I have, you are the oldest of them. You jump from a funny girl to a beautiful young woman. The reflection of your mother, her sweetness and the presence that you sisters emanate, will keep your serene gaze.</blockquote><p class="poema-materials"><span>Materials</span>Madagascar and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº25 · Evolution<span class="poema-year">2012</span></h4>
+      <p class="poema-owner">Juan José Camacho · Huelva, España</p><blockquote>That the guts that I have have never been seen in my species. Do they sound bad to me...? Ask the witnesses! You will only have to press my “spaghettis” to the rhythm.</blockquote><p class="poema-materials"><span>Materials</span>Madagascar and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº26 · Initials<span class="poema-year">2012</span></h4>
+      <p class="poema-owner">Ramón Sánchez · France</p><blockquote>I have a present and a past, but a past different from the rest, that like me, we share a last name M and C, they will say mine!</blockquote><p class="poema-materials"><span>Materials</span>Madagascar and cedar.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº27 · Home Remedy<span class="poema-year">2013</span></h4>
+      <p class="poema-owner">Veronica Noval · Madrid, España</p><blockquote>They treated me as constipated, until I engraved your image on the bottom of my cup.</blockquote><p class="poema-materials"><span>Materials</span>Koa 3 pieces and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº28 · Lola <span class="poema-year">2013</span></h4>
+      <p class="poema-owner">Joni Jiménez · Madrid, España</p><blockquote>I don't need doctors if the pain haunts me, I don't need doctors! May my evils go away when I see your bronze face and your flamenco dance!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and sitka.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº29 · Villa Rosa <span class="poema-year">2013</span></h4>
+      <p class="poema-owner">Santiago Sánchez · Albacete, España</p><blockquote>Because entering “Villa-Rosa” is the most beautiful thing about Madrid flamenco. That's why you say yes, you will see a graceful town, the most beautiful of the roses we have here.</blockquote><p class="poema-materials"><span>Materials</span>Imbuia and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº30 · Dedication<span class="poema-year">2014</span></h4>
+      <p class="poema-owner">Jose María Cavanna · Netherlands</p><blockquote>Despeñaperros surrenders when crossing Lucía's! Castilla, gives it tears, to the singing of Andalusia! Silent seguiriya silences the bays!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº31 · Antonia <span class="poema-year">2013</span></h4>
+      <p class="poema-owner">Raimundo Amador · Seville, España</p><blockquote>You can't be freer than a basket-raising gypsy! May your father, Mariano, be light and path for you! And in cane and wicker baskets you store the memory!</blockquote><p class="poema-materials"><span>Materials</span>Indian and cedar with cutaway</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº32 · Roneo <span class="poema-year">2014</span></h4>
+      <p class="poema-owner">Private collection</p><blockquote>They say what you say what you do. If you do everything you say you won't have enough time if you live five hundred years.</blockquote><p class="poema-materials"><span>Materials</span>Imbuia and yellow cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº33 · Everything<span class="poema-year">2014</span></h4>
+      <p class="poema-owner">Jose María Cavanna · Netherlands</p><blockquote>I carry everything in wood. Beginning of new era. Rooted in “Media Luna”, “Full Moon” has been born!</blockquote><p class="poema-materials"><span>Materials</span>Cedar with maple back and koa sides. First guitar with a full moon.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº34 · Password<span class="poema-year">2014</span></h4>
+      <p class="poema-owner">Alfred Zill · Germany</p><blockquote>Towards the Genil you can already see the eleven alert towers. By giving you “stop”, you will say; by Saint: Juan Manuel, by Sign: Diaz Baena. Be fully aware of having cited who he is, from Écija..., his poet!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and yellow cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº35 · Alejandra <span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Juan José Camacho · Huelva, España</p><blockquote>“The fandango and the saeta”! “Your Gabriel and Alegría are the fandango and the saeta” What greater prize would you want? Almonte flamenco, one day he wanted to see you, president!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine. Whole Moon Head</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº36 · Carmen <span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Private collection · España</p><blockquote>Where the boat moors and the sailor holds on tightly. He lends his name and his claw to cities; and a novel, origin of the famous opera, that the world heard. To a beautiful house in Granada..., to women from my land!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine. Whole Moon Head.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº37 · Equis<span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Jose María Cavanna · Netherlands</p><blockquote>Until Mariano finishes I won't know what, I would say; but I believe it is not in vain, the mystery of life!</blockquote><p class="poema-materials"><span>Materials</span>Maple back, Indian rosewood sides, pine top. Whole Moon Head (Equis)</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº38 · Unique<span class="poema-year">2015</span></h4>
+      <p class="poema-owner">Ivan G.V. · Madrid, España</p><blockquote>What an ancient design, it is not the work of just any “uncle”…, nor the oldest, nor the youngest…, it was the inventiveness of a genius of a father and my very lord!</blockquote><p class="poema-materials"><span>Materials</span>Maple and cedar. Full Moon Head (ebony with half moons).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº39 · Aurea <span class="poema-year">2015/16</span></h4>
+      <p class="poema-owner">Private collection · Madrid, España</p><blockquote>Don't "scratch" me with such proportions, I've already been involved in it for half an hour. If I can't get the equations right and the sounds and sounds don't emerge..., in the studio I will see, the dawn will arrive!</blockquote><p class="poema-materials"><span>Materials</span>India and sitka. Indian rosewood background in collaboration with the artist Javier Liébana. Whole Moon Head (nautilus shell).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº40 · De Lucía <span class="poema-year">2016</span></h4>
+      <p class="poema-owner">Antonio Sánchez · Madrid</p><blockquote>From the butt to the “rock”, I carry wood and the mouth of someone who made mine. Paco was, from my ancestors..., a sound that I keep inside as a divine relic! Already on Olympus..., Master!</blockquote><p class="poema-materials"><span>Materials</span>Whole Moon Head (Rock of Gibraltar) Indian Rosewood and Sitka.</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº41 · Roneo 2 <span class="poema-year">2016</span></h4>
+      <p class="poema-owner">Private collection · Madrid, España</p><blockquote>They say you say you are. If you are everything you say, there is no minister or admiral who can bother you!</blockquote><p class="poema-materials"><span>Materials</span>Yellow cedar and pine. Removable Full Moon Head (representation of male head)</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº42 · Lowtide<span class="poema-year">2016/18</span></h4>
+      <p class="poema-owner">Paco Saucedo · Madrid, España</p><blockquote>He's going to walk backwards, but don't worry about him, shame on you. He's looking for his dinner, that is...! He's going to “jamar”!</blockquote><p class="poema-materials"><span>Materials</span>Maple and pine. Whole Moon Head (crab).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº43 · Dune<span class="poema-year">2016/18</span></h4>
+      <p class="poema-owner">Jose María Cavanna · Netherlands</p><blockquote>Grain by grain what life accumulates of stupidity and talent goes very slowly!</blockquote><p class="poema-materials"><span>Materials</span>Maple and pine. Whole Moon Head (camel).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº44 · Eli <span class="poema-year">2019</span></h4>
+      <p class="poema-owner">Fernando Prieto · Seville, España</p><blockquote>It settles like snow on the highest rock. It flutters, comes and goes, until, as I drink, my song is nourished by my desires. Sharp pins are witnesses of my crying!</blockquote><p class="poema-materials"><span>Materials</span>American maple and cedar. Whole Moon Head (white butterfly).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº45 · Ma P’Tite sucks<span class="poema-year">2019</span></h4>
+      <p class="poema-owner">Mathieu Ammari · Normandy, France</p><blockquote>Hardworking and humble. From a large family. A flirt who would marry someone whose love does not respond. Her life was marked by the fact of fighting for her son, alone, that brave Norman of half Spanish blood!</blockquote><p class="poema-materials"><span>Materials</span>Exotic ebony and cedar. Full Moon Head (lion head).</p>
+    </article></div>
+    </details><details class="poema-decade" >
+      <summary>2020 <span>10 guitars</span></summary>
+      <div class="poema-entries"><article class="poema-entry reveal">
+      <h4>Nº46 · Meeting<span class="poema-year">2020</span></h4>
+      <p class="poema-owner">Joaquín Gómez · Nicaragua</p><blockquote>A chance encounter was the “why” of this guitar. With Joaquín I went to cross in October… Today an evil, that deadly virus, binds humanity!</blockquote><p class="poema-materials"><span>Materials</span>Exotic ebony and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº47 · Milonga <span class="poema-year">2020/21</span></h4>
+      <p class="poema-owner">Gilles (Knobloch) · España</p><blockquote>guitar player; believe that the wood is going to obey your demands, it is simply pure milonga.</blockquote><p class="poema-materials"><span>Materials</span>India and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº48 · Colombian from Manzanillo de la Muerte<span class="poema-year">2020/21</span></h4>
+      <p class="poema-owner">Jesus Guerrero · España</p><blockquote>From the “Manzanillo of Death” There is an American tree of fruits, leaves and branches that poisons whoever touches it and whoever eats its apples. And there is “palo” of Cuban son, which flamenco reached España!</blockquote><p class="poema-materials"><span>Materials</span>India and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº49 · Sea<span class="poema-year">2021/22</span></h4>
+      <p class="poema-owner">Udo Lampe · Germany</p><blockquote>Cumulus of immensity that bathes all destinations. Literature clouds your world, with reality. Musical depth where a tangle of songs and concerts are woven that, when successfully navigated, unite Germany to España.</blockquote><p class="poema-materials"><span>Materials</span>Madagascar and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº50 · Cayetana <span class="poema-year">2021/22</span></h4>
+      <p class="poema-owner">Jose Manuel · Barcelona, España</p><blockquote>With your arrival you introduce this family to joy, and being you, the first, you increase the joy both in me and in your grandmother. I would ask to navigate life, a vast piece, as I walk beside you.</blockquote><p class="poema-materials"><span>Materials</span>Gold and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº51 · Unai <span class="poema-year">2021/22</span></h4>
+      <p class="poema-owner">Jose Manuel · Barcelona, España</p><blockquote>A guitar shares a name with you. When you are five years old, you are born… Home I write.</blockquote><p class="poema-materials"><span>Materials</span>Exotic ebony and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº52 · Nasrid<span class="poema-year">2022</span></h4>
+      <p class="poema-owner">Jose Manuel · Barcelona, España</p><blockquote>Art in which you become aware after the impact on you, of just thinking about something... Be grateful for its existence, since if not, it is not possible to imagine it!</blockquote><p class="poema-materials"><span>Materials</span>Koa and cedar</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº53 · Santa Fe<span class="poema-year">2022</span></h4>
+      <p class="poema-owner">Jose Manuel · Barcelona, España</p><blockquote>Both capitulations took place there; the surrender of Granada and the crossing of the sea. Not in vain does its motto say: “Cradle of Hispanic Heritage”!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº55 · Marcite<span class="poema-year">2022</span></h4>
+      <p class="poema-owner">Dieter Lampe · Germany</p><blockquote>He has a “tempered” character, a mixture of Hispanic ardor and cold-headedness. German of great nobility who, by defending a refugee, banishes sadness in him!</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº58 · Hongsa <span class="poema-year">2023</span></h4>
+      <p class="poema-owner">Private collection Thailand</p><blockquote>You do not have your name in vain when you rise like the Phoenix and are born on the wrong day. Victor of science and stars, today you know about España, kings. Well versed in politics, laws and weapons. A sweet kind “warrior” of only fifteen years old!</blockquote><p class="poema-materials"><span>Materials</span>Double Cover Poem Guitar. Majagua wood and cedar. Removable Whole Moon Head (phoenix).</p>
+    </article></div>
+    </details><details class="poema-decade" >
+      <summary>No date<span>6 guitars</span></summary>
+      <div class="poema-entries"><article class="poema-entry reveal">
+      <h4>Nº16 · Cypress</h4>
+      <p class="poema-owner">Alfred Zil · Germany</p><blockquote>As the curve passed, the inert scimitar procession marked the path. Now you rock the abbey and its sky with your centuries-old glasses. Plank that you were the carpenter's yesterday, today you revive in the soul of a guitar.</blockquote><p class="poema-materials"><span>Materials</span>Cypress and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº17 · Advice</h4>
+      <p class="poema-owner">Private collection · Türkiye</p><blockquote>Congested friend since that's why I have you, don't let the second deprive me of the first. Move at medium levels!</blockquote><p class="poema-materials"><span>Materials</span>India and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº18 · Andalusia</h4>
+      <p class="poema-owner">Roberto Morón · España</p><blockquote>Lime and green olive. Salty foam bubbling light! Wave crest! Dune loving wind. Sun waiting behind the mountain mist! Blackberry song!</blockquote><p class="poema-materials"><span>Materials</span>Rosewood and pine</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº54 · Siwalee </h4>
+      <p class="poema-owner">Private collection Thailand</p><blockquote>Sextet that makes you fall in love; twenty thirty summon your husband and your children with their singing guitars! In you they find faithful shelter, both the white bunny and the candor of the rose!</blockquote><p class="poema-materials"><span>Materials</span>Cocobolo and pine. Removable Whole Moon Head (white rabbit).</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº56 · Rhombus</h4>
+      <p class="poema-owner">Private collection · España</p><p class="poema-materials"><span>Materials</span>under construction</p>
+    </article><article class="poema-entry reveal">
+      <h4>Nº57 · Marianne </h4>
+      <p class="poema-owner">Udo Lampe · Germany</p><blockquote>Königsberg would see the birth of the bravest teacher saving lost cases from the castle of the soul! An artist of good work, she made a lot out of nothing, who as a baby found herself in Bavaria, a refugee!</blockquote><p class="poema-materials"><span>Materials</span>Maple and pine wood Whole Moon Head (Kandinsky).</p>
+    </article></div>
+    </details>
+</div></section><section class="section-dark" id="solicita-poema"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Orders</p><h2 class="display">Request your<br><em>Edition of the Poem.</em></h2>
+  <p class="section-intro">€48,400 · VAT included. Tell us what you would like to know and we will contact you.</p></div>
+  <form class="poema-form reveal" data-mailform novalidate>
+    <div class="config-grid">
+      <label>Name<input type="text" name="nombre" required autocomplete="name"></label>
+      <label>phone number<input type="tel" name="telefono" autocomplete="tel"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Subject<input type="text" name="asunto" value="Solicitud Guitarra del Poema · Edición del Poema" readonly></label>
+      <label class="config-wide">Message<textarea name="mensaje" rows="4" placeholder="Tell us about your assignment..."></textarea></label>
+      <label class="checkbox config-wide"><input type="checkbox" name="privacidad" required>I accept the<a href="../privacidad.html">privacy policy</a></label>
+    </div>
+    <button type="submit" class="btn btn-gold">Order ↗</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</div></section><section class="section-dark" id="solicita-doble-tapa"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Orders</p><h2 class="display">Request your<br><em>Double Cover.</em></h2>
+  <p class="section-intro">€121,000 · VAT included. Tell us what you would like to know and we will contact you.</p></div>
+  <form class="poema-form reveal" data-mailform novalidate>
+    <div class="config-grid">
+      <label>Name<input type="text" name="nombre" required autocomplete="name"></label>
+      <label>phone number<input type="tel" name="telefono" autocomplete="tel"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Subject<input type="text" name="asunto" value="Solicitud Guitarra del Poema · Doble Tapa" readonly></label>
+      <label class="config-wide">Message<textarea name="mensaje" rows="4" placeholder="Tell us about your assignment..."></textarea></label>
+      <label class="checkbox config-wide"><input type="checkbox" name="privacidad" required>I accept the<a href="../privacidad.html">privacy policy</a></label>
+    </div>
+    <button type="submit" class="btn btn-gold">Order ↗</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</div></section><div class="container"><div class="next-section reveal">
+  <span>Next section · Image gallery</span>
+  <a href="../galeria.html">MC on wall, MC on scene<em>↗</em></a>
+</div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../assets/img/MC-Logo.svg" alt="MC — Mariano Conde" class="footer-logo">
+        <p>The Spanish guitar bears the Conde signature.<br>Madrid, since 1915.</p>
+      </div>
+      <div class="footer-nav">
+        <div><h4>Explore</h4><a href="../guitarras.html">Guitars</a><a href="../flamencas.html">Flamenco</a><a href="../clasicas.html">Classical</a><a href="../poema.html">Poem Edition</a></div>
+        <div><h4>Discover</h4><a href="../directo.html">Live workshop</a><a href="../historia.html">History</a><a href="../noticias.html">News</a><a href="../galeria.html">Gallery</a><a href="../contacto.html">Contact</a></div>
+        <div><h4>Live</h4><a href="https://www.youtube.com/@Guitarras_MarianoConde/live" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.twitch.tv/guitarrasmarianoconde" target="_blank" rel="noopener">Twitch ↗</a><a href="https://www.instagram.com/guitarras_marianoconde/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/GuitarrasMarianoConde/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/@guitarras_marianoconde" target="_blank" rel="noopener">TikTok ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span>Guitars Mariano Conde · C. de la Amnistía, 1 · 28013 Madrid</p>
+      <div><a href="../aviso-legal.html">Legal notice</a><a href="../privacidad.html">Privacy</a><a href="../cookies.html">Cookies</a><a href="../feed.xml" type="application/rss+xml">RSS</a><button class="footer-cookie-btn" id="cookieSettings" type="button">Cookie settings</button></div>
+      <div class="view-switch"><button type="button" data-view="mobile">View mobile version</button><button type="button" data-view="desktop">View desktop version</button></div>
+    </div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+</div>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden>
+  <div class="cookie-inner">
+    <div><h3 id="cookieTitle">Manage cookie consent</h3>
+    <p>We use functional, preference and statistics cookies to give you the best experience. You can accept, reject or choose your preferences.<a href="../cookies.html">Read more ↗</a></p></div>
+    <div class="cookie-actions"><button class="btn btn-ghost-light btn-sm" id="cookieDeny" type="button">Reject</button><button class="btn btn-ghost-light btn-sm" id="cookiePrefs" type="button">See preferences</button><button class="btn btn-gold btn-sm" id="cookieAccept" type="button">Accept</button></div>
+  </div>
+  <div class="cookie-prefs" id="cookiePrefsPanel" hidden>
+    <label><input type="checkbox" checked disabled>Functional<span>always active</span></label>
+    <label><input type="checkbox" id="cookiePrefsPrefs">Preferences</label>
+    <label><input type="checkbox" id="cookiePrefsStats">Statistics</label>
+    <label><input type="checkbox" id="cookiePrefsMarketing">Marketing</label>
+    <button class="btn btn-outline btn-sm" id="cookieSave" type="button">Save preferences</button>
+  </div>
+</div>
+<nav class="mobile-tabbar" aria-label="Mobile quick navigation">
+  <a href="../index.html"><span class="tab-icon" aria-hidden="true">⌂</span>Home</a><a href="../guitarras.html"><span class="tab-icon" aria-hidden="true">♪</span>Guitars</a><a href="../poema.html" class="is-current" aria-current="page"><span class="tab-icon" aria-hidden="true">✦</span>Poem</a><a href="../directo.html"><span class="tab-icon" aria-hidden="true">◉</span>Live</a><a href="../contacto.html"><span class="tab-icon" aria-hidden="true">✉</span>Contact</a>
+</nav>
+<script src="../app.js"></script>
+</body>
+</html>

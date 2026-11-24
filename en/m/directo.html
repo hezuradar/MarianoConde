@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-device="mobile">
+<head>
+<script>(function(){
+  try{
+    if(localStorage.getItem('mc-view')==='mobile') return;
+    var ua=navigator.userAgent||'';
+    var mobile=(navigator.userAgentData&&navigator.userAgentData.mobile===true)||
+      /Android|iPhone|iPod|Windows Phone|Mobile|Silk|BlackBerry|Opera Mini/i.test(ua)||
+      (/iPad|Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
+    if(mobile!==false) return;
+    var p=location.pathname.split('/').pop()||'index.html';
+    if(!/\.html$/.test(p)) p='index.html';
+    location.replace('../'+p);
+  }catch(e){}
+})();</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live workshop · Mariano Conde</title>
+  <meta name="description" content="Follow the Mariano Conde workshop live on YouTube and Twitch, and discover the documentary The Guardians of Tradition.">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="../../assets/img/MC_Favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body data-section="directo.html">
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="../../index.html" aria-label="Mariano Conde — home">
+      <img src="../../assets/img/Mariano-Conde-Logo.svg" alt="Mariano Conde" class="brand-logo">
+      <span class="brand-meta">Madrid · since 1915</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main navigation"><a href="../../index.html">Home</a><a href="../../guitarras.html">Guitars</a><a href="../../directo.html" class="is-current nav-live"><span class="live-dot"></span>Live workshop</a><a href="../../poema.html">Poem Guitars</a><a href="../../galeria.html">Gallery</a><a href="../../noticias.html">News</a><a href="../../historia.html">History</a><a href="../../contacto.html">Contact</a></nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">English <span aria-hidden="true">▾</span></button>
+        <div class="lang-menu" id="langMenu" hidden>
+          <span class="is-current">English</span>
+          <a href="../../directo.html">Español</a>
+        </div>
+      </div>
+      <a class="btn btn-sm btn-outline" href="../../contacto.html">Orders</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <a href="../../index.html">Home</a>    <a href="../../guitarras.html">Guitars</a>    <a href="../../directo.html">Live workshop</a>    <a href="../../poema.html">Poem Guitars</a>    <a href="../../galeria.html">Gallery</a>    <a href="../../noticias.html">News</a>    <a href="../../historia.html">History</a>    <a href="../../contacto.html">Contact</a>
+    <a href="../../directo.html">Spanish version</a>
+  </nav>
+</header>
+<main id="main">
+<section class="page-hero" style="--hero-img:url('../../assets/img/MC_Historia_4.webp')">
+  <div class="container">
+    <p class="crumb"><a href="../../index.html">Home</a>/ Live workshop</p>
+    <h1>The workshop,<br>without doors<em>closed.</em></h1>
+    <p class="lead">Travel to our guitar-playing past and present in person or by watching us live in the workshop through Twitch and YouTube. Monday to Friday, 09:00–14:00 and 17:00–19:00; Saturdays, 10:00–14:00.</p>
+  </div>
+  <div class="hero-index">03 / 08</div>
+</section><nav class="subnav" aria-label="Subsection"><div class="container"><a href="../../directo.html" class='is-current'>Live</a><a href="../../noticias.html">Documentary</a><a href="../../historia.html">The workshop</a><a href="../../contacto.html">come see us</a></div></nav><section class="section-dark"><div class="container">
+  <div class="live-player reveal">
+    <div class="player-tabs" role="tablist" aria-label="Choose live platform">
+      <button class="player-tab is-active" role="tab" aria-selected="true" data-platform="youtube"><span class="play-icon">▶</span> YouTube</button>
+      <button class="player-tab" role="tab" aria-selected="false" data-platform="twitch"><span class="play-icon">◆</span> Twitch</button>
+      <div class="player-status"><span class="live-dot"></span>LIVE WHEN WE ARE IN THE WORKSHOP</div>
+    </div>
+    <div class="player-frame-wrap"><iframe id="playerFrame" title="Live workshop from Mariano Conde" src="https://www.youtube-nocookie.com/embed/0KmZT-WlaTs?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+    <div class="player-footer">
+      <p id="playerCaption">Now: documentary "The Guardians of Tradition." Press live to connect to the broadcast as soon as it begins.</p>
+      <div class="player-links">
+        <button class="btn btn-gold btn-sm" id="goLiveBtn">Watch live broadcast</button>
+        <a class="text-link" id="openPlatform" href="https://www.youtube.com/@Guitarras_MarianoConde/live" target="_blank" rel="noopener">Open on YouTube ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="video-strip reveal" style="margin-top:1.5rem">
+ <button class="video-thumb is-active" data-video="0KmZT-WlaTs" data-title="Documentary “The Guardians of Tradition”"><img src="../../assets/img/_ESTRENO-MUNDIAL-Mariano-Conde-Los-guitarreros-que-enamoraron-al-maestro-Paco-de-Lucia.webp" alt="Documentary “The Guardians of Tradition”" loading="lazy"><span>▶ Documentary</span></button>
+<button class="video-thumb" data-video="_ImLFVl-9iQ" data-title="The saga Conde"><img src="../../assets/img/MC_Historia_11.webp" alt="The saga Conde" loading="lazy"><span>▶ History</span></button>
+<button class="video-thumb" data-video="R8WobwVvmIU" data-title="First video of the street workshop Amnistía, 1"><img src="../../assets/img/MC_Historia_4.webp" alt="First video of the street workshop Amnistía, 1" loading="lazy"><span>▶ The workshop</span></button>
+<button class="video-thumb" data-video="eLx-rtyg30U" data-title="Reaction to the fallacies of “flamenco solera”"><img src="../../assets/img/MC_Escenario_22.webp" alt="Reaction to the fallacies of “flamenco solera”" loading="lazy"><span>▶ News</span></button>
+<button class="video-thumb" data-video="glCERZfJTBc" data-title="Leonard Cohen &amp; Mariano Conde"><img src="../../assets/img/MC_Historia_2.webp" alt="Leonard Cohen &amp; Mariano Conde" loading="lazy"><span>▶ Music</span></button>
+<button class="video-thumb" data-video="wIEEt_3pAOk" data-title="Amós Lora in Telemadrid"><img src="../../assets/img/MC_Escenario_13.webp" alt="Amós Lora in Telemadrid" loading="lazy"><span>▶ Press</span></button>
+<button class="video-thumb" data-video="yuIomU2WYoQ" data-title="Interview by Íñigo Cifuentes"><img src="../../assets/img/MC_Historia_9.webp" alt="Interview by Íñigo Cifuentes" loading="lazy"><span>▶ Interview</span></button>
+    <button class="video-thumb" data-video="live" data-title="Live workshop"><img src="../../assets/img/MC_Historia_4.webp" alt="Live Mariano Conde workshop" loading="lazy"><span>● Live workshop</span></button>
+  </div>
+</div></section>
+<section class="section-cream"><div class="container">
+  <div class="section-head reveal"><p class="eyebrow">Workshop videos</p><h2 class="display">Stories<br><em>in motion.</em></h2>
+  <p class="section-intro">Documentaries, interviews and performances collected in the Mariano Conde archive. Tap any to play it in the player above.</p></div>
+  <div class="video-grid">
+ <article class="video-card reveal"><button class="video-card-play" data-video="0KmZT-WlaTs" data-title="Documentary “The Guardians of Tradition”" aria-label="Play Documentary “The Guardians of Tradition”"><img src="../../assets/img/_ESTRENO-MUNDIAL-Mariano-Conde-Los-guitarreros-que-enamoraron-al-maestro-Paco-de-Lucia.webp" alt="Documentary “The Guardians of Tradition”" loading="lazy"><span aria-hidden="true">▶</span></button><div><span class="video-label">Documentary</span><h3>Documentary “The Guardians of Tradition”</h3></div></article>
+<article class="video-card reveal"><button class="video-card-play" data-video="_ImLFVl-9iQ" data-title="The saga Conde" aria-label="Play The saga Conde"><img src="../../assets/img/MC_Historia_11.webp" alt="The saga Conde" loading="lazy"><span aria-hidden="true">▶</span></button><div><span class="video-label">History</span><h3>The saga Conde</h3></div></article>
+<article class="video-card reveal"><button class="video-card-play" data-video="R8WobwVvmIU" data-title="First video of the street workshop Amnistía, 1" aria-label="Play First video of the street workshop Amnistía, 1"><img src="../../assets/img/MC_Historia_4.webp" alt="First video of the street workshop Amnistía, 1" loading="lazy"><span aria-hidden="true">▶</span></button><div><span class="video-label">The workshop</span><h3>First video of the street workshop Amnistía, 1</h3></div></article>
+<article class="video-card reveal"><button class="video-card-play" data-video="eLx-rtyg30U" data-title="Reaction to the fallacies of “flamenco solera”" aria-label="Play Reaction to the fallacies of “flamenco solera”"><img src="../../assets/img/MC_Escenario_22.webp" alt="Reaction to the fallacies of “flamenco solera”" loading="lazy"><span aria-hidden="true">▶</span></button><div><span class="video-label">News</span><h3>Reaction to the fallacies of “flamenco solera”</h3></div></article>
+<article class="video-card reveal"><button class="video-card-play" data-video="glCERZfJTBc" data-title="Leonard Cohen &amp; Mariano Conde" aria-label="Play Leonard Cohen &amp; Mariano Conde"><img src="../../assets/img/MC_Historia_2.webp" alt="Leonard Cohen &amp; Mariano Conde" loading="lazy"><span aria-hidden="true">▶</span></button><div><span class="video-label">Music</span><h3>Leonard Cohen &amp; Mariano Conde</h3></div></article>
+<article class="video-card reveal"><button class="video-card-play" data-video="wIEEt_3pAOk" data-title="Amós Lora in Telemadrid" aria-label="Play Amós Lora on Telemadrid"><img src="../../assets/img/MC_Escenario_13.webp" alt="Amós Lora in Telemadrid" loading="lazy"><span aria-hidden="true">▶</span></button><div><span class="video-label">Press</span><h3>Amós Lora in Telemadrid</h3></div></article>
+<article class="video-card reveal"><button class="video-card-play" data-video="yuIomU2WYoQ" data-title="Interview by Íñigo Cifuentes" aria-label="Play Interview by Íñigo Cifuentes"><img src="../../assets/img/MC_Historia_9.webp" alt="Interview by Íñigo Cifuentes" loading="lazy"><span aria-hidden="true">▶</span></button><div><span class="video-label">Interview</span><h3>Interview by Íñigo Cifuentes</h3></div></article>
+  </div>
+</div></section>
+<section class="section-dark"><div class="container">
+  <div class="split reveal"><figure><img src="../../assets/img/MC_Historia_4.webp" alt="Mariano Conde working in the workshop" loading="lazy"><figcaption>Street Amnistía, 1 · Madrid</figcaption></figure>
+  <div><p class="eyebrow">In person or on screen</p><h3>A workshop with open doors</h3>
+  <p>Since 2018, Mariano and his son have worked together without workers outside the family. You can follow the process of building a guitar live or visit us at the Madrid center.</p>
+  <p>The YouTube channel (@Guitarras_MarianoConde) and Twitch (guitarrasmarianoconde) maintain the live workshop as a permanent window to the craft.</p>
+  <a class="btn btn-dark btn-sm" href="../../contacto.html">Book a visit ↗</a></div></div>
+</div></section><div class="container"><div class="next-section reveal">
+  <span>Next section · History of the house</span>
+  <a href="../../historia.html">One family, one tradition<em>↗</em></a>
+</div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="../../assets/img/MC-Logo.svg" alt="MC — Mariano Conde" class="footer-logo">
+        <p>The Spanish guitar bears the Conde signature.<br>Madrid, since 1915.</p>
+      </div>
+      <div class="footer-nav">
+        <div><h4>Explore</h4><a href="../../guitarras.html">Guitars</a><a href="../../flamencas.html">Flamenco</a><a href="../../clasicas.html">Classical</a><a href="../../poema.html">Poem Edition</a></div>
+        <div><h4>Discover</h4><a href="../../directo.html">Live workshop</a><a href="../../historia.html">History</a><a href="../../noticias.html">News</a><a href="../../galeria.html">Gallery</a><a href="../../contacto.html">Contact</a></div>
+        <div><h4>Live</h4><a href="https://www.youtube.com/@Guitarras_MarianoConde/live" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.twitch.tv/guitarrasmarianoconde" target="_blank" rel="noopener">Twitch ↗</a><a href="https://www.instagram.com/guitarras_marianoconde/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/GuitarrasMarianoConde/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/@guitarras_marianoconde" target="_blank" rel="noopener">TikTok ↗</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span>Guitars Mariano Conde · C. de la Amnistía, 1 · 28013 Madrid</p>
+      <div><a href="../../aviso-legal.html">Legal notice</a><a href="../../privacidad.html">Privacy</a><a href="../../cookies.html">Cookies</a><a href="../../feed.xml" type="application/rss+xml">RSS</a><button class="footer-cookie-btn" id="cookieSettings" type="button">Cookie settings</button></div>
+      <div class="view-switch"><button type="button" data-view="mobile">View mobile version</button><button type="button" data-view="desktop">View desktop version</button></div>
+    </div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+</div>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" hidden>
+  <div class="cookie-inner">
+    <div><h3 id="cookieTitle">Manage cookie consent</h3>
+    <p>We use functional, preference and statistics cookies to give you the best experience. You can accept, reject or choose your preferences.<a href="../../cookies.html">Read more ↗</a></p></div>
+    <div class="cookie-actions"><button class="btn btn-ghost-light btn-sm" id="cookieDeny" type="button">Reject</button><button class="btn btn-ghost-light btn-sm" id="cookiePrefs" type="button">See preferences</button><button class="btn btn-gold btn-sm" id="cookieAccept" type="button">Accept</button></div>
+  </div>
+  <div class="cookie-prefs" id="cookiePrefsPanel" hidden>
+    <label><input type="checkbox" checked disabled>Functional<span>always active</span></label>
+    <label><input type="checkbox" id="cookiePrefsPrefs">Preferences</label>
+    <label><input type="checkbox" id="cookiePrefsStats">Statistics</label>
+    <label><input type="checkbox" id="cookiePrefsMarketing">Marketing</label>
+    <button class="btn btn-outline btn-sm" id="cookieSave" type="button">Save preferences</button>
+  </div>
+</div>
+<nav class="mobile-tabbar" aria-label="Mobile quick navigation">
+  <a href="../../index.html"><span class="tab-icon" aria-hidden="true">⌂</span>Home</a><a href="../../guitarras.html"><span class="tab-icon" aria-hidden="true">♪</span>Guitars</a><a href="../../poema.html"><span class="tab-icon" aria-hidden="true">✦</span>Poem</a><a href="../../directo.html" class="is-current" aria-current="page"><span class="tab-icon" aria-hidden="true">◉</span>Live</a><a href="../../contacto.html"><span class="tab-icon" aria-hidden="true">✉</span>Contact</a>
+</nav>
+<script src="../../app.js"></script>
+</body>
+</html>

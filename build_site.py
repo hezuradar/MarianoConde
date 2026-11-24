@@ -14,6 +14,11 @@ MODEL_DATA = json.loads(Path('model-data.json').read_text(encoding='utf-8'))
 POEMA_DATA = json.loads(Path('poema-data.json').read_text(encoding='utf-8'))
 NOTICIAS_DATA = json.loads(Path('noticias-data.json').read_text(encoding='utf-8'))
 SITE_URL = 'https://hezuradar.github.io/MarianoConde/'
+OUT_EN = OUT / 'en'
+OUT_EN_M = OUT_EN / 'm'
+TRANS_FILE = Path('translations-en.json')
+TRANSLATIONS = (json.loads(TRANS_FILE.read_text(encoding='utf-8'))
+                if TRANS_FILE.exists() else {})
 
 REVERB_URL = (
     'https://reverb.com/shop/guitarras-mariano-conde-conde-hermanos-'
@@ -219,23 +224,26 @@ def en_model_url(name):
     return base + slug + '/'
 
 # ---------------------------------------------------------------- plantilla
-def header(active, en_url=None):
+def header(active, filename):
     links = []
     for href, label in NAV:
         cls = ' class="is-current"' if href == active else ''
         extra = ' nav-live' if href == 'directo.html' else ''
         if extra:
             label = '<span class="live-dot"></span> ' + label
-        links.append(f'<a href="{href}"{cls}{extra}>{label}</a>')
-    en_link = en_url if en_url is not None else EN_PAGES.get(active, EN_PAGES['index.html'])
-    lang_switch = '' if not en_link else f'''      <div class="lang-switch">
+        link_class = ' '.join(x for x in (cls.strip().replace('class="', '').replace('"', ''), extra.strip()) if x)
+        class_attr = f' class="{link_class}"' if link_class else ''
+        links.append(f'<a href="{href}"{class_attr}>{label}</a>')
+    # La versión inglesa es interna: el selector cambia de idioma sin salir del sitio.
+    en_link = 'en/' + filename
+    lang_switch = f'''      <div class="lang-switch">
         <button class="lang-current" id="langToggle" type="button" aria-expanded="false" aria-controls="langMenu">Español <span aria-hidden="true">▾</span></button>
         <div class="lang-menu" id="langMenu" hidden>
           <span class="is-current">Español</span>
-          <a href="{en_link}" target="_blank" rel="noopener">Inglés ↗</a>
+          <a href="{en_link}">Inglés</a>
         </div>
       </div>'''
-    en_mobile = '' if not en_link else f'    <a href="{en_link}" target="_blank" rel="noopener">English version ↗</a>\n'
+    en_mobile = f'    <a href="{en_link}">English version</a>\n'
     return f'''<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 <a class="skip-link" href="#main">Saltar al contenido principal</a>
@@ -353,18 +361,92 @@ MOBILE_BOOT = '<script>' + (_DETECT_JS.replace('__PREFERRED__', 'mobile')
                             .replace('__ISMOBILE__', 'false')
                             .replace('__TARGET__', '../')) + '</script>'
 
-def mobile_doc(doc):
-    """Adapta una página escritorio a la versión servida desde m/."""
-    d = doc.replace('data-device="desktop"', 'data-device="mobile"', 1)
-    d = d.replace(DESKTOP_BOOT, MOBILE_BOOT, 1)
-    d = d.replace('href="assets/', 'href="../assets/')
-    d = d.replace('src="assets/', 'src="../assets/')
-    d = d.replace('data-full="assets/', 'data-full="../assets/')
-    d = d.replace("url('assets/", "url('../assets/")
-    d = d.replace('href="styles.css"', 'href="../styles.css"')
-    d = d.replace('src="app.js"', 'src="../app.js"')
-    d = d.replace('href="feed.xml"', 'href="../feed.xml"')
+def relocate_doc(doc, prefix):
+    """Reescribe las rutas locales para una carpeta más profunda."""
+    d = doc.replace('href="assets/', f'href="{prefix}assets/')
+    d = d.replace('src="assets/', f'src="{prefix}assets/')
+    d = d.replace('data-full="assets/', f'data-full="{prefix}assets/')
+    d = d.replace("url('assets/", f"url('{prefix}assets/")
+    d = d.replace('href="styles.css"', f'href="{prefix}styles.css"')
+    d = d.replace('src="app.js"', f'src="{prefix}app.js"')
+    d = d.replace('href="feed.xml"', f'href="{prefix}feed.xml"')
     return d
+
+def mobile_base(doc):
+    """Cambia sólo el dispositivo y el detector, sin tocar rutas."""
+    d = doc.replace('data-device="desktop"', 'data-device="mobile"', 1)
+    return d.replace(DESKTOP_BOOT, MOBILE_BOOT, 1)
+
+
+def prefix_links(doc, prefix):
+    """Prefija los enlaces internos y el selector de idioma."""
+    d = _I18N_LINK.sub(lambda m: f'href="{prefix}{m.group(1)}"', doc)
+    return d.replace('href="en/', f'href="{prefix}en/')
+
+
+def mobile_doc(doc, prefix='../'):
+    """Adapta una página escritorio a la versión servida desde m/."""
+    return prefix_links(relocate_doc(mobile_base(doc), prefix), prefix)
+
+# ---------------------------------------------------------------- inglés
+def norm(text):
+    """Normalización compartida con _translate_site.py."""
+    return ' '.join(htmlmod.unescape(text).split())
+
+
+_I18N_ATTRS = re.compile(r'\b(alt|title|aria-label|placeholder|content)="([^"]*)"')
+_I18N_LINK = re.compile(r'href="((?!(?:https?:|mailto:|tel:|#|//|en/))[^"]*?\.html(?:\?[^"]*)?)"')
+_TAG_RE = re.compile(r'(<[^>]+>)')
+
+
+def translate_document(doc):
+    """Sustituye textos y atributos por su traducción sin tocar etiquetas ni scripts."""
+    out, in_raw = [], False
+    for piece in _TAG_RE.split(doc):
+        if not piece:
+            continue
+        if piece.startswith('<'):
+            if re.match(r'<(script|style)\b', piece, re.I):
+                in_raw = True
+            elif re.match(r'</(script|style)\b', piece, re.I):
+                in_raw = False
+
+            def replace_attr(match):
+                value = TRANSLATIONS.get(norm(match.group(2)))
+                if value is None:
+                    return match.group(0)
+                return f'{match.group(1)}="{htmlmod.escape(value, quote=True)}"'
+
+            out.append(_I18N_ATTRS.sub(replace_attr, piece))
+            continue
+        if in_raw:
+            out.append(piece)
+            continue
+        key = norm(piece)
+        if not key or key not in TRANSLATIONS:
+            out.append(piece)
+            continue
+        out.append(htmlmod.escape(TRANSLATIONS[key], quote=False))
+    return ''.join(out)
+
+
+def english_doc(doc, filename, prefix):
+    """Versión inglesa de una página ya generada en español."""
+    d = translate_document(doc)
+    d = d.replace('<html lang="es"', '<html lang="en"', 1)
+    # El selector vuelve al español de la misma página, sin salir del sitio.
+    d = d.replace('>Spanish<span', '>English <span', 1)
+    d = d.replace('>Spanish <span', '>English <span', 1)
+    d = d.replace('<span class="is-current">Spanish</span>',
+                  '<span class="is-current">English</span>', 1)
+    # Enlaces internos a páginas: se prefijan con ../ (en/) o ../../ (en/m/).
+    d = _I18N_LINK.sub(lambda m: f'href="{prefix}{m.group(1)}"', d)
+    # El enlace al español se reescribe después para no prefijarlo dos veces.
+    d = d.replace(f'href="en/{filename}">English</a>',
+                  f'href="{prefix}{filename}">Español</a>', 1)
+    d = d.replace('href="en/', f'href="{prefix}')
+    return relocate_doc(d, prefix)
+
 
 def page(filename, title, description, active, body, en_url=None):
     doc = f'''<!doctype html>
@@ -383,7 +465,7 @@ def page(filename, title, description, active, body, en_url=None):
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-section="{h(active)}">
-{header(active, en_url)}
+{header(active, filename)}
 <main id="main">
 {body}
 </main>
@@ -393,6 +475,10 @@ def page(filename, title, description, active, body, en_url=None):
 '''
     (OUT / filename).write_text(doc, encoding='utf-8')
     (OUT_M / filename).write_text(mobile_doc(doc), encoding='utf-8')
+    en_doc = english_doc(doc, filename, '../')
+    (OUT_EN / filename).write_text(en_doc, encoding='utf-8')
+    (OUT_EN_M / filename).write_text(english_doc(mobile_base(doc), filename, '../../'),
+                                     encoding='utf-8')
 
 # ---------------------------------------------------------------- bloques reutilizables
 def cards(models, cat):
@@ -1004,9 +1090,37 @@ def build_feed():
 '''
     (OUT / 'feed.xml').write_text(xml, encoding='utf-8')
 
+    en_items = []
+    for item in NOTICIAS_DATA:
+        url = SITE_URL + 'en/' + item['file']
+        title = TRANSLATIONS.get(item['title'], item['title'])
+        desc = TRANSLATIONS.get(item['description'], item['description'])
+        source = TRANSLATIONS.get(item['source'], item['source'])
+        en_items.append(f'''  <item>
+    <title>{esc(title)}</title>
+    <link>{esc(url)}</link>
+    <guid isPermaLink="true">{esc(url)}</guid>
+    <pubDate>{esc(item['date'])}</pubDate>
+    <description>{esc(desc)} — {esc(source)}.</description>
+  </item>''')
+    en_xml = f'''<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Mariano Conde · News</title>
+  <link>{SITE_URL}en/noticias.html</link>
+  <description>Premieres, awards and articles about Mariano Conde guitars.</description>
+  <language>en</language>
+{chr(10).join(en_items)}
+</channel>
+</rss>
+'''
+    (OUT_EN / 'feed.xml').write_text(en_xml, encoding='utf-8')
+
 # ---------------------------------------------------------------- run
 if __name__ == '__main__':
     OUT_M.mkdir(exist_ok=True)
+    OUT_EN.mkdir(exist_ok=True)
+    OUT_EN_M.mkdir(exist_ok=True)
     build_home()
     build_guitarras()
     build_category('flamencas.html', 'Guitarras flamencas', 'Flamencas', 'Más de un siglo dedicados a la construcción de guitarras flamencas en el taller de la calle Amnistía, en pleno Madrid.', FLAMENCAS, '02 / 08')
@@ -1026,5 +1140,7 @@ if __name__ == '__main__':
     build_legal('cookies.html', 'Política de cookies', '_cookies_text.txt',
                 'Uso de cookies técnicas, estadísticas y de marketing en el sitio web de Mariano Conde.')
     build_feed()
+    print('Páginas inglesas:', len(list(OUT_EN.glob('*.html'))),
+          'escritorio +', len(list(OUT_EN_M.glob('*.html'))), 'móvil')
     print('Páginas generadas:', len(list(OUT.glob('*.html'))),
           'escritorio +', len(list(OUT_M.glob('*.html'))), 'móvil')
