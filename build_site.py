@@ -359,6 +359,7 @@ def mobile_doc(doc):
     d = d.replace(DESKTOP_BOOT, MOBILE_BOOT, 1)
     d = d.replace('href="assets/', 'href="../assets/')
     d = d.replace('src="assets/', 'src="../assets/')
+    d = d.replace('data-full="assets/', 'data-full="../assets/')
     d = d.replace("url('assets/", "url('../assets/")
     d = d.replace('href="styles.css"', 'href="../styles.css"')
     d = d.replace('src="app.js"', 'src="../app.js"')
@@ -819,25 +820,58 @@ def build_noticias():
     body += next_section('Historia', 'historia.html', 'Una familia, una tradición')
     page('noticias.html', 'Noticias', 'Noticias, premios, documentales y artículos sobre Mariano Conde y la construcción artesanal de guitarras en Madrid.', 'noticias.html', body, en_url='')
 
+PARED_IMAGES = ['MCenPared_1.webp','MCenPared_2.webp','MCenPared_3.webp','Galeria_1.webp',
+                'MC_Historia_4.webp','Mariano-Conde-Joss.fernandez__-6.webp','MC_Historia_3.webp',
+                'MarianoCondeGuitarras_102.webp']
+ESCENA_IMAGES = [
+    'MC_Escenario_2.webp','MC_Escenario_3.webp','MC_Escenario_4.webp','MC_Escenario_5.webp',
+    'MC_Escenario_6.webp','MC_Escenario_7.webp','MC_Escenario_8.webp','MC_Escenario_9.webp',
+    'MC_Escenario_10.webp','MC_Escenario_11.webp','MC_Escenario_12.webp','MC_Escenario_13.webp',
+    'MC_Escenario_14.webp','MC_Escenario_15.webp','MC_Escenario_16.webp','MC_Escenario_17.webp',
+    'MC_Escenario_18.webp','MC_Escenario_19.webp','MC_Escenario_20.webp','MC_Escenario_21.webp',
+    'MC_Escenario_22.webp','MC_Escenario_23.webp','MC_Escenario_24.webp','MC_Escenario_25.webp',
+    'MC_Escenario_26.webp','MC_Escenario_27.webp','MC_Escenario_28.webp','MC_Esecnario_29.webp',
+    'MC_Esecnario_30.webp','Escena_13.webp','Escena_32.webp','Escena_33.webp','Escena_34.webp',
+    'Escena_35.webp',
+]
+
+def escena_4k(name):
+    """Ruta de la versión 4K de una foto de escena."""
+    return f'assets/img/4k/{Path(name).stem}-4k.webp'
+
 def build_galeria():
-    pared = ['MCenPared_1.webp','MCenPared_2.webp','MCenPared_3.webp','Galeria_1.webp','MC_Historia_4.webp','Mariano-Conde-Joss.fernandez__-6.webp','MC_Historia_3.webp','MarianoCondeGuitarras_102.webp']
-    escena = [
-        'MC_Escenario_2.webp','MC_Escenario_3.webp','MC_Escenario_4.webp','MC_Escenario_5.webp',
-        'MC_Escenario_6.webp','MC_Escenario_7.webp','MC_Escenario_8.webp','MC_Escenario_9.webp',
-        'MC_Escenario_10.webp','MC_Escenario_11.webp','MC_Escenario_12.webp','MC_Escenario_13.webp',
-        'MC_Escenario_14.webp','MC_Escenario_15.webp','MC_Escenario_16.webp','MC_Escenario_17.webp',
-        'MC_Escenario_18.webp','MC_Escenario_19.webp','MC_Escenario_20.webp','MC_Escenario_21.webp',
-        'MC_Escenario_22.webp','MC_Escenario_23.webp','MC_Escenario_24.webp','MC_Escenario_25.webp',
-        'MC_Escenario_26.webp','MC_Escenario_27.webp','MC_Escenario_28.webp','MC_Esecnario_29.webp',
-        'MC_Esecnario_30.webp','Escena_13.webp','Escena_32.webp','Escena_33.webp','Escena_34.webp',
-        'Escena_35.webp',
-    ]
-    pared = [im for im in pared if img_exists(im)]
-    escena = [im for im in escena if img_exists(im)]
+    pared = [im for im in PARED_IMAGES if img_exists(im)]
+    escena = [im for im in ESCENA_IMAGES
+              if img_exists(im) and (IMGPATH / '4k' / (Path(im).stem + '-4k.webp')).exists()]
     def items(arr, label):
         return '\n'.join(f'<button class="gallery-item reveal" data-full="assets/img/{im}" aria-label="Ampliar imagen: {label}"><img src="assets/img/{im}" alt="{label} — Mariano Conde" loading="lazy"></button>' for im in arr)
     panel1 = f'<div class="gallery-panel is-active" id="pared"><div class="masonry">{items(pared,"Taller y pared")}</div></div>'
-    panel2 = f'<div class="gallery-panel" id="escena"><div class="masonry">{items(escena,"Guitarra en escena")}</div></div>'
+    slides = []
+    dots = []
+    for i, im in enumerate(escena):
+        full = escena_4k(im)
+        is_first = i == 0
+        slides.append(
+            f'<button class="escena-slide gallery-item{" is-active" if is_first else ""}" '
+            f'type="button" data-full="{full}" data-index="{i}" '
+            f'tabindex="{0 if is_first else -1}" '
+            f'aria-label="Ampliar foto {i + 1} de {len(escena)}">'
+            f'<img src="{full}" alt="Guitarra en escena — Mariano Conde {i + 1}" '
+            f'loading="{"eager" if is_first else "lazy"}" decoding="async"></button>')
+        dots.append(
+            f'<button class="escena-dot{" is-active" if is_first else ""}" type="button" '
+            f'data-slide="{i}" aria-label="Ir a la foto {i + 1}" '
+            f'aria-current="{"true" if is_first else "false"}"></button>')
+    panel2 = f'''<div class="gallery-panel" id="escena">
+  <div class="escena-carousel" data-carousel aria-roledescription="carrusel" aria-label="Guitarra en escena">
+    <div class="escena-viewport"><div class="escena-track">{''.join(slides)}</div></div>
+    <button class="escena-nav escena-prev" type="button" aria-label="Foto anterior">‹</button>
+    <button class="escena-nav escena-next" type="button" aria-label="Foto siguiente">›</button>
+    <button class="escena-toggle" type="button" aria-label="Pausar carrusel" aria-pressed="false"><span class="pause-icon" aria-hidden="true"></span></button>
+    <div class="escena-caption"><span class="escena-count" aria-live="polite"><strong>1</strong> / {len(escena)}</span><span class="escena-label">Guitarra en escena</span></div>
+    <div class="escena-dots" role="group" aria-label="Elegir foto">{''.join(dots)}</div>
+  </div>
+</div>'''
     body = hero('galeria.html', 'Galería', 'Un recorrido visual por el taller de la calle Amnistía y por los escenarios donde han sonado las guitarras de Mariano Conde.', '07 / 08')
     body += subnav([('galeria.html','Todas'),('directo.html','En vídeo'),('historia.html','Archivo histórico'),('poema.html','Ediciones')], 'galeria.html')
     body += f'''<section class="section-dark"><div class="container">

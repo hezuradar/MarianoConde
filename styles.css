@@ -266,6 +266,44 @@ section{position:relative;padding:clamp(5rem,10vw,9rem) 0}
 .gallery-item::after{content:'＋';position:absolute;right:1rem;bottom:1rem;color:var(--cream);font-size:1.5rem;opacity:0;transition:opacity .3s}
 .gallery-item:hover::after{opacity:1}
 
+/* --- Carrusel 4K de «MC a escena» --- */
+.escena-carousel{position:relative;background:#0d0c0b;border:1px solid var(--line-dark);overflow:hidden}
+.escena-viewport{width:100%;overflow:hidden;aspect-ratio:16/9;background:#0d0c0b}
+.escena-track{display:flex;width:100%;height:100%;transition:transform .9s cubic-bezier(.22,1,.36,1);will-change:transform}
+.escena-slide{flex:0 0 100%;width:100%;height:100%;margin:0;aspect-ratio:auto;break-inside:auto;cursor:zoom-in}
+.escena-slide img{width:100%;height:100%;object-fit:contain;filter:none}
+.escena-slide:hover img{transform:none;filter:none}
+.escena-slide::after{right:1.25rem;bottom:1.25rem;font-size:1.8rem;text-shadow:0 2px 10px #000}
+.escena-carousel button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.escena-nav{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:3;
+  width:52px;height:52px;display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(201,162,94,.55);background:rgba(13,12,11,.72);color:var(--cream);
+  font-size:2.1rem;line-height:1;cursor:pointer;transition:background .3s,color .3s,border-color .3s;
+}
+.escena-nav:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.escena-prev{left:1rem}
+.escena-next{right:1rem}
+.escena-toggle{
+  position:absolute;top:1rem;right:1rem;z-index:3;width:42px;height:42px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(201,162,94,.55);background:rgba(13,12,11,.72);color:var(--cream);cursor:pointer;
+  transition:background .3s,color .3s,border-color .3s;
+}
+.escena-toggle[hidden]{display:none}
+.escena-toggle:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.escena-toggle .pause-icon{display:block;width:12px;height:14px;border-left:4px solid currentColor;border-right:4px solid currentColor}
+.escena-toggle[aria-pressed="true"] .pause-icon{width:0;height:0;border-left:12px solid currentColor;border-right:0;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.escena-caption{position:absolute;left:1.25rem;bottom:1.1rem;z-index:2;display:flex;align-items:baseline;gap:.8rem;pointer-events:none;text-shadow:0 2px 12px #000}
+.escena-count{font-family:var(--serif);font-size:1rem;color:var(--cream)}
+.escena-count strong{font-size:1.5rem;font-weight:500;color:var(--gold)}
+.escena-label{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-2)}
+.escena-dots{position:absolute;left:50%;bottom:1.25rem;transform:translateX(-50%);z-index:3;display:flex;gap:.4rem;max-width:calc(100% - 12rem);overflow-x:auto;scrollbar-width:none;padding:.35rem 0}
+.escena-dots::-webkit-scrollbar{display:none}
+.escena-dot{flex:0 0 auto;width:8px;height:8px;padding:0;border:0;border-radius:50%;background:rgba(237,230,216,.4);cursor:pointer;transition:background .3s,transform .3s}
+.escena-dot:hover{background:var(--cream)}
+.escena-dot.is-active{background:var(--gold);transform:scale(1.35)}
+
 /* ============================================================
    CONTACTO
    ============================================================ */
@@ -748,6 +786,25 @@ html[data-device="mobile"] .cookie-banner{bottom:calc(58px + env(safe-area-inset
   html[data-device="mobile"] .live-header,
   html[data-device="mobile"] .footer-top{grid-template-columns:1fr}
 }
+
+@media(max-width:600px){
+  .escena-nav{width:42px;height:42px;font-size:1.7rem}
+  .escena-prev{left:.4rem}
+  .escena-next{right:.4rem}
+  .escena-toggle{top:.6rem;right:.6rem;width:36px;height:36px}
+  .escena-caption{left:.8rem;bottom:2.7rem;gap:.5rem}
+  .escena-label{display:none}
+  .escena-dots{bottom:.65rem;max-width:calc(100% - 1.5rem)}
+  .escena-dot{width:6px;height:6px}
+}
+html[data-device="mobile"] .escena-nav{width:42px;height:42px;font-size:1.7rem}
+html[data-device="mobile"] .escena-prev{left:.4rem}
+html[data-device="mobile"] .escena-next{right:.4rem}
+html[data-device="mobile"] .escena-toggle{top:.6rem;right:.6rem;width:36px;height:36px}
+html[data-device="mobile"] .escena-caption{left:.8rem;bottom:2.7rem;gap:.5rem}
+html[data-device="mobile"] .escena-label{display:none}
+html[data-device="mobile"] .escena-dots{bottom:.65rem;max-width:calc(100% - 1.5rem)}
+html[data-device="mobile"] .escena-dot{width:6px;height:6px}
 
 /* ============================================================
    NOTICIAS — página propia de cada artículo

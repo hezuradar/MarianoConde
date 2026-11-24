@@ -194,6 +194,7 @@
       $$('.gallery-panel').forEach(p => p.classList.toggle('is-active', p.id === target));
       // El lightbox debe usar solo las imágenes visibles
       if (typeof window.__mcGalleryRefresh === 'function') window.__mcGalleryRefresh();
+      window.dispatchEvent(new CustomEvent('mc:gallery-tab', { detail: { target } }));
     }));
   }
 
@@ -228,11 +229,14 @@
       document.body.style.overflow = 'hidden';
       showImage(galleryItems.indexOf(item));
       lbClose.focus();
+      window.dispatchEvent(new CustomEvent('mc:lightbox-open'));
     });
     function closeLightbox() {
+      if (lightbox.hidden) return;
       lightbox.hidden = true;
       lbImg.src = '';
       document.body.style.overflow = '';
+      window.dispatchEvent(new CustomEvent('mc:lightbox-close'));
       if (lastFocused) lastFocused.focus();
     }
     lbClose.addEventListener('click', closeLightbox);
@@ -245,6 +249,98 @@
       if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
       if (e.key === 'ArrowRight') showImage(currentIndex + 1);
     });
+  }
+
+  /* ---------- Carrusel 4K de «MC a escena» ---------- */
+  const carousel = $('[data-carousel]');
+  if (carousel) {
+    const slides = $$('.escena-slide', carousel);
+    const dots = $$('.escena-dot', carousel);
+    const countEl = $('.escena-count strong', carousel);
+    const prevBtn = $('.escena-prev', carousel);
+    const nextBtn = $('.escena-next', carousel);
+    const toggleBtn = $('.escena-toggle', carousel);
+    const track = $('.escena-track', carousel);
+    const panel = carousel.closest('.gallery-panel');
+    const INTERVAL = 5000;
+    const reasons = new Set();
+    let current = 0;
+    const instanceId = (carousel.__mcCarouselId || 0) + 1;
+    carousel.__mcCarouselId = instanceId;
+
+    if (slides.length < 2 && toggleBtn) toggleBtn.hidden = true;
+
+    function setReason(reason, active) {
+      if (active) reasons.add(reason);
+      else reasons.delete(reason);
+      syncPlayback();
+    }
+    function syncPlayback() {
+      carousel.classList.toggle('is-paused', reasons.size > 0);
+      if (toggleBtn) {
+        const paused = reasons.has('manual');
+        toggleBtn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+        toggleBtn.setAttribute('aria-label', paused ? 'Reanudar carrusel' : 'Pausar carrusel');
+        toggleBtn.title = paused ? 'Reanudar carrusel' : 'Pausar carrusel';
+      }
+    }
+    function goTo(index) {
+      if (!slides.length) return;
+      current = ((index % slides.length) + slides.length) % slides.length;
+      if (track) track.style.transform = 'translate3d(-' + (current * 100) + '%, 0, 0)';
+      slides.forEach((slide, i) => {
+        const active = i === current;
+        slide.classList.toggle('is-active', active);
+        slide.setAttribute('tabindex', active ? '0' : '-1');
+        slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+      });
+      dots.forEach((dot, i) => {
+        const active = i === current;
+        dot.classList.toggle('is-active', active);
+        dot.setAttribute('aria-current', active ? 'true' : 'false');
+      });
+      if (countEl) countEl.textContent = String(current + 1);
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
+    dots.forEach(dot => dot.addEventListener('click', () => goTo(Number(dot.dataset.slide) || 0)));
+    if (toggleBtn) toggleBtn.addEventListener('click', () => setReason('manual', !reasons.has('manual')));
+
+    carousel.addEventListener('mouseenter', () => setReason('hover', true));
+    carousel.addEventListener('mouseleave', () => setReason('hover', false));
+    carousel.addEventListener('focusin', () => setReason('focus', true));
+    carousel.addEventListener('focusout', e => {
+      if (!carousel.contains(e.relatedTarget)) setReason('focus', false);
+    });
+    carousel.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(current - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current + 1); }
+    });
+
+    document.addEventListener('visibilitychange', () => setReason('hidden', document.hidden));
+    window.addEventListener('mc:lightbox-open', () => setReason('lightbox', true));
+    window.addEventListener('mc:lightbox-close', () => setReason('lightbox', false));
+    window.addEventListener('mc:gallery-tab', e => {
+      setReason('inactive', !e.detail || e.detail.target !== 'escena');
+    });
+
+    if (document.hidden) reasons.add('hidden');
+    if (panel && !panel.classList.contains('is-active')) reasons.add('inactive');
+    const reducedQuery = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+    function onReduced(e) { setReason('reduced', e.matches); }
+    if (reducedQuery) {
+      if (reducedQuery.matches) reasons.add('reduced');
+      if (reducedQuery.addEventListener) reducedQuery.addEventListener('change', onReduced);
+      else if (reducedQuery.addListener) reducedQuery.addListener(onReduced);
+    }
+
+    goTo(0);
+    syncPlayback();
+    setInterval(() => {
+      if (carousel.__mcCarouselId !== instanceId || reasons.size > 0) return;
+      goTo(current + 1);
+    }, INTERVAL);
   }
 
   /* ---------- Configurador de guitarra ---------- */

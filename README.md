@@ -38,7 +38,7 @@ La versión móvil añade una **barra de navegación rápida fija abajo** con In
 | `historia.html` | Cronología y relato en primera persona: Gravina 7, Felipe V 2, Conde Hermanos C.B. y Amnistía 1 |
 | `noticias.html` | 6 destacadas + 58 artículos filtrables con fecha y fuente + sección de prensa y reconocimientos |
 | `noticia-*.html` | 58 páginas propias de noticia con el contenido íntegro recuperado del original, vídeos, imágenes, navegación anterior/siguiente y enlace a la fuente cuando procede |
-| `galeria.html` | 42 fotos en dos pestañas (MC en pared / MC a escena), con lightbox y teclado |
+| `galeria.html` | MC en pared (8 fotos con lightbox) y MC a escena (34 fotos 4K en carrusel automático con anterior/siguiente, puntitos, teclado, pausa y lightbox) |
 | `contacto.html` | Dirección, horarios, teléfono, email, PDF de precios 2026, formulario con teléfono y mapa |
 | `aviso-legal.html`, `privacidad.html`, `cookies.html` | Textos legales del original servidos localmente |
 | `feed.xml` | Feed RSS con las 58 noticias; todos los enlaces apuntan a las páginas publicadas en GitHub Pages |
@@ -52,11 +52,13 @@ La versión móvil añade una **barra de navegación rápida fija abajo** con In
 | `poema-data.json` | 58 entradas limpias del catálogo del Poema (año, título, propietario, verso y materiales) |
 | `noticias-data.json` | 58 noticias estructuradas: título, fecha, imagen, categoría, fuente y contenido completo extraído del original |
 | `_parse_noticias.py` | Parser que reconstruye `noticias-data.json` desde los artículos descargados y el inventario `_noticias_todas.json` |
+| `_make_4k_gallery.py` | Genera las 34 versiones 4K (WebP 3840×2160) de «MC a escena» a partir de las fotos originales |
 | `_parse_poema.py` | Parser que reconstruye `poema-data.json` desde `_poema_text.txt` |
-| `styles.css` | Sistema visual editorial carbón / crema / oro, responsive y con la versión móvil (barra inferior, áreas táctiles, safe area, sin hover en táctil) |
-| `app.js` | Filtros, reproductor, galerías, lightbox, configurador, selector Español/Inglés, menú móvil, conmutador de versión, formularios y cookies |
+| `styles.css` | Sistema visual editorial carbón / crema / oro, responsive, carrusel 4K y versión móvil (barra inferior, áreas táctiles, safe area, sin hover en táctil) |
+| `app.js` | Filtros, reproductor, galerías, carrusel 4K, lightbox, configurador, selector Español/Inglés, menú móvil, conmutador de versión, formularios y cookies |
 | `m/` | Versión móvil: las mismas 90 páginas con rutas relativas `../assets/`, `../styles.css` y `../app.js` |
 | `assets/img/` | 590 imágenes, logos y fuentes visuales del original |
+| `assets/img/4k/` | 34 fotos de escena reescaladas a 3840×2160 en WebP para el carrusel |
 | `assets/docs/lista-precios-2026.pdf` | Lista de precios 2026 alojada localmente |
 | `contenido-original/` | 308 páginas HTML originales y `_assets/` con 162 CSS/JS archivados |
 | `image-urls.txt` | Inventario de 233 URLs de imágenes extraídas |
@@ -67,17 +69,20 @@ Edita siempre `build_site.py` (no los HTML generados) y ejecuta:
 
 ```powershell
 python _parse_noticias.py
+python _make_4k_gallery.py   # solo si cambian las fotos de escena
 python build_site.py
 ```
 
-El parser actualiza `noticias-data.json` con el contenido de los artículos descargados; el generador sobrescribe las páginas HTML de la raíz y de `m/`, y `feed.xml`, pero no toca `styles.css`, `app.js` ni `assets/`.
+El parser actualiza `noticias-data.json` con el contenido de los artículos descargados; el generador 4K reescribe `assets/img/4k/`; el generador sobrescribe las páginas HTML de la raíz y de `m/`, y `feed.xml`, pero no toca `styles.css`, `app.js` ni el resto de `assets/`.
 
 ## Notas
 
+- Las fotos de «MC a escena» se entregan como WebP de 3840×2160, pero las originales descargadas miden como máximo 1366 px de ancho: el 4K es un reescalado con Lanczos y sharpen suave, no detalle capturado en 4K. Si se consiguen originales mayores, basta con reemplazarlos en `assets/img/` y volver a ejecutar `_make_4k_gallery.py`.
+- El carrusel avanza cada 5 segundos y se controla con ‹/›, puntitos, flechas del teclado y el botón de pausa. Se detiene al pasar el ratón, al enfocarlo, al abrir el lightbox, al cambiar de pestaña del navegador, al salir de la pestaña «MC a escena» y cuando el sistema pide reducir movimiento.
 - El selector «Español / Inglés» del header abre la versión inglesa original en pestaña nueva con `rel="noopener"`. Las páginas de noticia no muestran ese selector porque su contenido se sirve íntegramente en esta nueva web.
 - El reproductor de Twitch puede no cargar si el archivo se abre con `file://`; usa el enlace «Abrir en Twitch» o sirve el sitio por HTTP.
 - El directo de YouTube muestra el último vídeo o el aviso de emisión no activa cuando no hay directo en curso.
 - Los formularios abren la aplicación de correo del visitante con el mensaje y las opciones elegidas pre-rellenadas (no requieren backend).
 - Todas las fuentes externas se abren en pestaña nueva con `rel="noopener"`.
-- Validación aplicada: 180/180 páginas (90 + 90) con HTML balanceado, sin enlaces internos rotos ni recursos ausentes, `feed.xml` con 58 ítems y URLs de GitHub Pages, 0 enlaces al dominio antiguo en noticias/feed, `py_compile` y `node --check` correctos y 0 apariciones de texto de investigación no publicado.
+- Validación aplicada: 180/180 páginas (90 + 90) con HTML balanceado, sin enlaces internos rotos ni recursos ausentes (incluidas las 34 rutas 4K en ambas versiones), `feed.xml` con 58 ítems y URLs de GitHub Pages, 0 enlaces al dominio antiguo en noticias/feed, `py_compile` y `node --check` correctos, carrusel comprobado en navegador (avance cada 5 s, anterior/siguiente, puntitos, pausa, lightbox y pestaña «MC a escena») y 0 apariciones de texto de investigación no publicado.
 - La barra de navegación móvil y el conmutador de versión se generan en `build_site.py` (función `footer()`); la detección automática vive en `DESKTOP_BOOT` / `MOBILE_BOOT`. No editar los HTML generados.
