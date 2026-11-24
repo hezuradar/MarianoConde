@@ -175,9 +175,8 @@
     const goLiveBtn = $('#goLiveBtn');
     const YT_VIDEO = id => `https://www.youtube-nocookie.com/embed/${id}?rel=0&modestbranding=1`;
     // YouTube retiró embed/live_stream (mostraba «Este vídeo no está disponible»).
-    // Se incrusta el ID de la emisión vigente; se obtiene en
-    // https://www.youtube.com/@Guitarras_MarianoConde/live (URL del vídeo en directo).
-    // El enlace «Abrir en YouTube» apunta siempre al directo del canal.
+    // LIVE_VIDEO_ID lo actualiza automáticamente update_live.py mientras hay directo.
+    // El enlace «Abrir en YouTube» apunta siempre al directo vigente del canal.
     const LIVE_VIDEO_ID = 'ELvwXjxxZjM';
     const YT_LIVE = YT_VIDEO(LIVE_VIDEO_ID);
     const host = window.location.hostname;
